@@ -86,6 +86,25 @@
 ]]></content>
   </entry>
   <entry>
+    <title>jQuery 笔记</title>
+    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>jQuery<span id="more"></span></p>
+<h4 id="遵循原则"><a href="#遵循原则" class="headerlink" title="遵循原则"></a>遵循原则</h4><ul>
+<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
+<li>把所有事件处理函数置于文档就绪事件处理器中</li>
+<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
+<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
+</ul>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>minipack 学习笔记</title>
     <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
@@ -94,6 +113,22 @@
 
 <h3 id="模拟捆绑器"><a href="#模拟捆绑器" class="headerlink" title="模拟捆绑器"></a>模拟捆绑器</h3><p>将小块代码编译成更大和更复杂的代码</p>
 <p>入口文件</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>创建对象<span id="more"></span></p>
+<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
+<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
+<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -135,41 +170,6 @@
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>创建对象<span id="more"></span></p>
-<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
-<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
-<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jQuery 笔记</title>
-    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>jQuery<span id="more"></span></p>
-<h4 id="遵循原则"><a href="#遵循原则" class="headerlink" title="遵循原则"></a>遵循原则</h4><ul>
-<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
-<li>把所有事件处理函数置于文档就绪事件处理器中</li>
-<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
-<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
-</ul>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -283,6 +283,24 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>备忘录</title>
+    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
+<ul>
+<li><p>面向类的语言的 new 机制</p>
+</li>
+<li><p>python</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
@@ -421,6 +439,46 @@
       </tags>
   </entry>
   <entry>
+    <title>建立本地仓库与远程仓库的联系（git）</title>
+    <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
+    <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
+<span id="more"></span>
+
+<h4 id="1-建立本地仓库"><a href="#1-建立本地仓库" class="headerlink" title="1.建立本地仓库"></a>1.建立本地仓库</h4><p><code>git init</code></p>
+<h4 id="2-添加所有文件到暂存区"><a href="#2-添加所有文件到暂存区" class="headerlink" title="2.添加所有文件到暂存区"></a>2.添加所有文件到暂存区</h4><p><code>git add .</code></p>
+<h4 id="3-提交所有文件"><a href="#3-提交所有文件" class="headerlink" title="3.提交所有文件"></a>3.提交所有文件</h4><p><code>git commit -m &quot;注释&quot; -a</code></p>
+<h4 id="4-新建远程仓库"><a href="#4-新建远程仓库" class="headerlink" title="4.新建远程仓库"></a>4.新建远程仓库</h4><p>新建一个仓库，复制其链接</p>
+<h4 id="5-连接远程仓库"><a href="#5-连接远程仓库" class="headerlink" title="5.连接远程仓库"></a>5.连接远程仓库</h4><p><code>git remote add origin https://gitee.com/Elcfin/try.git </code>（链接）</p>
+<h4 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6.推送到远程仓库"></a>6.推送到远程仓库</h4><p><code>git push -u origin master </code></p>
+<p>如果远程仓库非空，如建立时选择README.md初始化，则发生冲突</p>
+<p>此时可输入</p>
+<p><code>git push -u origin master -f</code></p>
+<p>强制覆盖远程仓库</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>课内学习笔记</p>
+<span id="more"></span>
+
+<p><a href="https://gitee.com/Elcfin/data-structure">https://gitee.com/Elcfin/data-structure</a></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript判断变量是否为某种类型</title>
     <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<p>对象、数组<span id="more"></span></p>
@@ -471,49 +529,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>备忘录</title>
-    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
-<ul>
-<li><p>面向类的语言的 new 机制</p>
-</li>
-<li><p>python</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>建立本地仓库与远程仓库的联系（git）</title>
-    <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
-    <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
-<span id="more"></span>
-
-<h4 id="1-建立本地仓库"><a href="#1-建立本地仓库" class="headerlink" title="1.建立本地仓库"></a>1.建立本地仓库</h4><p><code>git init</code></p>
-<h4 id="2-添加所有文件到暂存区"><a href="#2-添加所有文件到暂存区" class="headerlink" title="2.添加所有文件到暂存区"></a>2.添加所有文件到暂存区</h4><p><code>git add .</code></p>
-<h4 id="3-提交所有文件"><a href="#3-提交所有文件" class="headerlink" title="3.提交所有文件"></a>3.提交所有文件</h4><p><code>git commit -m &quot;注释&quot; -a</code></p>
-<h4 id="4-新建远程仓库"><a href="#4-新建远程仓库" class="headerlink" title="4.新建远程仓库"></a>4.新建远程仓库</h4><p>新建一个仓库，复制其链接</p>
-<h4 id="5-连接远程仓库"><a href="#5-连接远程仓库" class="headerlink" title="5.连接远程仓库"></a>5.连接远程仓库</h4><p><code>git remote add origin https://gitee.com/Elcfin/try.git </code>（链接）</p>
-<h4 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6.推送到远程仓库"></a>6.推送到远程仓库</h4><p><code>git push -u origin master </code></p>
-<p>如果远程仓库非空，如建立时选择README.md初始化，则发生冲突</p>
-<p>此时可输入</p>
-<p><code>git push -u origin master -f</code></p>
-<p>强制覆盖远程仓库</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -664,21 +679,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数据结构</title>
-    <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>课内学习笔记</p>
-<span id="more"></span>
-
-<p><a href="https://gitee.com/Elcfin/data-structure">https://gitee.com/Elcfin/data-structure</a></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -767,33 +767,6 @@
       </tags>
   </entry>
   <entry>
-    <title>零零碎碎（HTML/CSS）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>伪类元素的原始位置一般是在父元素的左上和右下，如果设置成<code>display: block</code>会另起新行</strong></li>
-</ul>
-<ul>
-<li><p><strong>关于<code>clip-path</code></strong></p>
-<p><a href="https://www.w3cplus.com/css3/using-making-sense-of-clip-path.html">理解Clip Path_clip-path 教程_W3cplus</a></p>
-</li>
-</ul>
-<ul>
-<li><strong>HTML <code>contenteditable</code> 属性</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML/CSS</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>HTML</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>零零碎碎（JavaScript）</title>
     <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88JavaScript%EF%BC%89/</url>
     <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
@@ -855,6 +828,33 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零零碎碎（HTML/CSS）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>伪类元素的原始位置一般是在父元素的左上和右下，如果设置成<code>display: block</code>会另起新行</strong></li>
+</ul>
+<ul>
+<li><p><strong>关于<code>clip-path</code></strong></p>
+<p><a href="https://www.w3cplus.com/css3/using-making-sense-of-clip-path.html">理解Clip Path_clip-path 教程_W3cplus</a></p>
+</li>
+</ul>
+<ul>
+<li><strong>HTML <code>contenteditable</code> 属性</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML/CSS</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
 </search>
