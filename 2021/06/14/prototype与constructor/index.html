@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo!">
+<meta name="description" content="__proto__、prototype与constructor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/06/14/hello-world/index.html">
+<meta property="og:title" content="__proto__、prototype与constructor">
+<meta property="og:url" content="http://example.com/2021/06/14/prototype%E4%B8%8Econstructor/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo!">
+<meta property="og:description" content="__proto__、prototype与constructor">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-14T05:14:23.420Z">
-<meta property="article:modified_time" content="2021-04-21T14:57:44.995Z">
+<meta property="article:published_time" content="2021-06-14T05:23:40.699Z">
+<meta property="article:modified_time" content="2021-05-08T13:58:32.487Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2021/06/14/hello-world/"/>
+  <link rel="canonical" href="http://example.com/2021/06/14/prototype与constructor/"/>
 
 
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>__proto__、prototype与constructor | Hexo</title>
   
 
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/14/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/14/prototype%E4%B8%8Econstructor/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -249,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">__proto__、prototype与constructor</h1>
         
 
         <div class="post-meta">
@@ -261,7 +262,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-14T13:14:23+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-14T13:23:40+08:00">
                 2021-06-14
               </time>
             
@@ -271,6 +272,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -299,19 +322,30 @@
       
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
+<h4 id="proto-属性"><a href="#proto-属性" class="headerlink" title="__proto__属性"></a><code>__proto__</code>属性</h4><p><code>__proto__</code>属性在ES标准定义中的名字是<code>[[Prototype]]</code></p>
+<ul>
+<li><code>__proto__</code>和<code>constructor</code>属性是<strong>对象</strong>所独有的</li>
+<li><code>prototype</code>属性是<strong>函数</strong>所独有的<ul>
+<li>由于JavaScript中函数也是对象，所以函数也拥有<code>__proto__</code>和<code>constructor</code>属性</li>
+</ul>
+</li>
+</ul>
+<p>原型链通过<code>__proto__</code>一级一级向上寻找，直到<code>null</code></p>
+<h4 id="prototype属性"><a href="#prototype属性" class="headerlink" title="prototype属性"></a><code>prototype</code>属性</h4><p>函数的<code>prototype</code>属性指向该函数的原型对象（从一个函数指向一个对象），即当这个函数作为构造函数时所创建的实例的原型对象</p>
+<p>作用：让该函数所实例化的对象们可以找到公用的属性和方法</p>
+<h4 id="constructor属性"><a href="#constructor属性" class="headerlink" title="constructor属性"></a><code>constructor</code>属性</h4><p>只有prototype对象自身拥有<code>constructor</code>属性</p>
+<p>对象的<code>constructor</code>属性指向该对象的构造函数（从一个对象指向一个函数），“每个对象都有构造函数”（意思是每个对象都可以找到其对应的<code>constructor</code>属性）</p>
+<p>由<code>Function</code>创建的函数对象较为特殊，该函数对象的<code>constructor</code>属性指向其构造函数<code>Function</code>，此时该函数对象相当于<code>Function</code>的一个实例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.__proto__.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.prototype.constructor); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.prototype.constructor); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>该函数对象的原型对象，即<code>.prototype</code>的<code>constructor</code>属性指向该函数对象</p>
+<p>对一个对象，有</p>
+<p><code>对象.__proto__ === 其构造函数.prototype</code></p>
+<p><code>其构造函数.prototype.constructor === 其构造函数本身</code></p>
+<blockquote>
+<p>使用对象字面量 <code>= &#123;&#125;</code> 创建新对象相当于 <code>= new Object()</code>，其对应的<code>construcor</code>属性即指向<code>Object</code></p>
+</blockquote>
 
       
     </div>
@@ -327,6 +361,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
 
       
       
@@ -336,14 +376,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="minipack 学习笔记">
+                <i class="fa fa-chevron-left"></i> minipack 学习笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/" rel="prev" title="《JavaScript高级程序设计（第4版）》读书笔记-创建对象">
-                《JavaScript高级程序设计（第4版）》读书笔记-创建对象 <i class="fa fa-chevron-right"></i>
+              <a href="/2021/06/14/Reading/" rel="prev" title="Reading">
+                Reading <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -476,7 +520,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#proto-%E5%B1%9E%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">__proto__属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#prototype%E5%B1%9E%E6%80%A7"><span class="nav-number">2.</span> <span class="nav-text">prototype属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#constructor%E5%B1%9E%E6%80%A7"><span class="nav-number">3.</span> <span class="nav-text">constructor属性</span></a></li></ol></div>
             
 
           </div>

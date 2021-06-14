@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="读书笔记," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="正则表达式是匹配模式，要么匹配字符，要么匹配位置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《JavaScript正则迷你书》读书笔记">
+<meta property="og:url" content="http://example.com/2021/06/14/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="正则表达式是匹配模式，要么匹配字符，要么匹配位置">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-14T05:23:40.770Z">
+<meta property="article:modified_time" content="2021-05-09T13:04:36.616Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="读书笔记">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2021/06/14/正则表达式/"/>
+
+
+
+
+
+  <title>《JavaScript正则迷你书》读书笔记 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/14/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《JavaScript正则迷你书》读书笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-14T13:23:40+08:00">
+                2021-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">读书笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>正则表达式是匹配模式，要么匹配字符，要么匹配位置<span id="more"></span></p>
+<h2 id="正则表达式字符匹配"><a href="#正则表达式字符匹配" class="headerlink" title="正则表达式字符匹配"></a>正则表达式字符匹配</h2><h3 id="两种模糊匹配"><a href="#两种模糊匹配" class="headerlink" title="两种模糊匹配"></a>两种模糊匹配</h3><h4 id="横向模糊匹配"><a href="#横向模糊匹配" class="headerlink" title="横向模糊匹配"></a>横向模糊匹配</h4><p>横向模糊：一个正则可匹配的字符串的长度不是固定的</p>
+<p>实现方式：使用量词</p>
+<table>
+<thead>
+<tr>
+<th align="left"><code> &#123;m,n&#125;</code></th>
+<th>表示连续出现最少 m 次，最多 n 次</th>
+</tr>
+</thead>
+</table>
+<h4 id="纵向模糊匹配"><a href="#纵向模糊匹配" class="headerlink" title="纵向模糊匹配"></a>纵向模糊匹配</h4><p>纵向模糊：一个正则匹配的字符串，具体到某一位字符时，它可以不是某个确定的字符</p>
+<p>实现方式：使用字符组</p>
+<table>
+<thead>
+<tr>
+<th><code>[abc]</code></th>
+<th>表示该字符是可以字符 “a”、”b”、”c” 中的任何一个</th>
+</tr>
+</thead>
+</table>
+<h3 id="字符组"><a href="#字符组" class="headerlink" title="字符组"></a>字符组</h3><h4 id="范围表示法"><a href="#范围表示法" class="headerlink" title="范围表示法"></a>范围表示法</h4><table>
+<thead>
+<tr>
+<th><code>-</code></th>
+<th>表示省略和缩写</th>
+<th>比如 <code>[123456abcdefGHIJKLM]</code>，可以写成 <code>[1-6a-fG-M]</code></th>
+</tr>
+</thead>
+</table>
+<h4 id="排除字符组"><a href="#排除字符组" class="headerlink" title="排除字符组"></a>排除字符组</h4><table>
+<thead>
+<tr>
+<th><code> [^abc]</code></th>
+<th>表示是一个除 “a”、”b”、”c”之外的任意一个字符</th>
+</tr>
+</thead>
+</table>
+<h4 id="常见的简写形式"><a href="#常见的简写形式" class="headerlink" title="常见的简写形式"></a>常见的简写形式</h4><table>
+<thead>
+<tr>
+<th>字符组</th>
+<th>具体含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>\d</code></td>
+<td>表示 <code>[0-9]</code>-表示是一位数字</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>表示 <code>[^0-9]</code>-表示除数字外的任意字符</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>表示 <code>[0-9a-zA-Z_]</code>-表示数字、大小写字母和下划线</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>表示 <code>[^0-9a-zA-Z_]</code>-非单词字符</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>表示 <code>[ \t\v\n\r\f]</code>-表示空白符，包括空格、水平制表符、垂直制表符、换行符、回车符、换页符</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>表示 <code>[^ \t\v\n\r\f]</code>-表示非空白符</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>表示 <code>[^\n\r\u2028\u2029]</code>-通配符，表示几乎任意字符-换行符、回车符、行分隔符和段分隔符除外</td>
+</tr>
+</tbody></table>
+<p>匹配任意字符：<code>[\d\D]</code>、<code>[\w\W]</code>、<code>[\s\S]</code> 和 <code>[^]</code> 中任意一个</p>
+<h3 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h3><h4 id="简写形式"><a href="#简写形式" class="headerlink" title="简写形式"></a>简写形式</h4><table>
+<thead>
+<tr>
+<th>量词</th>
+<th>具体含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&#123;m,&#125; </code></td>
+<td>表示至少出现 m 次</td>
+</tr>
+<tr>
+<td><code>&#123;m&#125; </code></td>
+<td>等价于 <code>&#123;m,m&#125;</code>，表示出现 m 次</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>等价于 <code>&#123;0,1&#125;</code>，表示出现或者不出现</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>等价于 <code>&#123;1,&#125;</code>，表示出现至少一次</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>等价于 <code>&#123;0,&#125;</code>，表示出现任意次，有可能不出现</td>
+</tr>
+</tbody></table>
+<h4 id="贪婪匹配与惰性匹配"><a href="#贪婪匹配与惰性匹配" class="headerlink" title="贪婪匹配与惰性匹配"></a>贪婪匹配与惰性匹配</h4><p>贪婪匹配：尽可能多的匹配</p>
+<p>惰性匹配：尽可能少的匹配</p>
+<table>
+<thead>
+<tr>
+<th>惰性量词</th>
+<th>贪婪量词</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&#123;m,n&#125;? </code></td>
+<td><code>&#123;m,n&#125; </code></td>
+</tr>
+<tr>
+<td><code>&#123;m,&#125;?</code></td>
+<td><code>&#123;m,&#125;</code></td>
+</tr>
+<tr>
+<td><code>?? </code></td>
+<td><code>?</code></td>
+</tr>
+<tr>
+<td><code>+?</code></td>
+<td><code>+</code></td>
+</tr>
+<tr>
+<td><code>*? </code></td>
+<td><code>* </code></td>
+</tr>
+</tbody></table>
+<h3 id="多选分支"><a href="#多选分支" class="headerlink" title="多选分支"></a>多选分支</h3><p>| <code>(p1|p2|p3)</code> | 其中 <code>p1</code>、<code>p2</code> 和 <code>p3</code> 是子模式，用 |（管道符）分隔，表示其中任何之一 |<br>| ———— | ———————————————————— |</p>
+<p>分支结构是惰性的，即当前面的匹配上，后面的就不再尝试</p>
+<h2 id="正则表达式位置匹配"><a href="#正则表达式位置匹配" class="headerlink" title="正则表达式位置匹配"></a>正则表达式位置匹配</h2><p>对于位置的理解，我们可以理解成空字符 “”</p>
+<h2 id="正则表达式括号的作用"><a href="#正则表达式括号的作用" class="headerlink" title="正则表达式括号的作用"></a>正则表达式括号的作用</h2>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag"># 读书笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="next" title="数据结构">
+                <i class="fa fa-chevron-left"></i> 数据结构
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%97%E7%AC%A6%E5%8C%B9%E9%85%8D"><span class="nav-number">1.</span> <span class="nav-text">正则表达式字符匹配</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D"><span class="nav-number">1.1.</span> <span class="nav-text">两种模糊匹配</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%AA%E5%90%91%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D"><span class="nav-number">1.1.1.</span> <span class="nav-text">横向模糊匹配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%B5%E5%90%91%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D"><span class="nav-number">1.1.2.</span> <span class="nav-text">纵向模糊匹配</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E7%BB%84"><span class="nav-number">1.2.</span> <span class="nav-text">字符组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8C%83%E5%9B%B4%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-number">1.2.1.</span> <span class="nav-text">范围表示法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%92%E9%99%A4%E5%AD%97%E7%AC%A6%E7%BB%84"><span class="nav-number">1.2.2.</span> <span class="nav-text">排除字符组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%AE%80%E5%86%99%E5%BD%A2%E5%BC%8F"><span class="nav-number">1.2.3.</span> <span class="nav-text">常见的简写形式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8F%E8%AF%8D"><span class="nav-number">1.3.</span> <span class="nav-text">量词</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E5%86%99%E5%BD%A2%E5%BC%8F"><span class="nav-number">1.3.1.</span> <span class="nav-text">简写形式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E4%B8%8E%E6%83%B0%E6%80%A7%E5%8C%B9%E9%85%8D"><span class="nav-number">1.3.2.</span> <span class="nav-text">贪婪匹配与惰性匹配</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%80%89%E5%88%86%E6%94%AF"><span class="nav-number">1.4.</span> <span class="nav-text">多选分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%8D%E7%BD%AE%E5%8C%B9%E9%85%8D"><span class="nav-number">2.</span> <span class="nav-text">正则表达式位置匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%8B%AC%E5%8F%B7%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">正则表达式括号的作用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
