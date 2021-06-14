@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Word文档中实现代码高亮</title>
+    <url>/2021/06/14/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    <content><![CDATA[<p>使用Notepad++<span id="more"></span></p>
+<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
+<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
+<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
+<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/06/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Reading</title>
     <url>/2021/06/14/Reading/</url>
     <content><![CDATA[<p>阅读进度记录<span id="more"></span></p>
@@ -52,40 +86,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Word文档中实现代码高亮</title>
-    <url>/2021/06/14/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
-    <content><![CDATA[<p>使用Notepad++<span id="more"></span></p>
-<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
-<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
-<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
-<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/06/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>minipack 学习笔记</title>
     <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
@@ -94,25 +94,6 @@
 
 <h3 id="模拟捆绑器"><a href="#模拟捆绑器" class="headerlink" title="模拟捆绑器"></a>模拟捆绑器</h3><p>将小块代码编译成更大和更复杂的代码</p>
 <p>入口文件</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jQuery 笔记</title>
-    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>jQuery<span id="more"></span></p>
-<h4 id="遵循原则"><a href="#遵循原则" class="headerlink" title="遵循原则"></a>遵循原则</h4><ul>
-<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
-<li>把所有事件处理函数置于文档就绪事件处理器中</li>
-<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
-<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
-</ul>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -154,6 +135,25 @@
         <category>JavaScript</category>
       </categories>
       <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jQuery 笔记</title>
+    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>jQuery<span id="more"></span></p>
+<h4 id="Principles"><a href="#Principles" class="headerlink" title="Principles"></a>Principles</h4><ul>
+<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
+<li>把所有事件处理函数置于文档就绪事件处理器中</li>
+<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
+<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
+</ul>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -282,6 +282,59 @@
       </categories>
       <tags>
         <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript判断变量是否为某种类型</title>
+    <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<p>对象、数组<span id="more"></span></p>
+<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
+<blockquote>
+<p><code>[object Object]</code>中第一个o小写</p>
+</blockquote>
+</li>
+<li><p><code>obj.constructor === Object</code></p>
+</li>
+<li><p><code>obj instanceof Object</code>（不可行）</p>
+<blockquote>
+<p>数组和函数也会返回true</p>
+</blockquote>
+</li>
+<li><p><code>typeof obj === Object</code>（不可行）</p>
+<blockquote>
+<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>$.isPlainObject(obj)</code></p>
+<blockquote>
+<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
+</li>
+<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
+</li>
+<li><p><code>obj instanceof Array</code></p>
+</li>
+<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
+</li>
+<li><p><code>Array.isArray()</code></p>
+</li>
+</ol>
+<blockquote>
+<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -421,56 +474,21 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript判断变量是否为某种类型</title>
-    <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<p>对象、数组<span id="more"></span></p>
-<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
-<blockquote>
-<p><code>[object Object]</code>中第一个o小写</p>
-</blockquote>
+    <title>备忘录</title>
+    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
+<ul>
+<li><p>面向类的语言的 new 机制</p>
 </li>
-<li><p><code>obj.constructor === Object</code></p>
+<li><p>python</p>
 </li>
-<li><p><code>obj instanceof Object</code>（不可行）</p>
-<blockquote>
-<p>数组和函数也会返回true</p>
-</blockquote>
-</li>
-<li><p><code>typeof obj === Object</code>（不可行）</p>
-<blockquote>
-<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li><p><code>$.isPlainObject(obj)</code></p>
-<blockquote>
-<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
-</li>
-<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
-</li>
-<li><p><code>obj instanceof Array</code></p>
-</li>
-<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
-</li>
-<li><p><code>Array.isArray()</code></p>
-</li>
-</ol>
-<blockquote>
-<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
-</blockquote>
+</ul>
 ]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>杂记</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
@@ -499,24 +517,6 @@
       </tags>
   </entry>
   <entry>
-    <title>备忘录</title>
-    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
-<ul>
-<li><p>面向类的语言的 new 机制</p>
-</li>
-<li><p>python</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据结构</title>
     <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>课内学习笔记</p>
@@ -529,20 +529,6 @@
       </categories>
       <tags>
         <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Colors</title>
-    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
-    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
@@ -693,24 +679,6 @@
       </tags>
   </entry>
   <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -778,6 +746,38 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Colors</title>
+    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
+    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
       </tags>
   </entry>
   <entry>
@@ -867,8 +867,8 @@
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>杂记</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
 </search>
