@@ -68,22 +68,23 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/06/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>jQuery 笔记</title>
+    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>jQuery<span id="more"></span></p>
+<h4 id="遵循原则"><a href="#遵循原则" class="headerlink" title="遵循原则"></a>遵循原则</h4><ul>
+<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
+<li>把所有事件处理函数置于文档就绪事件处理器中</li>
+<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
+<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
   </entry>
   <entry>
     <title>minipack 学习笔记</title>
@@ -104,23 +105,22 @@
       </tags>
   </entry>
   <entry>
-    <title>jQuery 笔记</title>
-    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>jQuery<span id="more"></span></p>
-<h4 id="遵循原则"><a href="#遵循原则" class="headerlink" title="遵循原则"></a>遵循原则</h4><ul>
-<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
-<li>把所有事件处理函数置于文档就绪事件处理器中</li>
-<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
-<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
-</ul>
+    <title>Hello World</title>
+    <url>/2021/06/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
   </entry>
   <entry>
     <title>__proto__、prototype与constructor</title>
@@ -154,6 +154,59 @@
         <category>JavaScript</category>
       </categories>
       <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>创建对象<span id="more"></span></p>
+<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
+<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
+<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-基本引用类型</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>基本引用类型<span id="more"></span></p>
+<p><strong>引用类型</strong>是把数据和功能组织到一起的结构，描述自己的对象应有的属性和方法</p>
+<p><strong>对象</strong>被认为是某个特定引用类型的实例</p>
+<p><strong>构造函数</strong>是用来创建新对象的函数，负责创建一个只有默认属性和方法的简单对象</p>
+<p><code>let now = new Date(); </code></p>
+<p>这行代码中，引用类型<code>Date</code>，构造函数<code>Date()</code></p>
+<blockquote>
+<p>函数也是一种引用类型</p>
+</blockquote>
+<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>在不给 Date 构造函数传参数（毫秒表示）的情况下，创建的对象将保存当前日期和时间</p>
+<p><strong><code>Date.parse()</code></strong></p>
+<p>接收一个表示日期的字符串参数</p>
+<p>尝试转换为表示该日期的毫秒数，失败则返回<code>NaN</code></p>
+<p>如果直接把表示日期的字符串传给 <code>Date</code> 构造函数，那么 <code>Date</code> 会在后台调用 <code>Date.parse()</code></p>
+<p><strong><code>Date.UTC()</code></strong></p>
+<p><strong><code>Date.now()</code></strong></p>
+<p>返回表示方法执行时日期和时间的毫秒数</p>
+<h4 id="继承的方法"><a href="#继承的方法" class="headerlink" title="继承的方法"></a>继承的方法</h4><p>重写了<code>toLocaleString()</code>、<code>toString()</code>和 <code>valueOf()</code>方法</p>
+<p><code>valueOf()</code>返回日期的毫秒表示</p>
+<h3 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h3><p>简洁语法 <code>let expression = /pattern/flags; </code></p>
+<p>使用 <code>RegExp</code> 构造函数创建时，参数是字符串</p>
+<blockquote>
+<p>所有元字符都必须二次转义（\转义后的字符串是\\，在正则表达式字符串中则要写成\\\\）</p>
+</blockquote>
+<h4 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h4><p><code>lastIndex</code>：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -233,49 +286,16 @@
       </tags>
   </entry>
   <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>创建对象<span id="more"></span></p>
-<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
-<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
-<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-基本引用类型</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>基本引用类型<span id="more"></span></p>
-<p><strong>引用类型</strong>是把数据和功能组织到一起的结构，描述自己的对象应有的属性和方法</p>
-<p><strong>对象</strong>被认为是某个特定引用类型的实例</p>
-<p><strong>构造函数</strong>是用来创建新对象的函数，负责创建一个只有默认属性和方法的简单对象</p>
-<p><code>let now = new Date(); </code></p>
-<p>这行代码中，引用类型<code>Date</code>，构造函数<code>Date()</code></p>
-<blockquote>
-<p>函数也是一种引用类型</p>
-</blockquote>
-<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>在不给 Date 构造函数传参数（毫秒表示）的情况下，创建的对象将保存当前日期和时间</p>
-<p><strong><code>Date.parse()</code></strong></p>
-<p>接收一个表示日期的字符串参数</p>
-<p>尝试转换为表示该日期的毫秒数，失败则返回<code>NaN</code></p>
-<p>如果直接把表示日期的字符串传给 <code>Date</code> 构造函数，那么 <code>Date</code> 会在后台调用 <code>Date.parse()</code></p>
-<p><strong><code>Date.UTC()</code></strong></p>
-<p><strong><code>Date.now()</code></strong></p>
-<p>返回表示方法执行时日期和时间的毫秒数</p>
-<h4 id="继承的方法"><a href="#继承的方法" class="headerlink" title="继承的方法"></a>继承的方法</h4><p>重写了<code>toLocaleString()</code>、<code>toString()</code>和 <code>valueOf()</code>方法</p>
-<p><code>valueOf()</code>返回日期的毫秒表示</p>
-<h3 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h3><p>简洁语法 <code>let expression = /pattern/flags; </code></p>
-<p>使用 <code>RegExp</code> 构造函数创建时，参数是字符串</p>
-<blockquote>
-<p>所有元字符都必须二次转义（\转义后的字符串是\\，在正则表达式字符串中则要写成\\\\）</p>
-</blockquote>
-<h4 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h4><p><code>lastIndex</code>：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始</p>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
+<ul>
+<li>包含的元素是有限的</li>
+<li>具有无歧义的遍历顺序</li>
+</ul>
+<p><strong>迭代器</strong></p>
+<p>按需创建的一次性对象</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -391,26 +411,6 @@
 <li>只使用词法作用域并完全抛弃错误 this 风格</li>
 <li>完全采用 this 风格，在必要时使用 bind(..)，尽量避免使用 self = this 和箭头函数</li>
 </ol>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
-<ul>
-<li>包含的元素是有限的</li>
-<li>具有无歧义的遍历顺序</li>
-</ul>
-<p><strong>迭代器</strong></p>
-<p>按需创建的一次性对象</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -746,6 +746,20 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Colors</title>
+    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
+    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
