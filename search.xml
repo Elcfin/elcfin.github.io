@@ -54,6 +54,26 @@
       </tags>
   </entry>
   <entry>
+    <title>minipack 学习笔记</title>
+    <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
+<p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
+<span id="more"></span>
+
+<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
+<p>compile small pieces of code into something larger and more</p>
+<p>将小块代码编译成更大和更复杂的代码</p>
+<p>入口文件</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>__proto__、prototype与constructor</title>
     <url>/2021/06/14/prototype%E4%B8%8Econstructor/</url>
     <content><![CDATA[<p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
@@ -85,26 +105,6 @@
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>minipack 学习笔记</title>
-    <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
-<p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
-<span id="more"></span>
-
-<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
-<p>compile small pieces of code into something larger and more</p>
-<p>将小块代码编译成更大和更复杂的代码</p>
-<p>入口文件</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -425,6 +425,31 @@
       </tags>
   </entry>
   <entry>
+    <title>建立本地仓库与远程仓库的联系（git）</title>
+    <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
+    <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
+<span id="more"></span>
+
+<h4 id="1-建立本地仓库"><a href="#1-建立本地仓库" class="headerlink" title="1.建立本地仓库"></a>1.建立本地仓库</h4><p><code>git init</code></p>
+<h4 id="2-添加所有文件到暂存区"><a href="#2-添加所有文件到暂存区" class="headerlink" title="2.添加所有文件到暂存区"></a>2.添加所有文件到暂存区</h4><p><code>git add .</code></p>
+<h4 id="3-提交所有文件"><a href="#3-提交所有文件" class="headerlink" title="3.提交所有文件"></a>3.提交所有文件</h4><p><code>git commit -m &quot;注释&quot; -a</code></p>
+<h4 id="4-新建远程仓库"><a href="#4-新建远程仓库" class="headerlink" title="4.新建远程仓库"></a>4.新建远程仓库</h4><p>新建一个仓库，复制其链接</p>
+<h4 id="5-连接远程仓库"><a href="#5-连接远程仓库" class="headerlink" title="5.连接远程仓库"></a>5.连接远程仓库</h4><p><code>git remote add origin https://gitee.com/Elcfin/try.git </code>（链接）</p>
+<h4 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6.推送到远程仓库"></a>6.推送到远程仓库</h4><p><code>git push -u origin master </code></p>
+<p>如果远程仓库非空，如建立时选择README.md初始化，则发生冲突</p>
+<p>此时可输入</p>
+<p><code>git push -u origin master -f</code></p>
+<p>强制覆盖远程仓库</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>备忘录</title>
     <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
     <content><![CDATA[<p>夏天的风<span id="more"></span></p>
@@ -455,31 +480,6 @@
       </categories>
       <tags>
         <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>建立本地仓库与远程仓库的联系（git）</title>
-    <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
-    <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
-<span id="more"></span>
-
-<h4 id="1-建立本地仓库"><a href="#1-建立本地仓库" class="headerlink" title="1.建立本地仓库"></a>1.建立本地仓库</h4><p><code>git init</code></p>
-<h4 id="2-添加所有文件到暂存区"><a href="#2-添加所有文件到暂存区" class="headerlink" title="2.添加所有文件到暂存区"></a>2.添加所有文件到暂存区</h4><p><code>git add .</code></p>
-<h4 id="3-提交所有文件"><a href="#3-提交所有文件" class="headerlink" title="3.提交所有文件"></a>3.提交所有文件</h4><p><code>git commit -m &quot;注释&quot; -a</code></p>
-<h4 id="4-新建远程仓库"><a href="#4-新建远程仓库" class="headerlink" title="4.新建远程仓库"></a>4.新建远程仓库</h4><p>新建一个仓库，复制其链接</p>
-<h4 id="5-连接远程仓库"><a href="#5-连接远程仓库" class="headerlink" title="5.连接远程仓库"></a>5.连接远程仓库</h4><p><code>git remote add origin https://gitee.com/Elcfin/try.git </code>（链接）</p>
-<h4 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6.推送到远程仓库"></a>6.推送到远程仓库</h4><p><code>git push -u origin master </code></p>
-<p>如果远程仓库非空，如建立时选择README.md初始化，则发生冲突</p>
-<p>此时可输入</p>
-<p><code>git push -u origin master -f</code></p>
-<p>强制覆盖远程仓库</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -630,38 +630,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Colors</title>
-    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
-    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -729,6 +697,38 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Colors</title>
+    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
+    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
