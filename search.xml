@@ -17,6 +17,40 @@
       </tags>
   </entry>
   <entry>
+    <title>Colors</title>
+    <url>/2021/06/14/colors/</url>
+    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>minipack 学习笔记</title>
+    <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
+<p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
+<span id="more"></span>
+
+<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
+<p>compile small pieces of code into something larger and more</p>
+<p>将小块代码编译成更大和更复杂的代码</p>
+<p>入口文件</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/06/14/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -44,26 +78,6 @@
 <li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
 <li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
 </ul>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>minipack 学习笔记</title>
-    <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
-<p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
-<span id="more"></span>
-
-<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
-<p>compile small pieces of code into something larger and more</p>
-<p>将小块代码编译成更大和更复杂的代码</p>
-<p>入口文件</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -237,26 +251,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
-<ul>
-<li>包含的元素是有限的</li>
-<li>具有无歧义的遍历顺序</li>
-</ul>
-<p><strong>迭代器</strong></p>
-<p>按需创建的一次性对象</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《你不知道的JavaScript》（上卷）读书笔记-关于this</title>
     <url>/2021/06/14/%E3%80%8A%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E3%80%8B%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%85%B3%E4%BA%8Ethis/</url>
     <content><![CDATA[<p><code>this</code> 的绑定和函数声明的位置没有任何关系，只取决于函数的调用方式</p>
@@ -372,6 +366,26 @@
       </tags>
   </entry>
   <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
+<ul>
+<li>包含的元素是有限的</li>
+<li>具有无歧义的遍历顺序</li>
+</ul>
+<p><strong>迭代器</strong></p>
+<p>按需创建的一次性对象</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript判断变量是否为某种类型</title>
     <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<p>对象、数组<span id="more"></span></p>
@@ -425,6 +439,24 @@
       </tags>
   </entry>
   <entry>
+    <title>备忘录</title>
+    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
+<ul>
+<li><p>面向类的语言的 new 机制</p>
+</li>
+<li><p>python</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>建立本地仓库与远程仓库的联系（git）</title>
     <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
     <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
@@ -447,24 +479,6 @@
       <tags>
         <tag>杂记</tag>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>备忘录</title>
-    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
-<ul>
-<li><p>面向类的语言的 new 机制</p>
-</li>
-<li><p>python</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
@@ -630,6 +644,24 @@
       </tags>
   </entry>
   <entry>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -697,38 +729,6 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Colors</title>
-    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
-    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
