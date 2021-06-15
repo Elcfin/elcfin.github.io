@@ -714,6 +714,24 @@
       </tags>
   </entry>
   <entry>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>零零碎碎（HTML/CSS）</title>
     <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
     <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
@@ -738,24 +756,6 @@
         <tag>杂记</tag>
         <tag>HTML</tag>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
       </tags>
   </entry>
   <entry>
