@@ -35,47 +35,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Reading</title>
-    <url>/2021/06/14/Reading/</url>
-    <content><![CDATA[<p>阅读进度记录<span id="more"></span></p>
-<h3 id="《你不知道的JavaScript》（上卷）"><a href="#《你不知道的JavaScript》（上卷）" class="headerlink" title="《你不知道的JavaScript》（上卷）"></a>《你不知道的JavaScript》（上卷）</h3><p>4月25日</p>
-<p>第二部分 第3章</p>
-<ul>
-<li>复制对象</li>
-<li>Getter和Setter</li>
-<li>遍历</li>
+    <title>jQuery 学习笔记</title>
+    <url>/2021/06/14/jQuery%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>“Write Less，Do More”<span id="more"></span></p>
+<h4 id="Principles"><a href="#Principles" class="headerlink" title="Principles"></a>Principles</h4><ul>
+<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
+<li>把所有事件处理函数置于文档就绪事件处理器中</li>
+<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
+<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
 </ul>
-<p>第二部分 第4章</p>
-<ul>
-<li>混入</li>
-</ul>
-<p>5月5日</p>
-<p>第二部分 第1章</p>
-<h3 id="《JavaScript高级程序设计》（第4版）"><a href="#《JavaScript高级程序设计》（第4版）" class="headerlink" title="《JavaScript高级程序设计》（第4版）"></a>《JavaScript高级程序设计》（第4版）</h3><p>4月25日</p>
-<p>第8章（至p228）</p>
-<ul>
-<li>解构</li>
-</ul>
-<p>4月26日、4月27日</p>
-<p>第8章（除类的继承）</p>
-<p>5月1日</p>
-<p>第7章（至迭代器模式）</p>
-<p>第5章</p>
-<p>第3章（Symbol）</p>
-<p>5月5日</p>
-<p>第3章（3.4Object-3.8）</p>
-<p>第4章（至垃圾回收）</p>
-<p>5月6日</p>
-<p>第4章（垃圾回收）</p>
-<p>第6章</p>
-<ul>
-<li>6.3-6.7</li>
-</ul>
-<p>5月17日</p>
-<p>第21章</p>
-<p>第12章（至12.1.7）</p>
-<p>至5月25日</p>
-<p>至第16章（至16.4）</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -92,7 +60,9 @@
 <p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
 <span id="more"></span>
 
-<h3 id="模拟捆绑器"><a href="#模拟捆绑器" class="headerlink" title="模拟捆绑器"></a>模拟捆绑器</h3><p>将小块代码编译成更大和更复杂的代码</p>
+<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
+<p>compile small pieces of code into something larger and more</p>
+<p>将小块代码编译成更大和更复杂的代码</p>
 <p>入口文件</p>
 ]]></content>
       <categories>
@@ -107,7 +77,7 @@
     <title>__proto__、prototype与constructor</title>
     <url>/2021/06/14/prototype%E4%B8%8Econstructor/</url>
     <content><![CDATA[<p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
-<h4 id="proto-属性"><a href="#proto-属性" class="headerlink" title="__proto__属性"></a><code>__proto__</code>属性</h4><p><code>__proto__</code>属性在ES标准定义中的名字是<code>[[Prototype]]</code></p>
+<h3 id="proto"><a href="#proto" class="headerlink" title="__proto__"></a>__proto__</h3><p><code>__proto__</code>属性在ES标准定义中的名字是<code>[[Prototype]]</code></p>
 <ul>
 <li><code>__proto__</code>和<code>constructor</code>属性是<strong>对象</strong>所独有的</li>
 <li><code>prototype</code>属性是<strong>函数</strong>所独有的<ul>
@@ -116,9 +86,9 @@
 </li>
 </ul>
 <p>原型链通过<code>__proto__</code>一级一级向上寻找，直到<code>null</code></p>
-<h4 id="prototype属性"><a href="#prototype属性" class="headerlink" title="prototype属性"></a><code>prototype</code>属性</h4><p>函数的<code>prototype</code>属性指向该函数的原型对象（从一个函数指向一个对象），即当这个函数作为构造函数时所创建的实例的原型对象</p>
+<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h3><p>函数的<code>prototype</code>属性指向该函数的原型对象（从一个函数指向一个对象），即当这个函数作为构造函数时所创建的实例的原型对象</p>
 <p>作用：让该函数所实例化的对象们可以找到公用的属性和方法</p>
-<h4 id="constructor属性"><a href="#constructor属性" class="headerlink" title="constructor属性"></a><code>constructor</code>属性</h4><p>只有prototype对象自身拥有<code>constructor</code>属性</p>
+<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><p>只有prototype对象自身拥有<code>constructor</code>属性</p>
 <p>对象的<code>constructor</code>属性指向该对象的构造函数（从一个对象指向一个函数），“每个对象都有构造函数”（意思是每个对象都可以找到其对应的<code>constructor</code>属性）</p>
 <p>由<code>Function</code>创建的函数对象较为特殊，该函数对象的<code>constructor</code>属性指向其构造函数<code>Function</code>，此时该函数对象相当于<code>Function</code>的一个实例</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.__proto__.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.prototype.constructor); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.prototype.constructor); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
@@ -135,25 +105,6 @@
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jQuery 笔记</title>
-    <url>/2021/06/14/jQuery%20%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>jQuery<span id="more"></span></p>
-<h4 id="Principles"><a href="#Principles" class="headerlink" title="Principles"></a>Principles</h4><ul>
-<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
-<li>把所有事件处理函数置于文档就绪事件处理器中</li>
-<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
-<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
-</ul>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -282,59 +233,6 @@
       </categories>
       <tags>
         <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript判断变量是否为某种类型</title>
-    <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<p>对象、数组<span id="more"></span></p>
-<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
-<blockquote>
-<p><code>[object Object]</code>中第一个o小写</p>
-</blockquote>
-</li>
-<li><p><code>obj.constructor === Object</code></p>
-</li>
-<li><p><code>obj instanceof Object</code>（不可行）</p>
-<blockquote>
-<p>数组和函数也会返回true</p>
-</blockquote>
-</li>
-<li><p><code>typeof obj === Object</code>（不可行）</p>
-<blockquote>
-<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li><p><code>$.isPlainObject(obj)</code></p>
-<blockquote>
-<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
-</li>
-<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
-</li>
-<li><p><code>obj instanceof Array</code></p>
-</li>
-<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
-</li>
-<li><p><code>Array.isArray()</code></p>
-</li>
-</ol>
-<blockquote>
-<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -470,6 +368,59 @@
       </categories>
       <tags>
         <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript判断变量是否为某种类型</title>
+    <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<p>对象、数组<span id="more"></span></p>
+<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
+<blockquote>
+<p><code>[object Object]</code>中第一个o小写</p>
+</blockquote>
+</li>
+<li><p><code>obj.constructor === Object</code></p>
+</li>
+<li><p><code>obj instanceof Object</code>（不可行）</p>
+<blockquote>
+<p>数组和函数也会返回true</p>
+</blockquote>
+</li>
+<li><p><code>typeof obj === Object</code>（不可行）</p>
+<blockquote>
+<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>$.isPlainObject(obj)</code></p>
+<blockquote>
+<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
+</li>
+<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
+</li>
+<li><p><code>obj instanceof Array</code></p>
+</li>
+<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
+</li>
+<li><p><code>Array.isArray()</code></p>
+</li>
+</ol>
+<blockquote>
+<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -679,6 +630,20 @@
       </tags>
   </entry>
   <entry>
+    <title>Colors</title>
+    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
+    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -749,38 +714,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Colors</title>
-    <url>/2021/06/14/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</url>
-    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>零零碎碎（HTML/CSS）</title>
     <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
     <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
@@ -805,6 +738,24 @@
         <tag>杂记</tag>
         <tag>HTML</tag>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
       </tags>
   </entry>
   <entry>
