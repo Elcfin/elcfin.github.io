@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>盛夏白瓷梅子汤</title>
-    <url>/2021/06/16/%E5%A4%8F%E5%A4%A9/</url>
-    <content><![CDATA[<p><img src="/2021/06/16/%E5%A4%8F%E5%A4%A9/%E5%8F%B6%E5%8F%B6.jpg"></p>
+    <title>Word文档中实现代码高亮</title>
+    <url>/2021/06/14/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    <content><![CDATA[<p>使用Notepad++<span id="more"></span></p>
+<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
+<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
+<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
+<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
 ]]></content>
       <categories>
         <category>杂记</category>
@@ -24,6 +28,484 @@
       </categories>
       <tags>
         <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/06/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>jQuery 学习笔记</title>
+    <url>/2021/06/14/jQuery%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>“Write Less，Do More”<span id="more"></span></p>
+<h4 id="Principles"><a href="#Principles" class="headerlink" title="Principles"></a>Principles</h4><ul>
+<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
+<li>把所有事件处理函数置于文档就绪事件处理器中</li>
+<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
+<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
+</ul>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>minipack 学习笔记</title>
+    <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
+<p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
+<span id="more"></span>
+
+<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
+<p>compile small pieces of code into something larger and more</p>
+<p>将小块代码编译成更大和更复杂的代码</p>
+<p>入口文件</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>__proto__、prototype与constructor</title>
+    <url>/2021/06/14/prototype%E4%B8%8Econstructor/</url>
+    <content><![CDATA[<p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
+<h3 id="proto"><a href="#proto" class="headerlink" title="__proto__"></a>__proto__</h3><p><code>__proto__</code>属性在ES标准定义中的名字是<code>[[Prototype]]</code></p>
+<ul>
+<li><code>__proto__</code>和<code>constructor</code>属性是<strong>对象</strong>所独有的</li>
+<li><code>prototype</code>属性是<strong>函数</strong>所独有的<ul>
+<li>由于JavaScript中函数也是对象，所以函数也拥有<code>__proto__</code>和<code>constructor</code>属性</li>
+</ul>
+</li>
+</ul>
+<p>原型链通过<code>__proto__</code>一级一级向上寻找，直到<code>null</code></p>
+<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h3><p>函数的<code>prototype</code>属性指向该函数的原型对象（从一个函数指向一个对象），即当这个函数作为构造函数时所创建的实例的原型对象</p>
+<p>作用：让该函数所实例化的对象们可以找到公用的属性和方法</p>
+<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><p>只有prototype对象自身拥有<code>constructor</code>属性</p>
+<p>对象的<code>constructor</code>属性指向该对象的构造函数（从一个对象指向一个函数），“每个对象都有构造函数”（意思是每个对象都可以找到其对应的<code>constructor</code>属性）</p>
+<p>由<code>Function</code>创建的函数对象较为特殊，该函数对象的<code>constructor</code>属性指向其构造函数<code>Function</code>，此时该函数对象相当于<code>Function</code>的一个实例</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.__proto__.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.prototype.constructor); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.prototype.constructor); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+<p>该函数对象的原型对象，即<code>.prototype</code>的<code>constructor</code>属性指向该函数对象</p>
+<p>对一个对象，有</p>
+<p><code>对象.__proto__ === 其构造函数.prototype</code></p>
+<p><code>其构造函数.prototype.constructor === 其构造函数本身</code></p>
+<blockquote>
+<p>使用对象字面量 <code>= &#123;&#125;</code> 创建新对象相当于 <code>= new Object()</code>，其对应的<code>construcor</code>属性即指向<code>Object</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>创建对象<span id="more"></span></p>
+<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
+<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
+<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-继承</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E7%BB%A7%E6%89%BF/</url>
+    <content><![CDATA[<p>实现继承是 ECMAScript 唯一支持的继承方式，主要是通过原型链实现的<span id="more"></span></p>
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><p>每个构造函数都有一个原型对象，原型有一个属性指回构造函数，而实例有一个内部指针指向原型</p>
+<p>如果原型是另一个类型的实例，这个原型本身有一个内部指针指向另一个原型，相应地另一个原型也有一个指针指向另一个构造函数</p>
+<blockquote>
+<p>该原型自身不再存在constructor属性，而是继承自另一个原型</p>
+</blockquote>
+<h4 id="默认原型"><a href="#默认原型" class="headerlink" title="默认原型"></a>默认原型</h4><p>任何函数的默认原型都是一个 Object 的实例，这意味着这个实例有一个内部指针指向 <code>Object.prototype</code></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">function <span class="title">fun</span><span class="params">()</span> </span>&#123;&#125;;</span><br><span class="line">console.log(fun.prototype.__proto__ === Object.prototype); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="原型与继承关系"><a href="#原型与继承关系" class="headerlink" title="原型与继承关系"></a>原型与继承关系</h4><p><code>instanceof</code> 如果一个实例的原型链中出现过相应的构造函数，则返回true</p>
+<p><code>isPrototypeOf()</code> <code>构造函数.prototype.isPrototypeOf(实例)</code>只要原型链中包含这个原型，这个方法就返回true</p>
+<h4 id="关于方法"><a href="#关于方法" class="headerlink" title="关于方法"></a>关于方法</h4><p>以对象字面量方式创建原型方法会破坏之前的原型链，相当于重写了原型链，覆盖后的原型为默认原型</p>
+<h4 id="原型链的问题"><a href="#原型链的问题" class="headerlink" title="原型链的问题"></a>原型链的问题</h4><p>原型中包含的引用值会在所有实例间共享</p>
+<p>在使用原型实现继承时，原型实际上变成了另一个类型的实例，意味着原先的实例属性变成了原型属性</p>
+<h3 id="盗用构造函数"><a href="#盗用构造函数" class="headerlink" title="盗用构造函数"></a>盗用构造函数</h3><p>解决原型包含引用值导致的继承问题</p>
+<p>基本思路：在子类构造函数中调用父类构造函数</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="comment">// 继承 SuperType </span></span><br><span class="line"> SuperType.call(<span class="built_in">this</span>); </span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">let</span> instance1 = <span class="keyword">new</span> SubType(); </span><br><span class="line">instance1.colors.push(<span class="string">&quot;black&quot;</span>); </span><br><span class="line"><span class="built_in">console</span>.log(instance1.colors); <span class="comment">// &quot;red,blue,green,black&quot; </span></span><br><span class="line"><span class="keyword">let</span> instance2 = <span class="keyword">new</span> SubType(); </span><br><span class="line"><span class="built_in">console</span>.log(instance2.colors); <span class="comment">// &quot;red,blue,green&quot; </span></span><br></pre></td></tr></table></figure>
+
+<p>新的 <code>SubType</code> 对象上运行了 <code>SuperType()</code> 函数中的所有初始化代码</p>
+<h4 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h4><h4 id="盗用构造函数的问题"><a href="#盗用构造函数的问题" class="headerlink" title="盗用构造函数的问题"></a>盗用构造函数的问题</h4><p>必须在构造函数中定义方法，因此函数不能重用</p>
+<p>子类不能访问父类原型上定义的方法</p>
+<h3 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h3><p>综合了原型链和盗用构造函数</p>
+<p><strong>基本思路：使用原型链继承原型上的属性和方法，而通过盗用构造函数继承实例属性</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>)</span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.name = name; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>)</span>&#123; </span><br><span class="line"> <span class="comment">// 继承属性</span></span><br><span class="line"> SuperType.call(<span class="built_in">this</span>, name); </span><br><span class="line"> <span class="built_in">this</span>.age = age; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">// 继承方法</span></span><br><span class="line">SubType.prototype = <span class="keyword">new</span> SuperType(); </span><br><span class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.age); </span><br><span class="line">&#125;; </span><br></pre></td></tr></table></figure>
+
+<h3 id="原型式继承"><a href="#原型式继承" class="headerlink" title="原型式继承"></a>原型式继承</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">object</span>(<span class="params">o</span>) </span>&#123; </span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;&#125; </span><br><span class="line"> F.prototype = o; </span><br><span class="line"> <span class="keyword">return</span> <span class="keyword">new</span> F(); </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p>这个 <code>object()</code> 函数会创建一个临时构造函数，将传入的对象赋值给这个构造函数的原型，然后返回这个临时类型的一个实例</p>
+<p>ECMAScript5 增加 <code>Object.create()</code> 方法将原型式继承的概念规范化</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123; </span><br><span class="line"> <span class="attr">name</span>: <span class="string">&quot;Nicholas&quot;</span>, </span><br><span class="line"> <span class="attr">friends</span>: [<span class="string">&quot;Shelby&quot;</span>, <span class="string">&quot;Court&quot;</span>, <span class="string">&quot;Van&quot;</span>] </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> anotherPerson = <span class="built_in">Object</span>.create(person, &#123; </span><br><span class="line"> <span class="attr">name</span>: &#123; </span><br><span class="line"> <span class="attr">value</span>: <span class="string">&quot;Greg&quot;</span> </span><br><span class="line"> &#125; </span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> yetAnotherPerson = <span class="built_in">Object</span>.create(person); </span><br><span class="line">yetAnotherPerson.name = <span class="string">&quot;Linda&quot;</span>; </span><br><span class="line">yetAnotherPerson.friends.push(<span class="string">&quot;Barbie&quot;</span>); </span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.friends); <span class="comment">// &quot;Shelby,Court,Van,Rob,Barbie&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(anotherPerson.name); <span class="comment">// &quot;Greg&quot;</span></span><br><span class="line"><span class="built_in">console</span>.log(anotherPerson.friends); <span class="comment">// &quot;Shelby,Court,Van,Rob,Barbie&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>anotherPerson</code> 和 <code>yetAnotherPerson</code> 的 <code>[[prototype]]</code> 都是 <code>person</code> （无对象标识）</p>
+<p>适用不需要单独创建构造函数，但仍然需要在对象间共享信息的场合</p>
+<h3 id="寄生式继承"><a href="#寄生式继承" class="headerlink" title="寄生式继承"></a>寄生式继承</h3><p><strong>基本思路：创建一个实现继承的函数，以某种方式增强对象，然后返回这个对象</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createAnother</span>(<span class="params">original</span>)</span>&#123; </span><br><span class="line"> <span class="keyword">let</span> clone = object(original); <span class="comment">// 通过调用函数创建一个新对象</span></span><br><span class="line"> clone.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// 以某种方式增强这个对象</span></span><br><span class="line"> <span class="built_in">console</span>.log(<span class="string">&quot;hi&quot;</span>); </span><br><span class="line"> &#125;; </span><br><span class="line"> <span class="keyword">return</span> clone; <span class="comment">// 返回这个对象</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>object()</code> 函数不是寄生式继承所必需的，任何返回新对象的函数都可以在这里使用</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123; </span><br><span class="line"> <span class="attr">name</span>: <span class="string">&quot;Nicholas&quot;</span>, </span><br><span class="line"> <span class="attr">friends</span>: [<span class="string">&quot;Shelby&quot;</span>, <span class="string">&quot;Court&quot;</span>, <span class="string">&quot;Van&quot;</span>] </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> anotherPerson = createAnother(person); </span><br><span class="line">anotherPerson.sayHi(); <span class="comment">// &quot;hi&quot; </span></span><br></pre></td></tr></table></figure>
+
+<p>上例基于 <code>person</code> 对象返回了一个新对象。新返回的 <code>anotherPerson</code> 对象具有 <code>person</code> 的所有属性和方法，还有一个新方法 <code>sayHi()</code></p>
+<p>适用主要关注对象，而不在乎类型和构造函数的场合</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>通过寄生式继承给对象添加函数会导致函数难以重用，与构造函数模式类似</p>
+<h3 id="寄生式组合继承"><a href="#寄生式组合继承" class="headerlink" title="寄生式组合继承"></a>寄生式组合继承</h3><p>组合继承最主要的效率问题就是父类构造函数始终会被调用两次：一次在是创建子类原型时调用，另一次是在子类构造函数中调用</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>) </span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.name = name; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>)</span>&#123; </span><br><span class="line"> SuperType.call(<span class="built_in">this</span>, name); <span class="comment">// 第二次调用 SuperType() </span></span><br><span class="line"> <span class="built_in">this</span>.age = age; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">SubType.prototype = <span class="keyword">new</span> SuperType(); <span class="comment">// 第一次调用 SuperType() </span></span><br><span class="line">SubType.prototype.constructor = SubType; </span><br><span class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.age); </span><br><span class="line">&#125;; </span><br></pre></td></tr></table></figure>
+
+<p>有两组 name 和 colors 属性：一组在实例上，另一组在 <code>SubType</code> 的原型上</p>
+<p><strong>基本思路：不通过调用父类构造函数给子类原型赋值，而是取得父类原型的一个副本</strong></p>
+<p>即使用寄生式继承来继承父类原型，然后将返回的新对象赋值给子类原型</p>
+<p>寄生式组合继承的基本模式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">inheritPrototype</span>(<span class="params">subType, superType</span>) </span>&#123; </span><br><span class="line"> <span class="keyword">let</span> prototype = object(superType.prototype); <span class="comment">// 创建对象 </span></span><br><span class="line"> prototype.constructor = subType; <span class="comment">// 增强对象 </span></span><br><span class="line"> subType.prototype = prototype; <span class="comment">// 赋值对象 </span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p>这个函数接收两个参数：子类构造函数和父类构造函数</p>
+<ol>
+<li>创建父类原型的一个副本</li>
+<li>给返回的 <code>prototype</code> 对象设置 <code>constructor</code> 属性，解决由于重写原型导致默认 <code>constructor</code> 丢失的问题</li>
+<li>将新创建的对象赋值给子类型的原型</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>) </span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.name = name; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>) </span>&#123; </span><br><span class="line"> SuperType.call(<span class="built_in">this</span>, name);</span><br><span class="line"> <span class="built_in">this</span>.age = age; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">inheritPrototype(SubType, SuperType); </span><br><span class="line"></span><br><span class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.age); </span><br><span class="line">&#125;; </span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-基本引用类型</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>基本引用类型<span id="more"></span></p>
+<p><strong>引用类型</strong>是把数据和功能组织到一起的结构，描述自己的对象应有的属性和方法</p>
+<p><strong>对象</strong>被认为是某个特定引用类型的实例</p>
+<p><strong>构造函数</strong>是用来创建新对象的函数，负责创建一个只有默认属性和方法的简单对象</p>
+<p><code>let now = new Date(); </code></p>
+<p>这行代码中，引用类型<code>Date</code>，构造函数<code>Date()</code></p>
+<blockquote>
+<p>函数也是一种引用类型</p>
+</blockquote>
+<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>在不给 Date 构造函数传参数（毫秒表示）的情况下，创建的对象将保存当前日期和时间</p>
+<p><strong><code>Date.parse()</code></strong></p>
+<p>接收一个表示日期的字符串参数</p>
+<p>尝试转换为表示该日期的毫秒数，失败则返回<code>NaN</code></p>
+<p>如果直接把表示日期的字符串传给 <code>Date</code> 构造函数，那么 <code>Date</code> 会在后台调用 <code>Date.parse()</code></p>
+<p><strong><code>Date.UTC()</code></strong></p>
+<p><strong><code>Date.now()</code></strong></p>
+<p>返回表示方法执行时日期和时间的毫秒数</p>
+<h4 id="继承的方法"><a href="#继承的方法" class="headerlink" title="继承的方法"></a>继承的方法</h4><p>重写了<code>toLocaleString()</code>、<code>toString()</code>和 <code>valueOf()</code>方法</p>
+<p><code>valueOf()</code>返回日期的毫秒表示</p>
+<h3 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h3><p>简洁语法 <code>let expression = /pattern/flags; </code></p>
+<p>使用 <code>RegExp</code> 构造函数创建时，参数是字符串</p>
+<blockquote>
+<p>所有元字符都必须二次转义（\转义后的字符串是\\，在正则表达式字符串中则要写成\\\\）</p>
+</blockquote>
+<h4 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h4><p><code>lastIndex</code>：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
+<ul>
+<li>包含的元素是有限的</li>
+<li>具有无歧义的遍历顺序</li>
+</ul>
+<p><strong>迭代器</strong></p>
+<p>按需创建的一次性对象</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《你不知道的JavaScript》（上卷）读书笔记-关于this</title>
+    <url>/2021/06/14/%E3%80%8A%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E3%80%8B%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%85%B3%E4%BA%8Ethis/</url>
+    <content><![CDATA[<p><code>this</code> 的绑定和函数声明的位置没有任何关系，只取决于函数的调用方式</p>
+<p>当一个函数被调用时，会创建一个活动记录（有时候也称为执行上下文）。这个记录会包含函数在哪里被调用（调用栈）、函数的调用方法、传入的参数等信息。<code>this</code> 就是记录的其中一个属性，会在函数执行的过程中用到<span id="more"></span></p>
+<p><code>this</code> 既不指向函数自身也不指向函数的词法作用域</p>
+<p><strong>调用位置</strong>：函数在代码中被调用的位置（而不是声明的位置）</p>
+<p><strong>调用栈</strong>：为了到达当前执行位置所调用的所有函数</p>
+<blockquote>
+<p>使用开发者工具得到调用栈</p>
+</blockquote>
+<h3 id="绑定规则"><a href="#绑定规则" class="headerlink" title="绑定规则"></a>绑定规则</h3><p>找到调用位置，判断应用四条规则中的哪一条</p>
+<h4 id="默认绑定"><a href="#默认绑定" class="headerlink" title="默认绑定"></a>默认绑定</h4><p>默认绑定时，<code>this</code> 指向全局对象</p>
+<p>适用：独立函数调用</p>
+<p>如果使用严格模式（strict mode），那么全局对象将无法使用默认绑定，因此 <code>this</code> 会绑定到 <code>undefined</code></p>
+<h4 id="隐式绑定"><a href="#隐式绑定" class="headerlink" title="隐式绑定"></a>隐式绑定</h4><p>当函数引用有上下文对象时，隐式绑定规则会把函数调用中的 this 绑定到这个上下文对象</p>
+<p>适用：调用位置是否有上下文对象，或者说是否被某个对象拥有或者包含</p>
+<blockquote>
+<p>无论是直接在 obj 中定义还是先定义再添加为引用属性，这个函数严格来说都不属于 obj 对象。 然而，调用位置会使用 obj 上下文来引用函数，因此你可以说函数被调用时 obj 对象“拥有”或者“包含”它</p>
+</blockquote>
+<p>对象属性引用链中只有最顶层或者说最后一层会影响调用位置</p>
+<p>例：<code>obj1.obj2.foo(); </code> 调用位置为对象 <code>obj2</code></p>
+<h5 id="隐式丢失"><a href="#隐式丢失" class="headerlink" title="隐式丢失"></a>隐式丢失</h5><p>被隐式绑定的函数会丢失绑定对象，也就是说它会应用默认绑定</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> bar = obj.foo;</span><br><span class="line">bar();</span><br></pre></td></tr></table></figure>
+
+<p><code>bar</code> 引用的是 <code>foo</code> 函数本身，此时的 <code>bar()</code> 其实是一个不带任何修饰的函数调用，因此应用默认绑定</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">function <span class="title">foo</span><span class="params">()</span></span>&#123;</span><br><span class="line">  console.log( <span class="keyword">this</span>.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">function <span class="title">doFoo</span><span class="params">(fn)</span></span>&#123;</span><br><span class="line">  fn();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  a:<span class="number">2</span>,</span><br><span class="line">  foo:foo</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="string">&quot;opps, global&quot;</span>;</span><br><span class="line"></span><br><span class="line">doFoo( obj.foo ); <span class="comment">//&quot;opps, global&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>传入回调函数时，参数传递其实就是一种隐式赋值</p>
+<h4 id="显示绑定"><a href="#显示绑定" class="headerlink" title="显示绑定"></a>显示绑定</h4><p>通过<code>call(..)</code> 和 <code>apply(..)</code> 方法指定 <code>this</code> 的绑定对象</p>
+<p>无法解决丢失绑定的问题</p>
+<h5 id="1-硬绑定"><a href="#1-硬绑定" class="headerlink" title="1.硬绑定"></a>1.硬绑定</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  foo.call( obj );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">bar(); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">setTimeout</span>( bar, <span class="number">100</span> ); <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 硬绑定的 bar 不可能再修改它的 this</span></span><br><span class="line">bar.call( <span class="built_in">window</span> ); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<p>我们创建了函数 <code>bar()</code>，并在它的内部手动调用 了 <code>foo.call(obj)</code>，因此强制把 <code>foo</code> 的 <code>this</code> 绑定到了 <code>obj</code>。无论之后如何调用函数 <code>bar</code>，它总会手动在 <code>obj</code> 上调用 <code>foo</code>。这种绑定是一种显式的强制绑定，因此我们称之为<strong>硬绑定</strong></p>
+<p><strong>应用场景一（典型）：</strong></p>
+<p>创建一个包裹函数，传入所有的参数并返回接收到的所有值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">something</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a, something );</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.a + something;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> foo.apply( obj, <span class="built_in">arguments</span> );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = bar( <span class="number">3</span> ); <span class="comment">// 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log( b ); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+
+<p>包裹函数：<code>bar</code></p>
+<p><strong>应用场景二：</strong></p>
+<p>创建一个 i 可以重复使用的辅助函数</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">something</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a, something );</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.a + something;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 简单的辅助绑定函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bind</span>(<span class="params">fn, obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> fn.apply( obj, <span class="built_in">arguments</span> );</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = bind( foo, obj );</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = bar( <span class="number">3</span> ); <span class="comment">// 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log( b ); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>内置方法 <code>Function.prototype.bind</code> （ ES5 ）</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">something</span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log( <span class="built_in">this</span>.a, something );</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.a + something;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = foo.bind( obj );</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = bar( <span class="number">3</span> ); <span class="comment">// 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log( b ); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+
+<p><code>bind(..)</code> 会返回一个硬编码的新函数，它会把参数设置为 this 的上下文并调用原始函数</p>
+<h5 id="2-API调用的“上下文”"><a href="#2-API调用的“上下文”" class="headerlink" title="2. API调用的“上下文”"></a>2. API调用的“上下文”</h5><p>第三方库的许多函数，以及 JavaScript 语言和宿主环境中许多新的内置函数，都提供了一个可选的参数，通常被称为“上下文”（context），其作用和 <code>bind(..)</code> 一样，确保你的回调函数使用指定的 <code>this</code></p>
+<h4 id="new绑定"><a href="#new绑定" class="headerlink" title="new绑定"></a>new绑定</h4><p>JavaScript 中 new 的机制实际上和面向类的语言完全不同</p>
+<p><strong>构造函数</strong>：在 JavaScript 中，构造函数只是一些使用 new 操作符时被调用的函数。它们并不会属于某个类，也不会实例化一个类。实际上， 它们甚至都不能说是一种特殊的函数类型，它们只是被 new 操作符调用的普通函数而已</p>
+<p>实际上并不存在所谓的“构造函数”，只有对于函数的“构造调用”</p>
+<p>使用 new 来调用函数，或者说发生构造函数调用时，会自动执行下面的操作：</p>
+<ol>
+<li>创建（或者说构造）一个全新的对象 </li>
+<li>这个新对象会被执行 [[ 原型 ]] 连接 </li>
+<li>这个新对象会绑定到函数调用的 this </li>
+<li>如果函数没有返回其他对象，那么 new 表达式中的函数调用会自动返回这个新对象</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">a</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.a = a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = <span class="keyword">new</span> foo(<span class="number">2</span>);</span><br><span class="line"><span class="built_in">console</span>.log( bar.a ); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 new 来调用 <code>foo(..)</code> 时，我们会构造一个新对象并把它绑定到 <code>foo(..)</code> 调用中的 this 上</p>
+<h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><p>显示绑定（判断时优先考虑） &gt; 隐式绑定 &gt; 默认绑定</p>
+<p>判断硬绑定函数是否是被 new 调用，如果是的话就会使用新创建的 this 替换硬绑定的 this</p>
+<h4 id="判断this"><a href="#判断this" class="headerlink" title="判断this"></a>判断this</h4><ol>
+<li><p>函数是否在 new 中调用（new 绑定）？</p>
+<p>如果是的话 this 绑定的是新创建的对象。 <code>var bar = new foo()</code></p>
+</li>
+<li><p>函数是否通过 call、apply（显式绑定）或者硬绑定调用？</p>
+<p>如果是的话，this 绑定的是指定的对象。 <code>var bar = foo.call(obj2)</code></p>
+</li>
+<li><p>函数是否在某个上下文对象中调用（隐式绑定）？</p>
+<p>如果是的话，this 绑定的是那个上下文对象。 <code>var bar = obj1.foo()</code></p>
+</li>
+<li><p>如果都不是的话，使用默认绑定。</p>
+<p>如果在严格模式下，就绑定到 undefined，否则绑定到全局对象。 <code>var bar = foo()</code></p>
+</li>
+</ol>
+<h3 id="绑定例外"><a href="#绑定例外" class="headerlink" title="绑定例外"></a>绑定例外</h3><p>如果把 null 或者 undefined 作为 this 的绑定对象传入 call、apply 或者 bind，这些值在调用时会被忽略，实际应用的是默认绑定规则</p>
+<h4 id="更安全的this"><a href="#更安全的this" class="headerlink" title="更安全的this"></a>更安全的this</h4><p>一种“更安全”的做法是传入一个特殊的对象，把 this 绑定到这个对象不会对你的程序 产生任何副作用</p>
+<p>我们可以创建一个“DMZ”（demilitarized zone，非军事区）对象——一个空的非委托的对象</p>
+<p><strong>在忽略 this 绑定时总是传入一个 DMZ 对象</strong></p>
+<p>在 JavaScript 中创建一个空对象最简单的方法： <code>Object.create(null)</code></p>
+<blockquote>
+<p><code>Object.create(null)</code> 和 <code>&#123;&#125;</code> 很像， 但是并不会创建 Object. prototype 这个委托，所以它比 {}“更空”</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">a,b</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="string">&quot;a:&quot;</span> + a + <span class="string">&quot;, b:&quot;</span> + b );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 我们的 DMZ 空对象</span></span><br><span class="line"><span class="keyword">var</span> ø = <span class="built_in">Object</span>.create( <span class="literal">null</span> );</span><br><span class="line"></span><br><span class="line"><span class="comment">// 把数组展开成参数</span></span><br><span class="line">foo.apply( ø, [<span class="number">2</span>, <span class="number">3</span>] ); <span class="comment">// a:2, b:3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 bind(..) 进行柯里化</span></span><br><span class="line"><span class="keyword">var</span> bar = foo.bind( ø, <span class="number">2</span> );</span><br><span class="line">bar( <span class="number">3</span> ); <span class="comment">// a:2, b:3</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="间接引用"><a href="#间接引用" class="headerlink" title="间接引用"></a>间接引用</h3><p>创建一个函数的“间接引用”时，调用这个函数会应用默认绑定规则</p>
+<p>联系：隐式丢失</p>
+<p>间接引用最容易在赋值时发生</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> o = &#123; <span class="attr">a</span>: <span class="number">3</span>, <span class="attr">foo</span>: foo &#125;;</span><br><span class="line"><span class="keyword">var</span> p = &#123; <span class="attr">a</span>: <span class="number">4</span> &#125;;</span><br><span class="line"></span><br><span class="line">o.foo(); <span class="comment">// 3</span></span><br><span class="line">(p.foo = o.foo)(); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<p>赋值表达式 <code>p.foo = o.foo</code> 的返回值是目标函数的引用，因此调用位置是 <code>foo()</code> 而不是 <code>p.foo()</code> 或者 <code>o.foo()</code></p>
+<h3 id="软绑定"><a href="#软绑定" class="headerlink" title="软绑定"></a>软绑定</h3><p>给默认绑定指定一个全局对象和 undefined 以外的值，实现和硬绑定相同的效果，同时保留隐式绑定或者显示绑定修改this的能力</p>
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><p>无法使用这些规则的特殊函数类型</p>
+<p>根据外层（函数或者全局）作用域来决定 this</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 返回一个箭头函数</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function">(<span class="params">a</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">//this 继承自 foo()</span></span><br><span class="line">    <span class="built_in">console</span>.log( <span class="built_in">this</span>.a );</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj1 = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj2 = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">3</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = foo.call( obj1 );</span><br><span class="line">bar.call( obj2 ); <span class="comment">// 2, 不是 3 ！</span></span><br></pre></td></tr></table></figure>
+
+<p><code>foo()</code> 内部创建的箭头函数会捕获调用时 <code>foo()</code> 的 this。由于 <code>foo()</code> 的 this 绑定到 <code>obj1</code>， <code>bar</code>（引用箭头函数）的 this 也会绑定到 <code>obj1</code>，<strong>箭头函数的绑定无法被修改</strong>（new也不可以哟）</p>
+<p>箭头函数可以像 <code>bind(..)</code> 一样确保函数的 this 被绑定到指定对象，会继承外层函数调用的 this 绑定（无论 this 绑定到什么），和 ES6 之前代码中的 self = this 机制一样</p>
+<p>它用更常见的词法作用域取代了传统的 this 机制</p>
+<p><strong>2种this代码风格</strong>：</p>
+<ol>
+<li>只使用词法作用域并完全抛弃错误 this 风格</li>
+<li>完全采用 this 风格，在必要时使用 bind(..)，尽量避免使用 self = this 和箭头函数</li>
+</ol>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript判断变量是否为某种类型</title>
+    <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<p>对象、数组<span id="more"></span></p>
+<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
+<blockquote>
+<p><code>[object Object]</code>中第一个o小写</p>
+</blockquote>
+</li>
+<li><p><code>obj.constructor === Object</code></p>
+</li>
+<li><p><code>obj instanceof Object</code>（不可行）</p>
+<blockquote>
+<p>数组和函数也会返回true</p>
+</blockquote>
+</li>
+<li><p><code>typeof obj === Object</code>（不可行）</p>
+<blockquote>
+<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>$.isPlainObject(obj)</code></p>
+<blockquote>
+<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
+</li>
+<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
+</li>
+<li><p><code>obj instanceof Array</code></p>
+</li>
+<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
+</li>
+<li><p><code>Array.isArray()</code></p>
+</li>
+</ol>
+<blockquote>
+<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>盛夏白瓷梅子汤</title>
+    <url>/2021/06/16/%E5%A4%8F%E5%A4%A9/</url>
+    <content><![CDATA[<p><img src="/2021/06/16/%E5%A4%8F%E5%A4%A9/%E5%8F%B6%E5%8F%B6.jpg"></p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>备忘录</title>
+    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
+<ul>
+<li><p>面向类的语言的 new 机制</p>
+</li>
+<li><p>python</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>建立本地仓库与远程仓库的联系（git）</title>
+    <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
+    <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
+<span id="more"></span>
+
+<h4 id="1-建立本地仓库"><a href="#1-建立本地仓库" class="headerlink" title="1.建立本地仓库"></a>1.建立本地仓库</h4><p><code>git init</code></p>
+<h4 id="2-添加所有文件到暂存区"><a href="#2-添加所有文件到暂存区" class="headerlink" title="2.添加所有文件到暂存区"></a>2.添加所有文件到暂存区</h4><p><code>git add .</code></p>
+<h4 id="3-提交所有文件"><a href="#3-提交所有文件" class="headerlink" title="3.提交所有文件"></a>3.提交所有文件</h4><p><code>git commit -m &quot;注释&quot; -a</code></p>
+<h4 id="4-新建远程仓库"><a href="#4-新建远程仓库" class="headerlink" title="4.新建远程仓库"></a>4.新建远程仓库</h4><p>新建一个仓库，复制其链接</p>
+<h4 id="5-连接远程仓库"><a href="#5-连接远程仓库" class="headerlink" title="5.连接远程仓库"></a>5.连接远程仓库</h4><p><code>git remote add origin https://gitee.com/Elcfin/try.git </code>（链接）</p>
+<h4 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6.推送到远程仓库"></a>6.推送到远程仓库</h4><p><code>git push -u origin master </code></p>
+<p>如果远程仓库非空，如建立时选择README.md初始化，则发生冲突</p>
+<p>此时可输入</p>
+<p><code>git push -u origin master -f</code></p>
+<p>强制覆盖远程仓库</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>课内学习笔记</p>
+<span id="more"></span>
+
+<p><a href="https://gitee.com/Elcfin/data-structure">https://gitee.com/Elcfin/data-structure</a></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -174,21 +656,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数据结构</title>
-    <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>课内学习笔记</p>
-<span id="more"></span>
-
-<p><a href="https://gitee.com/Elcfin/data-structure">https://gitee.com/Elcfin/data-structure</a></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -259,56 +726,48 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript判断变量是否为某种类型</title>
-    <url>/2021/06/14/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<p>对象、数组<span id="more"></span></p>
-<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
-<blockquote>
-<p><code>[object Object]</code>中第一个o小写</p>
-</blockquote>
-</li>
-<li><p><code>obj.constructor === Object</code></p>
-</li>
-<li><p><code>obj instanceof Object</code>（不可行）</p>
-<blockquote>
-<p>数组和函数也会返回true</p>
-</blockquote>
-</li>
-<li><p><code>typeof obj === Object</code>（不可行）</p>
-<blockquote>
-<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li><p><code>$.isPlainObject(obj)</code></p>
-<blockquote>
-<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
-</li>
-<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
-</li>
-<li><p><code>obj instanceof Array</code></p>
-</li>
-<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
-</li>
-<li><p><code>Array.isArray()</code></p>
-</li>
-</ol>
-<blockquote>
-<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
-</blockquote>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
 ]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>C/C++</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零零碎碎（HTML/CSS）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>伪类元素的原始位置一般是在父元素的左上和右下，如果设置成<code>display: block</code>会另起新行</strong></li>
+</ul>
+<ul>
+<li><p><strong>关于<code>clip-path</code></strong></p>
+<p><a href="https://www.w3cplus.com/css3/using-making-sense-of-clip-path.html">理解Clip Path_clip-path 教程_W3cplus</a></p>
+</li>
+</ul>
+<ul>
+<li><strong>HTML <code>contenteditable</code> 属性</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML/CSS</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -374,464 +833,5 @@
         <tag>杂记</tag>
         <tag>JavaScript</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（HTML/CSS）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>伪类元素的原始位置一般是在父元素的左上和右下，如果设置成<code>display: block</code>会另起新行</strong></li>
-</ul>
-<ul>
-<li><p><strong>关于<code>clip-path</code></strong></p>
-<p><a href="https://www.w3cplus.com/css3/using-making-sense-of-clip-path.html">理解Clip Path_clip-path 教程_W3cplus</a></p>
-</li>
-</ul>
-<ul>
-<li><strong>HTML <code>contenteditable</code> 属性</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML/CSS</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>HTML</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>建立本地仓库与远程仓库的联系（git）</title>
-    <url>/2021/06/14/%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E8%81%94%E7%B3%BB/</url>
-    <content><![CDATA[<p>建立本地仓库与远程仓库的联系</p>
-<span id="more"></span>
-
-<h4 id="1-建立本地仓库"><a href="#1-建立本地仓库" class="headerlink" title="1.建立本地仓库"></a>1.建立本地仓库</h4><p><code>git init</code></p>
-<h4 id="2-添加所有文件到暂存区"><a href="#2-添加所有文件到暂存区" class="headerlink" title="2.添加所有文件到暂存区"></a>2.添加所有文件到暂存区</h4><p><code>git add .</code></p>
-<h4 id="3-提交所有文件"><a href="#3-提交所有文件" class="headerlink" title="3.提交所有文件"></a>3.提交所有文件</h4><p><code>git commit -m &quot;注释&quot; -a</code></p>
-<h4 id="4-新建远程仓库"><a href="#4-新建远程仓库" class="headerlink" title="4.新建远程仓库"></a>4.新建远程仓库</h4><p>新建一个仓库，复制其链接</p>
-<h4 id="5-连接远程仓库"><a href="#5-连接远程仓库" class="headerlink" title="5.连接远程仓库"></a>5.连接远程仓库</h4><p><code>git remote add origin https://gitee.com/Elcfin/try.git </code>（链接）</p>
-<h4 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6.推送到远程仓库"></a>6.推送到远程仓库</h4><p><code>git push -u origin master </code></p>
-<p>如果远程仓库非空，如建立时选择README.md初始化，则发生冲突</p>
-<p>此时可输入</p>
-<p><code>git push -u origin master -f</code></p>
-<p>强制覆盖远程仓库</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>备忘录</title>
-    <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<p>夏天的风<span id="more"></span></p>
-<ul>
-<li><p>面向类的语言的 new 机制</p>
-</li>
-<li><p>python</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Word文档中实现代码高亮</title>
-    <url>/2021/06/14/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
-    <content><![CDATA[<p>使用Notepad++<span id="more"></span></p>
-<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
-<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
-<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
-<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>__proto__、prototype与constructor</title>
-    <url>/2021/06/14/prototype%E4%B8%8Econstructor/</url>
-    <content><![CDATA[<p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
-<h3 id="proto"><a href="#proto" class="headerlink" title="__proto__"></a>__proto__</h3><p><code>__proto__</code>属性在ES标准定义中的名字是<code>[[Prototype]]</code></p>
-<ul>
-<li><code>__proto__</code>和<code>constructor</code>属性是<strong>对象</strong>所独有的</li>
-<li><code>prototype</code>属性是<strong>函数</strong>所独有的<ul>
-<li>由于JavaScript中函数也是对象，所以函数也拥有<code>__proto__</code>和<code>constructor</code>属性</li>
-</ul>
-</li>
-</ul>
-<p>原型链通过<code>__proto__</code>一级一级向上寻找，直到<code>null</code></p>
-<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h3><p>函数的<code>prototype</code>属性指向该函数的原型对象（从一个函数指向一个对象），即当这个函数作为构造函数时所创建的实例的原型对象</p>
-<p>作用：让该函数所实例化的对象们可以找到公用的属性和方法</p>
-<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><p>只有prototype对象自身拥有<code>constructor</code>属性</p>
-<p>对象的<code>constructor</code>属性指向该对象的构造函数（从一个对象指向一个函数），“每个对象都有构造函数”（意思是每个对象都可以找到其对应的<code>constructor</code>属性）</p>
-<p>由<code>Function</code>创建的函数对象较为特殊，该函数对象的<code>constructor</code>属性指向其构造函数<code>Function</code>，此时该函数对象相当于<code>Function</code>的一个实例</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.__proto__.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.prototype.constructor); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.prototype.constructor); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-
-<p>该函数对象的原型对象，即<code>.prototype</code>的<code>constructor</code>属性指向该函数对象</p>
-<p>对一个对象，有</p>
-<p><code>对象.__proto__ === 其构造函数.prototype</code></p>
-<p><code>其构造函数.prototype.constructor === 其构造函数本身</code></p>
-<blockquote>
-<p>使用对象字面量 <code>= &#123;&#125;</code> 创建新对象相当于 <code>= new Object()</code>，其对应的<code>construcor</code>属性即指向<code>Object</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>minipack 学习笔记</title>
-    <url>/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
-<p><a href="https://github.com/chinanf-boy/minipack-explain">chinanf-boy/minipack-explain: explain:  simple bundle 捆绑器 示例 「翻译」❤️ 校对 ✅ (github.com)</a></p>
-<span id="more"></span>
-
-<h3 id="Module-bundlers"><a href="#Module-bundlers" class="headerlink" title="Module bundlers"></a>Module bundlers</h3><p><strong>模拟捆绑器</strong></p>
-<p>compile small pieces of code into something larger and more</p>
-<p>将小块代码编译成更大和更复杂的代码</p>
-<p>入口文件</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jQuery 学习笔记</title>
-    <url>/2021/06/14/jQuery%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>“Write Less，Do More”<span id="more"></span></p>
-<h4 id="Principles"><a href="#Principles" class="headerlink" title="Principles"></a>Principles</h4><ul>
-<li>把所有 <code>jQuery</code> 代码置于事件处理函数中</li>
-<li>把所有事件处理函数置于文档就绪事件处理器中</li>
-<li>把 <code>jQuery</code> 代码置于单独的 <code>.js</code> 文件中</li>
-<li>如果存在名称冲突，则重命名 <code>jQuery</code> 库</li>
-</ul>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《你不知道的JavaScript》（上卷）读书笔记-关于this</title>
-    <url>/2021/06/14/%E3%80%8A%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%E3%80%8B%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%85%B3%E4%BA%8Ethis/</url>
-    <content><![CDATA[<p><code>this</code> 的绑定和函数声明的位置没有任何关系，只取决于函数的调用方式</p>
-<p>当一个函数被调用时，会创建一个活动记录（有时候也称为执行上下文）。这个记录会包含函数在哪里被调用（调用栈）、函数的调用方法、传入的参数等信息。<code>this</code> 就是记录的其中一个属性，会在函数执行的过程中用到<span id="more"></span></p>
-<p><code>this</code> 既不指向函数自身也不指向函数的词法作用域</p>
-<p><strong>调用位置</strong>：函数在代码中被调用的位置（而不是声明的位置）</p>
-<p><strong>调用栈</strong>：为了到达当前执行位置所调用的所有函数</p>
-<blockquote>
-<p>使用开发者工具得到调用栈</p>
-</blockquote>
-<h3 id="绑定规则"><a href="#绑定规则" class="headerlink" title="绑定规则"></a>绑定规则</h3><p>找到调用位置，判断应用四条规则中的哪一条</p>
-<h4 id="默认绑定"><a href="#默认绑定" class="headerlink" title="默认绑定"></a>默认绑定</h4><p>默认绑定时，<code>this</code> 指向全局对象</p>
-<p>适用：独立函数调用</p>
-<p>如果使用严格模式（strict mode），那么全局对象将无法使用默认绑定，因此 <code>this</code> 会绑定到 <code>undefined</code></p>
-<h4 id="隐式绑定"><a href="#隐式绑定" class="headerlink" title="隐式绑定"></a>隐式绑定</h4><p>当函数引用有上下文对象时，隐式绑定规则会把函数调用中的 this 绑定到这个上下文对象</p>
-<p>适用：调用位置是否有上下文对象，或者说是否被某个对象拥有或者包含</p>
-<blockquote>
-<p>无论是直接在 obj 中定义还是先定义再添加为引用属性，这个函数严格来说都不属于 obj 对象。 然而，调用位置会使用 obj 上下文来引用函数，因此你可以说函数被调用时 obj 对象“拥有”或者“包含”它</p>
-</blockquote>
-<p>对象属性引用链中只有最顶层或者说最后一层会影响调用位置</p>
-<p>例：<code>obj1.obj2.foo(); </code> 调用位置为对象 <code>obj2</code></p>
-<h5 id="隐式丢失"><a href="#隐式丢失" class="headerlink" title="隐式丢失"></a>隐式丢失</h5><p>被隐式绑定的函数会丢失绑定对象，也就是说它会应用默认绑定</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> bar = obj.foo;</span><br><span class="line">bar();</span><br></pre></td></tr></table></figure>
-
-<p><code>bar</code> 引用的是 <code>foo</code> 函数本身，此时的 <code>bar()</code> 其实是一个不带任何修饰的函数调用，因此应用默认绑定</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">function <span class="title">foo</span><span class="params">()</span></span>&#123;</span><br><span class="line">  console.log( <span class="keyword">this</span>.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">function <span class="title">doFoo</span><span class="params">(fn)</span></span>&#123;</span><br><span class="line">  fn();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  a:<span class="number">2</span>,</span><br><span class="line">  foo:foo</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="string">&quot;opps, global&quot;</span>;</span><br><span class="line"></span><br><span class="line">doFoo( obj.foo ); <span class="comment">//&quot;opps, global&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>传入回调函数时，参数传递其实就是一种隐式赋值</p>
-<h4 id="显示绑定"><a href="#显示绑定" class="headerlink" title="显示绑定"></a>显示绑定</h4><p>通过<code>call(..)</code> 和 <code>apply(..)</code> 方法指定 <code>this</code> 的绑定对象</p>
-<p>无法解决丢失绑定的问题</p>
-<h5 id="1-硬绑定"><a href="#1-硬绑定" class="headerlink" title="1.硬绑定"></a>1.硬绑定</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  foo.call( obj );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">bar(); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">setTimeout</span>( bar, <span class="number">100</span> ); <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 硬绑定的 bar 不可能再修改它的 this</span></span><br><span class="line">bar.call( <span class="built_in">window</span> ); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<p>我们创建了函数 <code>bar()</code>，并在它的内部手动调用 了 <code>foo.call(obj)</code>，因此强制把 <code>foo</code> 的 <code>this</code> 绑定到了 <code>obj</code>。无论之后如何调用函数 <code>bar</code>，它总会手动在 <code>obj</code> 上调用 <code>foo</code>。这种绑定是一种显式的强制绑定，因此我们称之为<strong>硬绑定</strong></p>
-<p><strong>应用场景一（典型）：</strong></p>
-<p>创建一个包裹函数，传入所有的参数并返回接收到的所有值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">something</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a, something );</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.a + something;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> foo.apply( obj, <span class="built_in">arguments</span> );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = bar( <span class="number">3</span> ); <span class="comment">// 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log( b ); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-
-<p>包裹函数：<code>bar</code></p>
-<p><strong>应用场景二：</strong></p>
-<p>创建一个 i 可以重复使用的辅助函数</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">something</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a, something );</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.a + something;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 简单的辅助绑定函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bind</span>(<span class="params">fn, obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> fn.apply( obj, <span class="built_in">arguments</span> );</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = bind( foo, obj );</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = bar( <span class="number">3</span> ); <span class="comment">// 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log( b ); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>内置方法 <code>Function.prototype.bind</code> （ ES5 ）</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">something</span>) </span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log( <span class="built_in">this</span>.a, something );</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.a + something;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = foo.bind( obj );</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = bar( <span class="number">3</span> ); <span class="comment">// 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log( b ); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
-
-<p><code>bind(..)</code> 会返回一个硬编码的新函数，它会把参数设置为 this 的上下文并调用原始函数</p>
-<h5 id="2-API调用的“上下文”"><a href="#2-API调用的“上下文”" class="headerlink" title="2. API调用的“上下文”"></a>2. API调用的“上下文”</h5><p>第三方库的许多函数，以及 JavaScript 语言和宿主环境中许多新的内置函数，都提供了一个可选的参数，通常被称为“上下文”（context），其作用和 <code>bind(..)</code> 一样，确保你的回调函数使用指定的 <code>this</code></p>
-<h4 id="new绑定"><a href="#new绑定" class="headerlink" title="new绑定"></a>new绑定</h4><p>JavaScript 中 new 的机制实际上和面向类的语言完全不同</p>
-<p><strong>构造函数</strong>：在 JavaScript 中，构造函数只是一些使用 new 操作符时被调用的函数。它们并不会属于某个类，也不会实例化一个类。实际上， 它们甚至都不能说是一种特殊的函数类型，它们只是被 new 操作符调用的普通函数而已</p>
-<p>实际上并不存在所谓的“构造函数”，只有对于函数的“构造调用”</p>
-<p>使用 new 来调用函数，或者说发生构造函数调用时，会自动执行下面的操作：</p>
-<ol>
-<li>创建（或者说构造）一个全新的对象 </li>
-<li>这个新对象会被执行 [[ 原型 ]] 连接 </li>
-<li>这个新对象会绑定到函数调用的 this </li>
-<li>如果函数没有返回其他对象，那么 new 表达式中的函数调用会自动返回这个新对象</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">a</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.a = a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = <span class="keyword">new</span> foo(<span class="number">2</span>);</span><br><span class="line"><span class="built_in">console</span>.log( bar.a ); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 new 来调用 <code>foo(..)</code> 时，我们会构造一个新对象并把它绑定到 <code>foo(..)</code> 调用中的 this 上</p>
-<h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><p>显示绑定（判断时优先考虑） &gt; 隐式绑定 &gt; 默认绑定</p>
-<p>判断硬绑定函数是否是被 new 调用，如果是的话就会使用新创建的 this 替换硬绑定的 this</p>
-<h4 id="判断this"><a href="#判断this" class="headerlink" title="判断this"></a>判断this</h4><ol>
-<li><p>函数是否在 new 中调用（new 绑定）？</p>
-<p>如果是的话 this 绑定的是新创建的对象。 <code>var bar = new foo()</code></p>
-</li>
-<li><p>函数是否通过 call、apply（显式绑定）或者硬绑定调用？</p>
-<p>如果是的话，this 绑定的是指定的对象。 <code>var bar = foo.call(obj2)</code></p>
-</li>
-<li><p>函数是否在某个上下文对象中调用（隐式绑定）？</p>
-<p>如果是的话，this 绑定的是那个上下文对象。 <code>var bar = obj1.foo()</code></p>
-</li>
-<li><p>如果都不是的话，使用默认绑定。</p>
-<p>如果在严格模式下，就绑定到 undefined，否则绑定到全局对象。 <code>var bar = foo()</code></p>
-</li>
-</ol>
-<h3 id="绑定例外"><a href="#绑定例外" class="headerlink" title="绑定例外"></a>绑定例外</h3><p>如果把 null 或者 undefined 作为 this 的绑定对象传入 call、apply 或者 bind，这些值在调用时会被忽略，实际应用的是默认绑定规则</p>
-<h4 id="更安全的this"><a href="#更安全的this" class="headerlink" title="更安全的this"></a>更安全的this</h4><p>一种“更安全”的做法是传入一个特殊的对象，把 this 绑定到这个对象不会对你的程序 产生任何副作用</p>
-<p>我们可以创建一个“DMZ”（demilitarized zone，非军事区）对象——一个空的非委托的对象</p>
-<p><strong>在忽略 this 绑定时总是传入一个 DMZ 对象</strong></p>
-<p>在 JavaScript 中创建一个空对象最简单的方法： <code>Object.create(null)</code></p>
-<blockquote>
-<p><code>Object.create(null)</code> 和 <code>&#123;&#125;</code> 很像， 但是并不会创建 Object. prototype 这个委托，所以它比 {}“更空”</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">a,b</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="string">&quot;a:&quot;</span> + a + <span class="string">&quot;, b:&quot;</span> + b );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 我们的 DMZ 空对象</span></span><br><span class="line"><span class="keyword">var</span> ø = <span class="built_in">Object</span>.create( <span class="literal">null</span> );</span><br><span class="line"></span><br><span class="line"><span class="comment">// 把数组展开成参数</span></span><br><span class="line">foo.apply( ø, [<span class="number">2</span>, <span class="number">3</span>] ); <span class="comment">// a:2, b:3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 bind(..) 进行柯里化</span></span><br><span class="line"><span class="keyword">var</span> bar = foo.bind( ø, <span class="number">2</span> );</span><br><span class="line">bar( <span class="number">3</span> ); <span class="comment">// a:2, b:3</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="间接引用"><a href="#间接引用" class="headerlink" title="间接引用"></a>间接引用</h3><p>创建一个函数的“间接引用”时，调用这个函数会应用默认绑定规则</p>
-<p>联系：隐式丢失</p>
-<p>间接引用最容易在赋值时发生</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="built_in">this</span>.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> o = &#123; <span class="attr">a</span>: <span class="number">3</span>, <span class="attr">foo</span>: foo &#125;;</span><br><span class="line"><span class="keyword">var</span> p = &#123; <span class="attr">a</span>: <span class="number">4</span> &#125;;</span><br><span class="line"></span><br><span class="line">o.foo(); <span class="comment">// 3</span></span><br><span class="line">(p.foo = o.foo)(); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<p>赋值表达式 <code>p.foo = o.foo</code> 的返回值是目标函数的引用，因此调用位置是 <code>foo()</code> 而不是 <code>p.foo()</code> 或者 <code>o.foo()</code></p>
-<h3 id="软绑定"><a href="#软绑定" class="headerlink" title="软绑定"></a>软绑定</h3><p>给默认绑定指定一个全局对象和 undefined 以外的值，实现和硬绑定相同的效果，同时保留隐式绑定或者显示绑定修改this的能力</p>
-<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><p>无法使用这些规则的特殊函数类型</p>
-<p>根据外层（函数或者全局）作用域来决定 this</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 返回一个箭头函数</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function">(<span class="params">a</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">//this 继承自 foo()</span></span><br><span class="line">    <span class="built_in">console</span>.log( <span class="built_in">this</span>.a );</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj1 = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj2 = &#123;</span><br><span class="line">  <span class="attr">a</span>:<span class="number">3</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = foo.call( obj1 );</span><br><span class="line">bar.call( obj2 ); <span class="comment">// 2, 不是 3 ！</span></span><br></pre></td></tr></table></figure>
-
-<p><code>foo()</code> 内部创建的箭头函数会捕获调用时 <code>foo()</code> 的 this。由于 <code>foo()</code> 的 this 绑定到 <code>obj1</code>， <code>bar</code>（引用箭头函数）的 this 也会绑定到 <code>obj1</code>，<strong>箭头函数的绑定无法被修改</strong>（new也不可以哟）</p>
-<p>箭头函数可以像 <code>bind(..)</code> 一样确保函数的 this 被绑定到指定对象，会继承外层函数调用的 this 绑定（无论 this 绑定到什么），和 ES6 之前代码中的 self = this 机制一样</p>
-<p>它用更常见的词法作用域取代了传统的 this 机制</p>
-<p><strong>2种this代码风格</strong>：</p>
-<ol>
-<li>只使用词法作用域并完全抛弃错误 this 风格</li>
-<li>完全采用 this 风格，在必要时使用 bind(..)，尽量避免使用 self = this 和箭头函数</li>
-</ol>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-继承</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E7%BB%A7%E6%89%BF/</url>
-    <content><![CDATA[<p>实现继承是 ECMAScript 唯一支持的继承方式，主要是通过原型链实现的<span id="more"></span></p>
-<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><p>每个构造函数都有一个原型对象，原型有一个属性指回构造函数，而实例有一个内部指针指向原型</p>
-<p>如果原型是另一个类型的实例，这个原型本身有一个内部指针指向另一个原型，相应地另一个原型也有一个指针指向另一个构造函数</p>
-<blockquote>
-<p>该原型自身不再存在constructor属性，而是继承自另一个原型</p>
-</blockquote>
-<h4 id="默认原型"><a href="#默认原型" class="headerlink" title="默认原型"></a>默认原型</h4><p>任何函数的默认原型都是一个 Object 的实例，这意味着这个实例有一个内部指针指向 <code>Object.prototype</code></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">function <span class="title">fun</span><span class="params">()</span> </span>&#123;&#125;;</span><br><span class="line">console.log(fun.prototype.__proto__ === Object.prototype); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="原型与继承关系"><a href="#原型与继承关系" class="headerlink" title="原型与继承关系"></a>原型与继承关系</h4><p><code>instanceof</code> 如果一个实例的原型链中出现过相应的构造函数，则返回true</p>
-<p><code>isPrototypeOf()</code> <code>构造函数.prototype.isPrototypeOf(实例)</code>只要原型链中包含这个原型，这个方法就返回true</p>
-<h4 id="关于方法"><a href="#关于方法" class="headerlink" title="关于方法"></a>关于方法</h4><p>以对象字面量方式创建原型方法会破坏之前的原型链，相当于重写了原型链，覆盖后的原型为默认原型</p>
-<h4 id="原型链的问题"><a href="#原型链的问题" class="headerlink" title="原型链的问题"></a>原型链的问题</h4><p>原型中包含的引用值会在所有实例间共享</p>
-<p>在使用原型实现继承时，原型实际上变成了另一个类型的实例，意味着原先的实例属性变成了原型属性</p>
-<h3 id="盗用构造函数"><a href="#盗用构造函数" class="headerlink" title="盗用构造函数"></a>盗用构造函数</h3><p>解决原型包含引用值导致的继承问题</p>
-<p>基本思路：在子类构造函数中调用父类构造函数</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="comment">// 继承 SuperType </span></span><br><span class="line"> SuperType.call(<span class="built_in">this</span>); </span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">let</span> instance1 = <span class="keyword">new</span> SubType(); </span><br><span class="line">instance1.colors.push(<span class="string">&quot;black&quot;</span>); </span><br><span class="line"><span class="built_in">console</span>.log(instance1.colors); <span class="comment">// &quot;red,blue,green,black&quot; </span></span><br><span class="line"><span class="keyword">let</span> instance2 = <span class="keyword">new</span> SubType(); </span><br><span class="line"><span class="built_in">console</span>.log(instance2.colors); <span class="comment">// &quot;red,blue,green&quot; </span></span><br></pre></td></tr></table></figure>
-
-<p>新的 <code>SubType</code> 对象上运行了 <code>SuperType()</code> 函数中的所有初始化代码</p>
-<h4 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h4><h4 id="盗用构造函数的问题"><a href="#盗用构造函数的问题" class="headerlink" title="盗用构造函数的问题"></a>盗用构造函数的问题</h4><p>必须在构造函数中定义方法，因此函数不能重用</p>
-<p>子类不能访问父类原型上定义的方法</p>
-<h3 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h3><p>综合了原型链和盗用构造函数</p>
-<p><strong>基本思路：使用原型链继承原型上的属性和方法，而通过盗用构造函数继承实例属性</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>)</span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.name = name; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>)</span>&#123; </span><br><span class="line"> <span class="comment">// 继承属性</span></span><br><span class="line"> SuperType.call(<span class="built_in">this</span>, name); </span><br><span class="line"> <span class="built_in">this</span>.age = age; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">// 继承方法</span></span><br><span class="line">SubType.prototype = <span class="keyword">new</span> SuperType(); </span><br><span class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.age); </span><br><span class="line">&#125;; </span><br></pre></td></tr></table></figure>
-
-<h3 id="原型式继承"><a href="#原型式继承" class="headerlink" title="原型式继承"></a>原型式继承</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">object</span>(<span class="params">o</span>) </span>&#123; </span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;&#125; </span><br><span class="line"> F.prototype = o; </span><br><span class="line"> <span class="keyword">return</span> <span class="keyword">new</span> F(); </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-
-<p>这个 <code>object()</code> 函数会创建一个临时构造函数，将传入的对象赋值给这个构造函数的原型，然后返回这个临时类型的一个实例</p>
-<p>ECMAScript5 增加 <code>Object.create()</code> 方法将原型式继承的概念规范化</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123; </span><br><span class="line"> <span class="attr">name</span>: <span class="string">&quot;Nicholas&quot;</span>, </span><br><span class="line"> <span class="attr">friends</span>: [<span class="string">&quot;Shelby&quot;</span>, <span class="string">&quot;Court&quot;</span>, <span class="string">&quot;Van&quot;</span>] </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> anotherPerson = <span class="built_in">Object</span>.create(person, &#123; </span><br><span class="line"> <span class="attr">name</span>: &#123; </span><br><span class="line"> <span class="attr">value</span>: <span class="string">&quot;Greg&quot;</span> </span><br><span class="line"> &#125; </span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> yetAnotherPerson = <span class="built_in">Object</span>.create(person); </span><br><span class="line">yetAnotherPerson.name = <span class="string">&quot;Linda&quot;</span>; </span><br><span class="line">yetAnotherPerson.friends.push(<span class="string">&quot;Barbie&quot;</span>); </span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.friends); <span class="comment">// &quot;Shelby,Court,Van,Rob,Barbie&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(anotherPerson.name); <span class="comment">// &quot;Greg&quot;</span></span><br><span class="line"><span class="built_in">console</span>.log(anotherPerson.friends); <span class="comment">// &quot;Shelby,Court,Van,Rob,Barbie&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>anotherPerson</code> 和 <code>yetAnotherPerson</code> 的 <code>[[prototype]]</code> 都是 <code>person</code> （无对象标识）</p>
-<p>适用不需要单独创建构造函数，但仍然需要在对象间共享信息的场合</p>
-<h3 id="寄生式继承"><a href="#寄生式继承" class="headerlink" title="寄生式继承"></a>寄生式继承</h3><p><strong>基本思路：创建一个实现继承的函数，以某种方式增强对象，然后返回这个对象</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createAnother</span>(<span class="params">original</span>)</span>&#123; </span><br><span class="line"> <span class="keyword">let</span> clone = object(original); <span class="comment">// 通过调用函数创建一个新对象</span></span><br><span class="line"> clone.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// 以某种方式增强这个对象</span></span><br><span class="line"> <span class="built_in">console</span>.log(<span class="string">&quot;hi&quot;</span>); </span><br><span class="line"> &#125;; </span><br><span class="line"> <span class="keyword">return</span> clone; <span class="comment">// 返回这个对象</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><code>object()</code> 函数不是寄生式继承所必需的，任何返回新对象的函数都可以在这里使用</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123; </span><br><span class="line"> <span class="attr">name</span>: <span class="string">&quot;Nicholas&quot;</span>, </span><br><span class="line"> <span class="attr">friends</span>: [<span class="string">&quot;Shelby&quot;</span>, <span class="string">&quot;Court&quot;</span>, <span class="string">&quot;Van&quot;</span>] </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> anotherPerson = createAnother(person); </span><br><span class="line">anotherPerson.sayHi(); <span class="comment">// &quot;hi&quot; </span></span><br></pre></td></tr></table></figure>
-
-<p>上例基于 <code>person</code> 对象返回了一个新对象。新返回的 <code>anotherPerson</code> 对象具有 <code>person</code> 的所有属性和方法，还有一个新方法 <code>sayHi()</code></p>
-<p>适用主要关注对象，而不在乎类型和构造函数的场合</p>
-<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>通过寄生式继承给对象添加函数会导致函数难以重用，与构造函数模式类似</p>
-<h3 id="寄生式组合继承"><a href="#寄生式组合继承" class="headerlink" title="寄生式组合继承"></a>寄生式组合继承</h3><p>组合继承最主要的效率问题就是父类构造函数始终会被调用两次：一次在是创建子类原型时调用，另一次是在子类构造函数中调用</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>) </span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.name = name; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>)</span>&#123; </span><br><span class="line"> SuperType.call(<span class="built_in">this</span>, name); <span class="comment">// 第二次调用 SuperType() </span></span><br><span class="line"> <span class="built_in">this</span>.age = age; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">SubType.prototype = <span class="keyword">new</span> SuperType(); <span class="comment">// 第一次调用 SuperType() </span></span><br><span class="line">SubType.prototype.constructor = SubType; </span><br><span class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.age); </span><br><span class="line">&#125;; </span><br></pre></td></tr></table></figure>
-
-<p>有两组 name 和 colors 属性：一组在实例上，另一组在 <code>SubType</code> 的原型上</p>
-<p><strong>基本思路：不通过调用父类构造函数给子类原型赋值，而是取得父类原型的一个副本</strong></p>
-<p>即使用寄生式继承来继承父类原型，然后将返回的新对象赋值给子类原型</p>
-<p>寄生式组合继承的基本模式</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">inheritPrototype</span>(<span class="params">subType, superType</span>) </span>&#123; </span><br><span class="line"> <span class="keyword">let</span> prototype = object(superType.prototype); <span class="comment">// 创建对象 </span></span><br><span class="line"> prototype.constructor = subType; <span class="comment">// 增强对象 </span></span><br><span class="line"> subType.prototype = prototype; <span class="comment">// 赋值对象 </span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-
-<p>这个函数接收两个参数：子类构造函数和父类构造函数</p>
-<ol>
-<li>创建父类原型的一个副本</li>
-<li>给返回的 <code>prototype</code> 对象设置 <code>constructor</code> 属性，解决由于重写原型导致默认 <code>constructor</code> 丢失的问题</li>
-<li>将新创建的对象赋值给子类型的原型</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>) </span>&#123; </span><br><span class="line"> <span class="built_in">this</span>.name = name; </span><br><span class="line"> <span class="built_in">this</span>.colors = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>]; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.name); </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>) </span>&#123; </span><br><span class="line"> SuperType.call(<span class="built_in">this</span>, name);</span><br><span class="line"> <span class="built_in">this</span>.age = age; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">inheritPrototype(SubType, SuperType); </span><br><span class="line"></span><br><span class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line"> <span class="built_in">console</span>.log(<span class="built_in">this</span>.age); </span><br><span class="line">&#125;; </span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-基本引用类型</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>基本引用类型<span id="more"></span></p>
-<p><strong>引用类型</strong>是把数据和功能组织到一起的结构，描述自己的对象应有的属性和方法</p>
-<p><strong>对象</strong>被认为是某个特定引用类型的实例</p>
-<p><strong>构造函数</strong>是用来创建新对象的函数，负责创建一个只有默认属性和方法的简单对象</p>
-<p><code>let now = new Date(); </code></p>
-<p>这行代码中，引用类型<code>Date</code>，构造函数<code>Date()</code></p>
-<blockquote>
-<p>函数也是一种引用类型</p>
-</blockquote>
-<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>在不给 Date 构造函数传参数（毫秒表示）的情况下，创建的对象将保存当前日期和时间</p>
-<p><strong><code>Date.parse()</code></strong></p>
-<p>接收一个表示日期的字符串参数</p>
-<p>尝试转换为表示该日期的毫秒数，失败则返回<code>NaN</code></p>
-<p>如果直接把表示日期的字符串传给 <code>Date</code> 构造函数，那么 <code>Date</code> 会在后台调用 <code>Date.parse()</code></p>
-<p><strong><code>Date.UTC()</code></strong></p>
-<p><strong><code>Date.now()</code></strong></p>
-<p>返回表示方法执行时日期和时间的毫秒数</p>
-<h4 id="继承的方法"><a href="#继承的方法" class="headerlink" title="继承的方法"></a>继承的方法</h4><p>重写了<code>toLocaleString()</code>、<code>toString()</code>和 <code>valueOf()</code>方法</p>
-<p><code>valueOf()</code>返回日期的毫秒表示</p>
-<h3 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h3><p>简洁语法 <code>let expression = /pattern/flags; </code></p>
-<p>使用 <code>RegExp</code> 构造函数创建时，参数是字符串</p>
-<blockquote>
-<p>所有元字符都必须二次转义（\转义后的字符串是\\，在正则表达式字符串中则要写成\\\\）</p>
-</blockquote>
-<h4 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h4><p><code>lastIndex</code>：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
-<ul>
-<li>包含的元素是有限的</li>
-<li>具有无歧义的遍历顺序</li>
-</ul>
-<p><strong>迭代器</strong></p>
-<p>按需创建的一次性对象</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>创建对象<span id="more"></span></p>
-<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
-<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
-<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/06/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
