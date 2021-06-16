@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/06/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>Colors</title>
+    <url>/2021/06/14/colors/</url>
+    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
   </entry>
   <entry>
     <title>Word文档中实现代码高亮</title>
@@ -35,18 +31,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Colors</title>
-    <url>/2021/06/14/colors/</url>
-    <content><![CDATA[<p>记录一些颜色搭配<span id="more"></span></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">美式复古: <span class="number">#4D84A2</span> <span class="number">#C96A38</span> <span class="number">#8B1F2B</span> <span class="number">#114D8B</span></span><br></pre></td></tr></table></figure>
+    <title>Hello World</title>
+    <url>/2021/06/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
   </entry>
   <entry>
     <title>jQuery 学习笔记</title>
@@ -119,43 +119,6 @@
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-基本引用类型</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>基本引用类型<span id="more"></span></p>
-<p><strong>引用类型</strong>是把数据和功能组织到一起的结构，描述自己的对象应有的属性和方法</p>
-<p><strong>对象</strong>被认为是某个特定引用类型的实例</p>
-<p><strong>构造函数</strong>是用来创建新对象的函数，负责创建一个只有默认属性和方法的简单对象</p>
-<p><code>let now = new Date(); </code></p>
-<p>这行代码中，引用类型<code>Date</code>，构造函数<code>Date()</code></p>
-<blockquote>
-<p>函数也是一种引用类型</p>
-</blockquote>
-<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>在不给 Date 构造函数传参数（毫秒表示）的情况下，创建的对象将保存当前日期和时间</p>
-<p><strong><code>Date.parse()</code></strong></p>
-<p>接收一个表示日期的字符串参数</p>
-<p>尝试转换为表示该日期的毫秒数，失败则返回<code>NaN</code></p>
-<p>如果直接把表示日期的字符串传给 <code>Date</code> 构造函数，那么 <code>Date</code> 会在后台调用 <code>Date.parse()</code></p>
-<p><strong><code>Date.UTC()</code></strong></p>
-<p><strong><code>Date.now()</code></strong></p>
-<p>返回表示方法执行时日期和时间的毫秒数</p>
-<h4 id="继承的方法"><a href="#继承的方法" class="headerlink" title="继承的方法"></a>继承的方法</h4><p>重写了<code>toLocaleString()</code>、<code>toString()</code>和 <code>valueOf()</code>方法</p>
-<p><code>valueOf()</code>返回日期的毫秒表示</p>
-<h3 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h3><p>简洁语法 <code>let expression = /pattern/flags; </code></p>
-<p>使用 <code>RegExp</code> 构造函数创建时，参数是字符串</p>
-<blockquote>
-<p>所有元字符都必须二次转义（\转义后的字符串是\\，在正则表达式字符串中则要写成\\\\）</p>
-</blockquote>
-<h4 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h4><p><code>lastIndex</code>：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
         <tag>JavaScript</tag>
       </tags>
   </entry>
@@ -251,16 +214,33 @@
       </tags>
   </entry>
   <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
-    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
-<ul>
-<li>包含的元素是有限的</li>
-<li>具有无歧义的遍历顺序</li>
-</ul>
-<p><strong>迭代器</strong></p>
-<p>按需创建的一次性对象</p>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-基本引用类型</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>基本引用类型<span id="more"></span></p>
+<p><strong>引用类型</strong>是把数据和功能组织到一起的结构，描述自己的对象应有的属性和方法</p>
+<p><strong>对象</strong>被认为是某个特定引用类型的实例</p>
+<p><strong>构造函数</strong>是用来创建新对象的函数，负责创建一个只有默认属性和方法的简单对象</p>
+<p><code>let now = new Date(); </code></p>
+<p>这行代码中，引用类型<code>Date</code>，构造函数<code>Date()</code></p>
+<blockquote>
+<p>函数也是一种引用类型</p>
+</blockquote>
+<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>在不给 Date 构造函数传参数（毫秒表示）的情况下，创建的对象将保存当前日期和时间</p>
+<p><strong><code>Date.parse()</code></strong></p>
+<p>接收一个表示日期的字符串参数</p>
+<p>尝试转换为表示该日期的毫秒数，失败则返回<code>NaN</code></p>
+<p>如果直接把表示日期的字符串传给 <code>Date</code> 构造函数，那么 <code>Date</code> 会在后台调用 <code>Date.parse()</code></p>
+<p><strong><code>Date.UTC()</code></strong></p>
+<p><strong><code>Date.now()</code></strong></p>
+<p>返回表示方法执行时日期和时间的毫秒数</p>
+<h4 id="继承的方法"><a href="#继承的方法" class="headerlink" title="继承的方法"></a>继承的方法</h4><p>重写了<code>toLocaleString()</code>、<code>toString()</code>和 <code>valueOf()</code>方法</p>
+<p><code>valueOf()</code>返回日期的毫秒表示</p>
+<h3 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h3><p>简洁语法 <code>let expression = /pattern/flags; </code></p>
+<p>使用 <code>RegExp</code> 构造函数创建时，参数是字符串</p>
+<blockquote>
+<p>所有元字符都必须二次转义（\转义后的字符串是\\，在正则表达式字符串中则要写成\\\\）</p>
+</blockquote>
+<h4 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h4><p><code>lastIndex</code>：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -439,6 +419,26 @@
       </tags>
   </entry>
   <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
+    <url>/2021/06/14/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<p>迭代器与生成器<span id="more"></span></p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
+<ul>
+<li>包含的元素是有限的</li>
+<li>具有无歧义的遍历顺序</li>
+</ul>
+<p><strong>迭代器</strong></p>
+<p>按需创建的一次性对象</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>备忘录</title>
     <url>/2021/06/14/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
     <content><![CDATA[<p>夏天的风<span id="more"></span></p>
@@ -479,91 +479,6 @@
       <tags>
         <tag>杂记</tag>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构</title>
-    <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>课内学习笔记</p>
-<span id="more"></span>
-
-<p><a href="https://gitee.com/Elcfin/data-structure">https://gitee.com/Elcfin/data-structure</a></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阮一峰ES6 笔记</title>
-    <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
-<h2 id="Class的基本语法"><a href="#Class的基本语法" class="headerlink" title="Class的基本语法"></a>Class的基本语法</h2><h3 id="类的实例"><a href="#类的实例" class="headerlink" title="类的实例"></a>类的实例</h3><p>可以通过实例的<code>__proto__</code>属性为“类”添加方法，改写原型（不推荐使用，因为这会改变“类”的原始定义，影响到所有实例）</p>
-<blockquote>
-<p><code>__proto__</code> 并不是语言本身的特性，这是各大厂商具体实现时添加的私有属性，虽然目前很多现代浏览器的 JS 引擎中都提供了这个私有属性，但依旧不建议在生产中使用该属性，避免对环境产生依赖。生产环境中，我们可以使用 <code>Object.getPrototypeOf</code> 方法来获取实例对象的原型，然后再来为原型添加方法/属性。</p>
-</blockquote>
-<h3 id="Class表达式"><a href="#Class表达式" class="headerlink" title="Class表达式"></a>Class表达式</h3><p>与函数一样，类也可以使用表达式的形式定义</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> MyClass = <span class="class"><span class="keyword">class</span> <span class="title">Me</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">getClassName</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> Me.name;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>上面代码使用表达式定义了一个类。需要注意的是，这个类的名字是<code>Me</code>，但是<code>Me</code>只在 Class 的内部可用，指代当前类。在 Class 外部，这个类只能用<code>MyClass</code>引用。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> inst = <span class="keyword">new</span> MyClass();</span><br><span class="line">inst.getClassName() <span class="comment">// Me</span></span><br><span class="line">Me.name <span class="comment">// ReferenceError: Me is not defined</span></span><br></pre></td></tr></table></figure>
-
-<p>上面代码表示，<code>Me</code>只在 Class 内部有定义。</p>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><h4 id="不存在提升"><a href="#不存在提升" class="headerlink" title="不存在提升"></a>不存在提升</h4><p> ES6 不会把类的声明提升到代码头部</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> Foo = <span class="class"><span class="keyword">class</span> </span>&#123;&#125;;</span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Bar</span> <span class="keyword">extends</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的代码不会报错，因为<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>已经有定义了。但是，如果存在<code>class</code>的提升，上面代码就会报错，因为<code>class</code>会被提升到代码头部，而<code>let</code>命令是不提升的，所以导致<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>还没有定义。</p>
-<h3 id="私有属性的提案"><a href="#私有属性的提案" class="headerlink" title="私有属性的提案"></a>私有属性的提案</h3><h4 id="in-运算符"><a href="#in-运算符" class="headerlink" title="in 运算符"></a>in 运算符</h4><p><code>in</code>运算符对于<code>Object.create()</code>、<code>Object.setPrototypeOf</code>形成的继承，是无效的，因为这种继承不会传递私有属性</p>
-<h3 id="new-target-属性"><a href="#new-target-属性" class="headerlink" title="new.target 属性"></a><code>new.target</code> 属性</h3><p>Class 内部调用<code>new.target</code>，返回当前 Class</p>
-<p>子类继承父类时，<code>new.target</code>会返回子类</p>
-<p>利用这个特点，可以写出不能独立使用、必须继承后才能使用的类</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">new</span>.target === Shape) &#123;</span><br><span class="line">      <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">&#x27;本类不能实例化&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> <span class="keyword">extends</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">length, width</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>();</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> Shape();  <span class="comment">// 报错</span></span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> Rectangle(<span class="number">3</span>, <span class="number">4</span>);  <span class="comment">// 正确</span></span><br></pre></td></tr></table></figure>
-
-<p>上面代码中，<code>Shape</code>类不能被实例化，只能用于继承</p>
-<h2 id="class的继承"><a href="#class的继承" class="headerlink" title="class的继承"></a>class的继承</h2><h3 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h3><h5 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a>第一种情况</h5><p><code>super</code>作为函数调用时，代表父类的构造函数，<code>super()</code>只能用在子类的构造函数之中</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">extends</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面代码中，子类<code>B</code>的构造函数之中的<code>super()</code>，代表调用父类的构造函数</p>
-<p>注意，<code>super</code>虽然代表了父类<code>A</code>的构造函数，但是返回的是子类<code>B</code>的实例，即<code>super</code>内部的<code>this</code>指的是<code>B</code>的实例，因此<code>super()</code>在这里相当于<code>A.prototype.constructor.call(this)</code></p>
-<h5 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a>第二种情况</h5><p><code>super</code>作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类</p>
-<h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>对象的解构赋值可以取到继承的属性</p>
-<h4 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h4><ol>
-<li><p>将一个已经声明的变量用于解构赋值时</p>
-<p>错误写法：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x;</span><br><span class="line">&#123;x&#125; = &#123;<span class="attr">x</span>: <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// SyntaxError: syntax error</span></span><br></pre></td></tr></table></figure>
-
-<p>JavaScript 引擎会将<code>&#123;x&#125;</code>理解成一个代码块</p>
-<p>解决方法：不将大括号写在行首，避免 JavaScript 将其解释为代码块</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x;</span><br><span class="line">(&#123;x&#125; = &#123;<span class="attr">x</span>: <span class="number">1</span>&#125;);</span><br></pre></td></tr></table></figure></li>
-<li><p>数组本质是特殊的对象，因此可以对数组进行对象属性的解构</p>
-<p>数组键值作为匹配模式</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">let</span> &#123;<span class="number">0</span> : first, [arr.length - <span class="number">1</span>] : last&#125; = arr;</span><br><span class="line">first <span class="comment">// 1</span></span><br><span class="line">last <span class="comment">// 3</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ol>
-<li><p>交换变量的值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> y = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">[x, y] = [y, x];</span><br></pre></td></tr></table></figure></li>
-<li><p>从函数返回多个值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 返回一个数组</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> [a, b, c] = example();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回一个对象</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">foo</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">bar</span>: <span class="number">2</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> &#123; foo, bar &#125; = example();</span><br></pre></td></tr></table></figure></li>
-<li><p>函数参数的定义</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 参数是一组有次序的值</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">[x, y, z]</span>) </span>&#123; ... &#125;</span><br><span class="line">f([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 参数是一组无次序的值</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">&#123;x, y, z&#125;</span>) </span>&#123; ... &#125;</span><br><span class="line">f(&#123;<span class="attr">z</span>: <span class="number">3</span>, <span class="attr">y</span>: <span class="number">2</span>, <span class="attr">x</span>: <span class="number">1</span>&#125;);</span><br></pre></td></tr></table></figure></li>
-<li><p>提取<code>JSON</code>数据</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> jsonData = &#123;</span><br><span class="line">  <span class="attr">id</span>: <span class="number">42</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="string">&quot;OK&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: [<span class="number">867</span>, <span class="number">5309</span>]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> &#123; id, status, <span class="attr">data</span>: number &#125; = jsonData;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(id, status, number);</span><br><span class="line"><span class="comment">// 42, &quot;OK&quot;, [867, 5309]</span></span><br></pre></td></tr></table></figure></li>
-<li><p>函数参数的默认值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">jQuery.ajax = <span class="function"><span class="keyword">function</span> (<span class="params">url, &#123;</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="keyword">async</span> = <span class="literal">true</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  beforeSend = <span class="keyword">function</span> () &#123;&#125;,</span></span></span><br><span class="line"><span class="params"><span class="function">  cache = <span class="literal">true</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  complete = <span class="keyword">function</span> () &#123;&#125;,</span></span></span><br><span class="line"><span class="params"><span class="function">  crossDomain = <span class="literal">false</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="built_in">global</span> = <span class="literal">true</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="regexp">//</span> ... more config</span></span></span><br><span class="line"><span class="params"><span class="function">&#125; = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ... do stuff</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-<li><p>遍历<code>Map</code>结构</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line">map.set(<span class="string">&#x27;first&#x27;</span>, <span class="string">&#x27;hello&#x27;</span>);</span><br><span class="line">map.set(<span class="string">&#x27;second&#x27;</span>, <span class="string">&#x27;world&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [key, value] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(key + <span class="string">&quot; is &quot;</span> + value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// first is hello</span></span><br><span class="line"><span class="comment">// second is world</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//只想获取键名，或只想获取键值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取键名</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [key] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取键值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [,value] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>输入模块指定方法</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; SourceMapConsumer, SourceNode &#125; = <span class="built_in">require</span>(<span class="string">&quot;source-map&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -714,6 +629,109 @@
       </tags>
   </entry>
   <entry>
+    <title>数据结构</title>
+    <url>/2021/06/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>课内学习笔记</p>
+<span id="more"></span>
+
+<p><a href="https://gitee.com/Elcfin/data-structure">https://gitee.com/Elcfin/data-structure</a></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零零碎碎（C/C++）</title>
+    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
+    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
+<span id="more"></span>
+
+<ul>
+<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阮一峰ES6 笔记</title>
+    <url>/2021/06/14/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
+<h2 id="Class的基本语法"><a href="#Class的基本语法" class="headerlink" title="Class的基本语法"></a>Class的基本语法</h2><h3 id="类的实例"><a href="#类的实例" class="headerlink" title="类的实例"></a>类的实例</h3><p>可以通过实例的<code>__proto__</code>属性为“类”添加方法，改写原型（不推荐使用，因为这会改变“类”的原始定义，影响到所有实例）</p>
+<blockquote>
+<p><code>__proto__</code> 并不是语言本身的特性，这是各大厂商具体实现时添加的私有属性，虽然目前很多现代浏览器的 JS 引擎中都提供了这个私有属性，但依旧不建议在生产中使用该属性，避免对环境产生依赖。生产环境中，我们可以使用 <code>Object.getPrototypeOf</code> 方法来获取实例对象的原型，然后再来为原型添加方法/属性。</p>
+</blockquote>
+<h3 id="Class表达式"><a href="#Class表达式" class="headerlink" title="Class表达式"></a>Class表达式</h3><p>与函数一样，类也可以使用表达式的形式定义</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> MyClass = <span class="class"><span class="keyword">class</span> <span class="title">Me</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">getClassName</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> Me.name;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码使用表达式定义了一个类。需要注意的是，这个类的名字是<code>Me</code>，但是<code>Me</code>只在 Class 的内部可用，指代当前类。在 Class 外部，这个类只能用<code>MyClass</code>引用。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> inst = <span class="keyword">new</span> MyClass();</span><br><span class="line">inst.getClassName() <span class="comment">// Me</span></span><br><span class="line">Me.name <span class="comment">// ReferenceError: Me is not defined</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码表示，<code>Me</code>只在 Class 内部有定义。</p>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><h4 id="不存在提升"><a href="#不存在提升" class="headerlink" title="不存在提升"></a>不存在提升</h4><p> ES6 不会把类的声明提升到代码头部</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> Foo = <span class="class"><span class="keyword">class</span> </span>&#123;&#125;;</span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Bar</span> <span class="keyword">extends</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码不会报错，因为<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>已经有定义了。但是，如果存在<code>class</code>的提升，上面代码就会报错，因为<code>class</code>会被提升到代码头部，而<code>let</code>命令是不提升的，所以导致<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>还没有定义。</p>
+<h3 id="私有属性的提案"><a href="#私有属性的提案" class="headerlink" title="私有属性的提案"></a>私有属性的提案</h3><h4 id="in-运算符"><a href="#in-运算符" class="headerlink" title="in 运算符"></a>in 运算符</h4><p><code>in</code>运算符对于<code>Object.create()</code>、<code>Object.setPrototypeOf</code>形成的继承，是无效的，因为这种继承不会传递私有属性</p>
+<h3 id="new-target-属性"><a href="#new-target-属性" class="headerlink" title="new.target 属性"></a><code>new.target</code> 属性</h3><p>Class 内部调用<code>new.target</code>，返回当前 Class</p>
+<p>子类继承父类时，<code>new.target</code>会返回子类</p>
+<p>利用这个特点，可以写出不能独立使用、必须继承后才能使用的类</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">new</span>.target === Shape) &#123;</span><br><span class="line">      <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">&#x27;本类不能实例化&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> <span class="keyword">extends</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">length, width</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>();</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> Shape();  <span class="comment">// 报错</span></span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> Rectangle(<span class="number">3</span>, <span class="number">4</span>);  <span class="comment">// 正确</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，<code>Shape</code>类不能被实例化，只能用于继承</p>
+<h2 id="class的继承"><a href="#class的继承" class="headerlink" title="class的继承"></a>class的继承</h2><h3 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h3><h5 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a>第一种情况</h5><p><code>super</code>作为函数调用时，代表父类的构造函数，<code>super()</code>只能用在子类的构造函数之中</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">extends</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，子类<code>B</code>的构造函数之中的<code>super()</code>，代表调用父类的构造函数</p>
+<p>注意，<code>super</code>虽然代表了父类<code>A</code>的构造函数，但是返回的是子类<code>B</code>的实例，即<code>super</code>内部的<code>this</code>指的是<code>B</code>的实例，因此<code>super()</code>在这里相当于<code>A.prototype.constructor.call(this)</code></p>
+<h5 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a>第二种情况</h5><p><code>super</code>作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类</p>
+<h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>对象的解构赋值可以取到继承的属性</p>
+<h4 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h4><ol>
+<li><p>将一个已经声明的变量用于解构赋值时</p>
+<p>错误写法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x;</span><br><span class="line">&#123;x&#125; = &#123;<span class="attr">x</span>: <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// SyntaxError: syntax error</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript 引擎会将<code>&#123;x&#125;</code>理解成一个代码块</p>
+<p>解决方法：不将大括号写在行首，避免 JavaScript 将其解释为代码块</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x;</span><br><span class="line">(&#123;x&#125; = &#123;<span class="attr">x</span>: <span class="number">1</span>&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>数组本质是特殊的对象，因此可以对数组进行对象属性的解构</p>
+<p>数组键值作为匹配模式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">let</span> &#123;<span class="number">0</span> : first, [arr.length - <span class="number">1</span>] : last&#125; = arr;</span><br><span class="line">first <span class="comment">// 1</span></span><br><span class="line">last <span class="comment">// 3</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ol>
+<li><p>交换变量的值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> y = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">[x, y] = [y, x];</span><br></pre></td></tr></table></figure></li>
+<li><p>从函数返回多个值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 返回一个数组</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> [a, b, c] = example();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回一个对象</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">foo</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">bar</span>: <span class="number">2</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> &#123; foo, bar &#125; = example();</span><br></pre></td></tr></table></figure></li>
+<li><p>函数参数的定义</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 参数是一组有次序的值</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">[x, y, z]</span>) </span>&#123; ... &#125;</span><br><span class="line">f([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 参数是一组无次序的值</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">&#123;x, y, z&#125;</span>) </span>&#123; ... &#125;</span><br><span class="line">f(&#123;<span class="attr">z</span>: <span class="number">3</span>, <span class="attr">y</span>: <span class="number">2</span>, <span class="attr">x</span>: <span class="number">1</span>&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>提取<code>JSON</code>数据</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> jsonData = &#123;</span><br><span class="line">  <span class="attr">id</span>: <span class="number">42</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="string">&quot;OK&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: [<span class="number">867</span>, <span class="number">5309</span>]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> &#123; id, status, <span class="attr">data</span>: number &#125; = jsonData;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(id, status, number);</span><br><span class="line"><span class="comment">// 42, &quot;OK&quot;, [867, 5309]</span></span><br></pre></td></tr></table></figure></li>
+<li><p>函数参数的默认值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">jQuery.ajax = <span class="function"><span class="keyword">function</span> (<span class="params">url, &#123;</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="keyword">async</span> = <span class="literal">true</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  beforeSend = <span class="keyword">function</span> () &#123;&#125;,</span></span></span><br><span class="line"><span class="params"><span class="function">  cache = <span class="literal">true</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  complete = <span class="keyword">function</span> () &#123;&#125;,</span></span></span><br><span class="line"><span class="params"><span class="function">  crossDomain = <span class="literal">false</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="built_in">global</span> = <span class="literal">true</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="regexp">//</span> ... more config</span></span></span><br><span class="line"><span class="params"><span class="function">&#125; = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ... do stuff</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li><p>遍历<code>Map</code>结构</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line">map.set(<span class="string">&#x27;first&#x27;</span>, <span class="string">&#x27;hello&#x27;</span>);</span><br><span class="line">map.set(<span class="string">&#x27;second&#x27;</span>, <span class="string">&#x27;world&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [key, value] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(key + <span class="string">&quot; is &quot;</span> + value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// first is hello</span></span><br><span class="line"><span class="comment">// second is world</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//只想获取键名，或只想获取键值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取键名</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [key] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取键值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [,value] <span class="keyword">of</span> map) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>输入模块指定方法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; SourceMapConsumer, SourceNode &#125; = <span class="built_in">require</span>(<span class="string">&quot;source-map&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>零零碎碎（HTML/CSS）</title>
     <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88HTML-CSS%EF%BC%89/</url>
     <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
@@ -738,24 +756,6 @@
         <tag>杂记</tag>
         <tag>HTML</tag>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零零碎碎（C/C++）</title>
-    <url>/2021/06/14/%E9%9B%B6%E9%9B%B6%E7%A2%8E%E7%A2%8E%EF%BC%88C-C++%EF%BC%89/</url>
-    <content><![CDATA[<p>记录平时遇到的一些零零碎碎</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>文件操作中，判断文件是否结束，即是否等于 <code>EOF</code></strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>C/C++</tag>
       </tags>
   </entry>
   <entry>
