@@ -79,7 +79,7 @@
 <p>p∨(q∧r)≡(p∨q)∧(p∨r)<br>p∧(q∨r)≡(p∧q)∨(p∧r)</p>
 <h5 id="条件命题的逻辑等价式"><a href="#条件命题的逻辑等价式" class="headerlink" title="条件命题的逻辑等价式"></a>条件命题的逻辑等价式</h5><p>p→q≡¬p∨q<br>p→q≡¬q→¬p<br>p∨q≡¬p→q<br>p∧q≡¬(p→¬q)<br>p→(q→r)≡(p∧q)→r</p>
 <h5 id="双条件命题的逻辑等价式"><a href="#双条件命题的逻辑等价式" class="headerlink" title="双条件命题的逻辑等价式"></a>双条件命题的逻辑等价式</h5><p>p↔q≡(p∧q)∨(¬p∧¬q)<br>p↔q≡(p→q)∧(q→p)<br>p↔q≡¬p↔¬q<br>¬(p↔q)≡p↔¬q</p>
-<h5 id="可满足性"><a href="#可满足性" class="headerlink" title="可满足性"></a>可满足性</h5><p>一个复合命题称为式可满足的，如果存在一个对其变量的真值赋值使其为真（即当它是一个永真式或可满足式时）</p>
+<h5 id="可满足性"><a href="#可满足性" class="headerlink" title="可满足性"></a>可满足性</h5><p>一个复合命题称为是可满足的，如果存在一个对其变量的真值赋值使其为真（即当它是一个永真式或可满足式时）</p>
 <h5 id="确定一个复合命题是否可满足"><a href="#确定一个复合命题是否可满足" class="headerlink" title="确定一个复合命题是否可满足"></a><span style="color: #C96A38">确定一个复合命题是否可满足</span></h5><ol>
 <li><p>使用真值表</p>
 </li>
@@ -108,7 +108,7 @@
 <p>p≡p∧1≡p∧(q∨¬q)≡(p∧q)∨(p∧¬q)<br>p≡p∨0≡p∨(q∧¬q)≡(p∨q)∧(p∨¬q)</p>
 </li>
 <li><p>用真值表</p>
-<p>p ↔q 的真值表</p>
+<p>p↔q的真值表</p>
 <table>
 <thead>
 <tr>
@@ -205,7 +205,7 @@
 <p>对于每个x，均存在y使P(x, y)均为真，y可依赖于x</p>
 <p><code>∃y∀xP(x, y)</code></p>
 <p>存在y使得，对于每个x，P(x, y)均为真，y不依赖于x</p>
-<p><code>∃y∀xP(x, y)⇒∃y∀xP(x, y)</code></p>
+<p><code>∃y∀xP(x, y)⇒∀x∃yP(x, y)</code></p>
 <p>约束变量 自由变量</p>
 <h5 id="特性谓词"><a href="#特性谓词" class="headerlink" title="特性谓词"></a>特性谓词</h5><p>∀xP(x) ⇝∀x(A(x)→P(x)) </p>
 <p>∃xP(x) ⇝∃x(A(x)∧P(x))</p>
