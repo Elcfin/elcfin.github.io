@@ -247,7 +247,8 @@
 <blockquote>
 <p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">typeof undefined <span class="comment">//&#x27;undefined&#x27;</span></span><br><span class="line">typeof <span class="keyword">null</span> <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line"><span class="function">typeof <span class="title">function</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//&#x27;function&#x27;</span></span><br><span class="line">typeof &#123;&#125; <span class="comment">//&#x27;object&#x27;</span></span><br><span class="line">typeof [] <span class="comment">//&#x27;object&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p><code>$.isPlainObject(obj)</code></p>
 <blockquote>
 <p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
@@ -260,12 +261,9 @@
 </li>
 <li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
 </li>
-<li><p><code>obj instanceof Array</code></p>
-</li>
-<li><p><code>typeof arr //&#39;object&#39;</code>（不可行）</p>
-</li>
-<li><p><code>Array.isArray()</code></p>
-</li>
+<li><code>obj instanceof Array</code></li>
+<li><code>typeof arr //&#39;object&#39;</code>（不可行）</li>
+<li><code>Array.isArray()</code></li>
 </ol>
 <blockquote>
 <p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
@@ -369,7 +367,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -382,7 +380,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -464,6 +462,8 @@
 
 
 
+
+  
 
   
 

@@ -231,9 +231,9 @@
       
         <p>Discrete mathematics</p>
 <span id="more"></span>
-
 <h4 id="数理逻辑"><a href="#数理逻辑" class="headerlink" title="数理逻辑"></a>数理逻辑</h4><h5 id="合取"><a href="#合取" class="headerlink" title="合取"></a>合取</h5><p>在逻辑中，有时会用“但是”一词替代“并且”一词来表示合取∧</p>
 <h5 id="真值表"><a href="#真值表" class="headerlink" title="真值表"></a>真值表</h5><p>两个命题析取∨的真值表</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -242,7 +242,8 @@
 <th><strong>p</strong> <strong>∨</strong> <strong>q</strong></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>1</td>
 <td>1</td>
 <td>1</td>
@@ -262,7 +263,9 @@
 <td>0</td>
 <td>0</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h5 id="蕴含"><a href="#蕴含" class="headerlink" title="蕴含"></a>蕴含</h5><p>条件语句p→q是命题“如果p，则q”</p>
 <ul>
 <li>p→q只是声明“如果p为真，那么q为真”<ul>
@@ -323,35 +326,7 @@
 </li>
 <li><p>用真值表</p>
 <p>p↔q的真值表</p>
-<table>
-<thead>
-<tr>
-<th><strong>p</strong></th>
-<th><strong>q</strong></th>
-<th><strong>p</strong> ↔ <strong>q</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody></table>
+<p>| <strong>p</strong> | <strong>q</strong> | <strong>p</strong> ↔ <strong>q</strong> |<br>| ——- | ——- | ——————- |<br>| 1     | 1     | 1             |<br>| 1     | 0     | 0             |<br>| 0     | 1     | 0             |<br>| 0     | 0     | 1             |</p>
 <p>真值为“1”的对应最小项</p>
 <p>p↔q≡(p∧q)∨(¬p∧¬q)</p>
 <p>m11∨m00</p>
@@ -360,14 +335,16 @@
 <p>M10∧M01</p>
 </li>
 </ol>
-<h5 id="推理规则"><a href="#推理规则" class="headerlink" title="推理规则"></a>推理规则</h5><table>
+<h5 id="推理规则"><a href="#推理规则" class="headerlink" title="推理规则"></a>推理规则</h5><div class="table-container">
+<table>
 <thead>
 <tr>
 <th><strong>推理规则</strong></th>
 <th><strong>名称</strong></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>p→q，p⇒q</td>
 <td></td>
 </tr>
@@ -399,7 +376,9 @@
 <td>p∨q，¬p∨r⇒q∨r</td>
 <td>消解</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h5 id="附加前提"><a href="#附加前提" class="headerlink" title="附加前提"></a>附加前提</h5><p>A1，A2，…，An⇒A→B等价于A1，A2，…，An，A⇒B</p>
 <h5 id="反证法"><a href="#反证法" class="headerlink" title="反证法"></a>反证法</h5><p>若要证A1, A2 , …, An ⇒ B</p>
 <p>将¬B加入前提，通过证明¬A1，A2，…，An,，¬B⇒C，¬C完成证明</p>
@@ -522,7 +501,8 @@
 <p>这里指MR的n次方</p>
 </li>
 <li><p>沃舍尔算法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>……n</span><br><span class="line">  <span class="keyword">for</span> i=<span class="number">1</span>……n</span><br><span class="line">    <span class="keyword">if</span> wik=<span class="number">1</span></span><br><span class="line">      第k行加至第i行</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>……n</span><br><span class="line">  <span class="keyword">for</span> i=<span class="number">1</span>……n</span><br><span class="line">    <span class="keyword">if</span> wik=<span class="number">1</span></span><br><span class="line">      第k行加至第i行</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h5 id="等价关系"><a href="#等价关系" class="headerlink" title="等价关系"></a>等价关系</h5><p>定义在集合A上的关系叫做等价关系，如果它是自反的，对称的和传递的</p>
 <p>模m同余</p>
@@ -708,7 +688,10 @@
     <a href="/2021/06/16/%E5%A4%8F%E5%A4%A9/" rel="prev" title="盛夏白瓷梅子汤">
       <i class="fa fa-chevron-left"></i> 盛夏白瓷梅子汤
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/06/21/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" rel="next" title="输出一个数学公式">
+      输出一个数学公式 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -783,7 +766,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -796,7 +779,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -878,6 +861,8 @@
 
 
 
+
+  
 
   
 

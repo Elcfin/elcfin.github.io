@@ -23,20 +23,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="__proto__、prototype与constructor">
+  <meta name="description" content="Physics">
 <meta property="og:type" content="article">
-<meta property="og:title" content="__proto__、prototype与constructor">
-<meta property="og:url" content="http://example.com/2021/06/14/prototype%E4%B8%8Econstructor/index.html">
+<meta property="og:title" content="大学物理整理">
+<meta property="og:url" content="http://example.com/2021/06/22/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="Elcfin&#39;s Blog">
-<meta property="og:description" content="__proto__、prototype与constructor">
+<meta property="og:description" content="Physics">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-14T05:23:40.699Z">
-<meta property="article:modified_time" content="2021-06-15T02:43:46.413Z">
+<meta property="article:published_time" content="2021-06-22T09:24:07.929Z">
+<meta property="article:modified_time" content="2021-06-22T12:41:26.575Z">
 <meta property="article:author" content="Elcfin">
-<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="读书笔记">
+<meta property="article:tag" content="大学物理">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/06/14/prototype%E4%B8%8Econstructor/">
+<link rel="canonical" href="http://example.com/2021/06/22/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E6%95%B4%E7%90%86/">
 
 
 <script id="page-configurations">
@@ -49,7 +50,7 @@
   };
 </script>
 
-  <title>__proto__、prototype与constructor | Elcfin's Blog</title>
+  <title>大学物理整理 | Elcfin's Blog</title>
   
 
 
@@ -175,7 +176,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/14/prototype%E4%B8%8Econstructor/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/22/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E6%95%B4%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/profile.jpg">
@@ -188,7 +189,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          __proto__、prototype与constructor
+          大学物理整理
         </h1>
 
         <div class="post-meta">
@@ -197,23 +198,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-14 13:23:40" itemprop="dateCreated datePublished" datetime="2021-06-14T13:23:40+08:00">2021-06-14</time>
+              <time title="创建时间：2021-06-22 17:24:07 / 修改时间：20:41:26" itemprop="dateCreated datePublished" datetime="2021-06-22T17:24:07+08:00">2021-06-22</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 10:43:46" itemprop="dateModified" datetime="2021-06-15T10:43:46+08:00">2021-06-15</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
                 </span>
             </span>
 
@@ -228,30 +223,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
-<h3 id="proto"><a href="#proto" class="headerlink" title="__proto__"></a>__proto__</h3><p><code>__proto__</code>属性在ES标准定义中的名字是<code>[[Prototype]]</code></p>
-<ul>
-<li><code>__proto__</code>和<code>constructor</code>属性是<strong>对象</strong>所独有的</li>
-<li><code>prototype</code>属性是<strong>函数</strong>所独有的<ul>
-<li>由于JavaScript中函数也是对象，所以函数也拥有<code>__proto__</code>和<code>constructor</code>属性</li>
-</ul>
-</li>
-</ul>
-<p>原型链通过<code>__proto__</code>一级一级向上寻找，直到<code>null</code></p>
-<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h3><p>函数的<code>prototype</code>属性指向该函数的原型对象（从一个函数指向一个对象），即当这个函数作为构造函数时所创建的实例的原型对象</p>
-<p>作用：让该函数所实例化的对象们可以找到公用的属性和方法</p>
-<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><p>只有prototype对象自身拥有<code>constructor</code>属性</p>
-<p>对象的<code>constructor</code>属性指向该对象的构造函数（从一个对象指向一个函数），“每个对象都有构造函数”（意思是每个对象都可以找到其对应的<code>constructor</code>属性）</p>
-<p>由<code>Function</code>创建的函数对象较为特殊，该函数对象的<code>constructor</code>属性指向其构造函数<code>Function</code>，此时该函数对象相当于<code>Function</code>的一个实例</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.__proto__.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === fun.prototype.constructor); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.constructor); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(fun.constructor === <span class="built_in">Function</span>.prototype.constructor); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<p>该函数对象的原型对象，即<code>.prototype</code>的<code>constructor</code>属性指向该函数对象</p>
-<p>对一个对象，有</p>
-<p><code>对象.__proto__ === 其构造函数.prototype</code></p>
-<p><code>其构造函数.prototype.constructor === 其构造函数本身</code></p>
-<blockquote>
-<p>使用对象字面量 <code>= &#123;&#125;</code> 创建新对象相当于 <code>= new Object()</code>，其对应的<code>construcor</code>属性即指向<code>Object</code></p>
-</blockquote>
-
+        <p>Physics</p>
+<span id="more"></span>
+<h4 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h4><h4 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h4><h5 id="质点系的动能定理"><a href="#质点系的动能定理" class="headerlink" title="质点系的动能定理"></a>质点系的动能定理</h5><p>各外力对质点系所做的总功与各内力对质点系所做的总功之代数和等于质点系动能的增量</p>
+<p>系统动量的改变仅仅取决于系统所受的外力，而系统动能的改变则不仅和外力的功有关，而且和内力的功有关</p>
+<h5 id="功能原理"><a href="#功能原理" class="headerlink" title="功能原理"></a>功能原理</h5><p>质点系从状态a到状态b时，它的机械能的增量等于外力的功和非保守内力的功的总和</p>
+<h5 id="机械能守恒定律"><a href="#机械能守恒定律" class="headerlink" title="机械能守恒定律"></a>机械能守恒定律</h5><p>当一个系统内只有保守内力做功，非保守内力和一切外力都不做功，或者非保守内力和一切外力的总功为零时，质点系的总机械能保持恒定</p>
+<p>系统的机械能守恒与否和参考系有关</p>
+<h4 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h4><h5 id="刚体"><a href="#刚体" class="headerlink" title="刚体"></a>刚体</h5><p>在任何情况下，大小和形状都不会发生任何变化的物体</p>
+<p>刚体内任意两质点之间的距离保持不变</p>
+<h5 id="平动"><a href="#平动" class="headerlink" title="平动"></a>平动</h5><p>在运动过程中，刚体内任意两点所连成的直线始终保持与其初始位置平行</p>
+<p>通常用刚体质心的运动来代表整个刚体的平动</p>
+<h5 id="质心"><a href="#质心" class="headerlink" title="质心"></a>质心</h5><p>质点系质量分布的中心</p>
+<h5 id="质心运动定理"><a href="#质心运动定理" class="headerlink" title="质心运动定理"></a>质心运动定理</h5><h5 id="转动"><a href="#转动" class="headerlink" title="转动"></a>转动</h5><p>在运动过程中，刚体内各点都绕同一直线作圆周运动</p>
+<p>称这一直线为转轴</p>
+<h5 id="定轴转动"><a href="#定轴转动" class="headerlink" title="定轴转动"></a>定轴转动</h5><p>转轴固定不动</p>
+<h5 id="角位置"><a href="#角位置" class="headerlink" title="角位置"></a>角位置</h5><h5 id="角速度"><a href="#角速度" class="headerlink" title="角速度"></a>角速度</h5><h5 id="角加速度"><a href="#角加速度" class="headerlink" title="角加速度"></a>角加速度</h5><h5 id="角位移"><a href="#角位移" class="headerlink" title="角位移"></a>角位移</h5>
     </div>
 
     
@@ -260,7 +247,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+              <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag"># 读书笔记</a>
+              <a href="/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" rel="tag"># 大学物理</a>
           </div>
 
         
@@ -269,13 +257,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/06/14/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="minipack 学习笔记">
-      <i class="fa fa-chevron-left"></i> minipack 学习笔记
+    <a href="/2021/06/21/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" rel="prev" title="输出一个数学公式">
+      <i class="fa fa-chevron-left"></i> 输出一个数学公式
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/06/14/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/" rel="next" title="Word文档中实现代码高亮">
-      Word文档中实现代码高亮 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -334,7 +319,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#proto"><span class="nav-number">1.</span> <span class="nav-text">__proto__</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#prototype"><span class="nav-number">2.</span> <span class="nav-text">prototype</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">3.</span> <span class="nav-text">constructor</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="nav-number">2.</span> <span class="nav-text">第二章</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E7%B3%BB%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">质点系的动能定理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86"><span class="nav-number">2.2.</span> <span class="nav-text">功能原理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%BA%E6%A2%B0%E8%83%BD%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"><span class="nav-number">2.3.</span> <span class="nav-text">机械能守恒定律</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="nav-number">3.</span> <span class="nav-text">第三章</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%9A%E4%BD%93"><span class="nav-number">3.1.</span> <span class="nav-text">刚体</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B9%B3%E5%8A%A8"><span class="nav-number">3.2.</span> <span class="nav-text">平动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B4%A8%E5%BF%83"><span class="nav-number">3.3.</span> <span class="nav-text">质心</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B4%A8%E5%BF%83%E8%BF%90%E5%8A%A8%E5%AE%9A%E7%90%86"><span class="nav-number">3.4.</span> <span class="nav-text">质心运动定理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BD%AC%E5%8A%A8"><span class="nav-number">3.5.</span> <span class="nav-text">转动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"><span class="nav-number">3.6.</span> <span class="nav-text">定轴转动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A7%92%E4%BD%8D%E7%BD%AE"><span class="nav-number">3.7.</span> <span class="nav-text">角位置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A7%92%E9%80%9F%E5%BA%A6"><span class="nav-number">3.8.</span> <span class="nav-text">角速度</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A7%92%E5%8A%A0%E9%80%9F%E5%BA%A6"><span class="nav-number">3.9.</span> <span class="nav-text">角加速度</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A7%92%E4%BD%8D%E7%A7%BB"><span class="nav-number">3.10.</span> <span class="nav-text">角位移</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
