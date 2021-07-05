@@ -13,15 +13,45 @@
       </tags>
   </entry>
   <entry>
-    <title>vue or react</title>
-    <url>/2021/06/30/vue-or-react/</url>
-    <content><![CDATA[<p>小孩子才做选择题，成年人当然是全都要<span id="more"></span></p>
-<h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h2 id="react"><a href="#react" class="headerlink" title="react"></a>react</h2>]]></content>
+    <title>Data Structure</title>
+    <url>/2021/07/02/dataStructure/</url>
+    <content><![CDATA[<p>数据结构是相互之间存在一种或多种特定关系的数据元素的集合<span id="more"></span></p>
+<h3 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h3><p>有穷性、确定性、可行性、输入、输出</p>
+<p>正确性、可读性、健壮性、效率与低存储量需求</p>
+<h4 id="算法时间复杂度分析"><a href="#算法时间复杂度分析" class="headerlink" title="算法时间复杂度分析"></a>算法时间复杂度分析</h4><ol>
+<li>找到执行次数最多的语句</li>
+<li>表示成<code>f(n)</code></li>
+<li>转换成<code>O(n)</code></li>
+</ol>
+<p>一般考虑最坏时间复杂度</p>
+<hr>
+<p><img src="/2021/07/02/dataStructure/时间复杂度例题1.png" alt></p>
+<hr>
+<p><img src="/2021/07/02/dataStructure/时间复杂度例题2.jpg" alt></p>
+<hr>
+<p><img src="/2021/07/02/dataStructure/时间复杂度例题3.jpg" alt></p>
+<hr>
+<h4 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h4><p>空间复杂度是对一个算法在运行过程中临时占用存储空间大小的量度</p>
+]]></content>
       <categories>
         <category>杂记</category>
       </categories>
       <tags>
         <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 官方文档学习笔记</title>
+    <url>/2021/06/30/Vue%20%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>Vue.js<span id="more"></span></p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="JavaScript组件"><a href="#JavaScript组件" class="headerlink" title="JavaScript组件"></a>JavaScript组件</h3><p>关键词：抽象、复用、可扩展</p>
+<h3 id="prop"><a href="#prop" class="headerlink" title="prop"></a>prop</h3>]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
