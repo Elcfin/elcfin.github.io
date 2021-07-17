@@ -34,7 +34,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongo</span><br></pre></td></tr></table></figure>
 <p><strong>Bingo</strong></p>
 <h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="基础安装、配置与连接-1"><a href="#基础安装、配置与连接-1" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，解压后可直接使用</p>
-<p><img src="/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20210717174002381.png" alt="image-20210717174002381"></p>
+<p><img src="/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux 版本选择.png" alt="Linux 版本选择"></p>
 <p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
 <p>此时路径为 /usr/local/mongodb</p>
 <p>建立 /usr/local/mongodb/data</p>
@@ -50,7 +50,7 @@
 <p>打开新终端，再执行</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongo 192.168.189.128</span><br></pre></td></tr></table></figure>
 <p>在 Windows 浏览器中访问 <a href="http://192.168.189.128:27017/">192.168.189.128:27017</a></p>
-<p><img src="/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20210717174646607.png" alt="image-20210717174646607"></p>
+<p><img src="/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Windows 连接成功.png" alt="Windows 连接成功"></p>
 <p><strong>Bingo</strong></p>
 ]]></content>
       <categories>
