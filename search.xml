@@ -15,9 +15,9 @@
   <entry>
     <title>MongoDB 学习笔记</title>
     <url>/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>MongoDB（windows 系统）</p>
+    <content><![CDATA[<p>MongoDB</p>
 <span id="more"></span>
-<h4 id="基础安装、配置与连接"><a href="#基础安装、配置与连接" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，zip 版解压后可直接使用</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h4 id="基础安装、配置与连接"><a href="#基础安装、配置与连接" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，zip 版解压后可直接使用</p>
 <p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
 <p>此时路径为 D:/mongodb</p>
 <p>建立 D:/mongodb/data</p>
@@ -29,9 +29,28 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">    destination: file</span><br><span class="line">    path: d:\mongodb\data\log\mongod.log</span><br><span class="line">storage:</span><br><span class="line">    dbPath: d:\mongodb\data\db</span><br></pre></td></tr></table></figure>
 <p>进入 D:/mongodb/bin</p>
 <p>打开命令行窗口，先执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongod -f d:\mongodb\mongod.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongod -f d:/mongodb/mongod.conf</span><br></pre></td></tr></table></figure>
 <p>打开新窗口，再执行</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongo</span><br></pre></td></tr></table></figure>
+<p><strong>Bingo</strong></p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="基础安装、配置与连接-1"><a href="#基础安装、配置与连接-1" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，解压后可直接使用</p>
+<p><img src="/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20210717174002381.png" alt="image-20210717174002381"></p>
+<p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
+<p>此时路径为 /usr/local/mongodb</p>
+<p>建立 /usr/local/mongodb/data</p>
+<p>建立 /usr/local/mongodb/data/db</p>
+<p>建立 /usr/local/mongodb/data/log</p>
+<p>建立 /usr/local/mongodb/mongod.conf 配置文件</p>
+<p>先简单配置一下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">systemLog:</span><br><span class="line">    destination: file</span><br><span class="line">    path: /usr/local/mongodb/data/log/mongod.log</span><br><span class="line">storage:</span><br><span class="line">    dbPath: /usr/local/mongodb/data/db</span><br><span class="line">net: </span><br><span class="line">    port: 27017 </span><br><span class="line">    bindIp: 192.168.189.128 #一定要配，否则远程无法连接</span><br></pre></td></tr></table></figure>
+<p>查找 linux 服务器的ip，在终端输入 ifconfig</p>
+<p>进入 /usr/local/mongodb/bin</p>
+<p>打开终端，先执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongod -f /usr/local/mongodb/mongod.conf</span><br></pre></td></tr></table></figure>
+<p>打开新终端，再执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongo 192.168.189.128</span><br></pre></td></tr></table></figure>
+<p>在 Windows 浏览器中访问 <a href="http://192.168.189.128:27017/">192.168.189.128:27017</a></p>
+<p><img src="/2021/07/16/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20210717174646607.png" alt="image-20210717174646607"></p>
 <p><strong>Bingo</strong></p>
 ]]></content>
       <categories>
