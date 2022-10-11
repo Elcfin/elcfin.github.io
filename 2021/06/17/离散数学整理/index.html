@@ -1,32 +1,25 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
-  <link rel="manifest" href="/images/favicon.ico">
-  <meta name="msapplication-config" content="/images/favicon.ico">
-
-<link rel="stylesheet" href="/css/main.css">
-
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta name="description" content="Discrete mathematics">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Elcfin">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Discrete mathematics">
 <meta property="og:type" content="article">
 <meta property="og:title" content="离散数学整理">
-<meta property="og:url" content="http://example.com/2021/06/17/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%95%B4%E7%90%86/index.html">
+<meta property="og:url" content="https://elcfin.github.io/2021/06/17/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="Elcfin&#39;s Blog">
 <meta property="og:description" content="Discrete mathematics">
 <meta property="og:locale" content="zh_CN">
@@ -35,201 +28,253 @@
 <meta property="article:author" content="Elcfin">
 <meta property="article:tag" content="读书笔记">
 <meta property="article:tag" content="离散数学">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>离散数学整理 - Elcfin&#39;s Blog</title>
 
-<link rel="canonical" href="http://example.com/2021/06/17/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%95%B4%E7%90%86/">
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
 
-  <title>离散数学整理 | Elcfin's Blog</title>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"elcfin.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+<body>
+  
 
-</head>
+  <header>
+    
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Elcfin's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Elcfin&#39;s Blog</strong>
     </a>
-      <p class="site-subtitle" itemprop="description">仲夏夜茫 七月未央</p>
-  </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-summer">
-
-    <a href="/summer/" rel="section"><i class="fa fa-paper-plane fa-fw"></i>summer</a>
-
-  </li>
-  </ul>
 </nav>
 
+  
 
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="离散数学整理"></span>
+          
+        </div>
 
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2021-06-17 20:23" pubdate>
+          2021年6月17日 晚上
+        </time>
+      </span>
+    
+  </div>
 
-</div>
-    </header>
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8k 字
+        
+      </span>
+    
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          67 分钟
+        
+      </span>
+    
+
+    
+    
   </div>
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/17/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%95%B4%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/profile.jpg">
-      <meta itemprop="name" content="Elcfin">
-      <meta itemprop="description" content="草木不朽">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Elcfin's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          离散数学整理
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-17 20:23:22" itemprop="dateCreated datePublished" datetime="2021-06-17T20:23:22+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-21 00:42:41" itemprop="dateModified" datetime="2021-06-21T00:42:41+08:00">2021-06-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        
+      </div>
 
       
-        <p>Discrete mathematics</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">离散数学整理</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>Discrete mathematics</p>
 <span id="more"></span>
 <h4 id="数理逻辑"><a href="#数理逻辑" class="headerlink" title="数理逻辑"></a>数理逻辑</h4><h5 id="合取"><a href="#合取" class="headerlink" title="合取"></a>合取</h5><p>在逻辑中，有时会用“但是”一词替代“并且”一词来表示合取∧</p>
 <h5 id="真值表"><a href="#真值表" class="headerlink" title="真值表"></a>真值表</h5><p>两个命题析取∨的真值表</p>
@@ -667,206 +712,371 @@
 <p>若主析取范式为 m0∨m2∨m6，或表示为 m000∨m010∨m011</p>
 <p>则对应主合取范式为 M1∧M3∧M4∧M5∧M7</p>
 
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="category-chain-item">读书笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">#读书笔记</a>
+      
+        <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">#离散数学</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>离散数学整理</div>
+      <div>https://elcfin.github.io/2021/06/17/离散数学整理/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Elcfin</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2021年6月17日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/07/16/JavaScript%20%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8B%E5%86%99%E6%B3%95/" title="JavaScript ES6 中的单例写法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">JavaScript ES6 中的单例写法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/06/16/%E5%A4%8F%E5%A4%A9/" title="山河岁月天地远">
+                        <span class="hidden-mobile">山河岁月天地远</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
     </div>
 
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag"># 读书笔记</a>
-              <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" rel="tag"># 离散数学</a>
-          </div>
-
-        
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
 
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2021/06/16/%E5%A4%8F%E5%A4%A9/" rel="prev" title="山河岁月天地远">
-      <i class="fa fa-chevron-left"></i> 山河岁月天地远
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/07/16/JavaScript%20%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8B%E5%86%99%E6%B3%95/" rel="next" title="JavaScript ES6 中的单例写法">
-      JavaScript ES6 中的单例写法 <i class="fa fa-chevron-right"></i>
-    </a></div>
+
+  </aside>
+
+
     </div>
-      </footer>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
-  </article>
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
   
   
   
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
 
 
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
-          </div>
-          
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
       }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
     }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
     });
-  }
+  });
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
+  <script>Fluid.plugins.codeWidget();</script>
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91"><span class="nav-number">1.</span> <span class="nav-text">数理逻辑</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%90%88%E5%8F%96"><span class="nav-number">1.1.</span> <span class="nav-text">合取</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%9C%9F%E5%80%BC%E8%A1%A8"><span class="nav-number">1.2.</span> <span class="nav-text">真值表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%95%B4%E5%90%AB"><span class="nav-number">1.3.</span> <span class="nav-text">蕴含</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%8C%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.4.</span> <span class="nav-text">双条件语句</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.5.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AF%94%E7%89%B9%E4%B8%B2"><span class="nav-number">1.6.</span> <span class="nav-text">比特串</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B0%B8%E7%9C%9F%E5%BC%8F%EF%BC%88%E9%87%8D%E8%A8%80%E5%BC%8F%EF%BC%89%E3%80%81%E6%B0%B8%E5%81%87%E5%BC%8F%EF%BC%88%E7%9F%9B%E7%9B%BE%E5%BC%8F%EF%BC%89%E3%80%81%E5%8F%AF%E8%83%BD%E5%BC%8F-%E5%8F%AF%E6%BB%A1%E8%B6%B3%E5%BC%8F"><span class="nav-number">1.7.</span> <span class="nav-text">永真式（重言式）、永假式（矛盾式）、可能式(可满足式)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E7%AD%89%E4%BB%B7"><span class="nav-number">1.8.</span> <span class="nav-text">逻辑等价</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%A4%E5%AE%9A%E4%B8%A4%E4%B8%AA%E5%A4%8D%E5%90%88%E5%91%BD%E9%A2%98%E6%98%AF%E5%90%A6%E7%AD%89%E4%BB%B7"><span class="nav-number">1.9.</span> <span class="nav-text">判定两个复合命题是否等价</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BE%B7%E6%91%A9%E6%A0%B9%E5%BE%8B"><span class="nav-number">1.10.</span> <span class="nav-text">德摩根律</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E7%AD%89%E4%BB%B7%E5%BC%8F"><span class="nav-number">1.11.</span> <span class="nav-text">一个重要的等价式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%87%A0%E4%B8%AA%E9%80%BB%E8%BE%91%E7%AD%89%E4%BB%B7%E5%BC%8F"><span class="nav-number">1.12.</span> <span class="nav-text">几个逻辑等价式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E5%91%BD%E9%A2%98%E7%9A%84%E9%80%BB%E8%BE%91%E7%AD%89%E4%BB%B7%E5%BC%8F"><span class="nav-number">1.13.</span> <span class="nav-text">条件命题的逻辑等价式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%8C%E6%9D%A1%E4%BB%B6%E5%91%BD%E9%A2%98%E7%9A%84%E9%80%BB%E8%BE%91%E7%AD%89%E4%BB%B7%E5%BC%8F"><span class="nav-number">1.14.</span> <span class="nav-text">双条件命题的逻辑等价式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%AF%E6%BB%A1%E8%B6%B3%E6%80%A7"><span class="nav-number">1.15.</span> <span class="nav-text">可满足性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A1%AE%E5%AE%9A%E4%B8%80%E4%B8%AA%E5%A4%8D%E5%90%88%E5%91%BD%E9%A2%98%E6%98%AF%E5%90%A6%E5%8F%AF%E6%BB%A1%E8%B6%B3"><span class="nav-number">1.16.</span> <span class="nav-text">确定一个复合命题是否可满足</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%8C%83%E5%BC%8F"><span class="nav-number">1.17.</span> <span class="nav-text">范式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B0%86%E8%8C%83%E5%BC%8F%E5%8C%96%E4%B8%BA%E4%B8%BB%E8%8C%83%E5%BC%8F"><span class="nav-number">1.18.</span> <span class="nav-text">将范式化为主范式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8E%A8%E7%90%86%E8%A7%84%E5%88%99"><span class="nav-number">1.19.</span> <span class="nav-text">推理规则</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%99%84%E5%8A%A0%E5%89%8D%E6%8F%90"><span class="nav-number">1.20.</span> <span class="nav-text">附加前提</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%8D%E8%AF%81%E6%B3%95"><span class="nav-number">1.21.</span> <span class="nav-text">反证法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%87%8F%E8%AF%8D"><span class="nav-number">1.22.</span> <span class="nav-text">量词</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%89%B9%E6%80%A7%E8%B0%93%E8%AF%8D"><span class="nav-number">1.23.</span> <span class="nav-text">特性谓词</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BF%BB%E8%AF%91%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80"><span class="nav-number">1.24.</span> <span class="nav-text">翻译自然语言</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number">2.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%A4%E4%B8%AA%E9%9B%86%E5%90%88%E7%9B%B8%E7%AD%89"><span class="nav-number">2.1.</span> <span class="nav-text">两个集合相等</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AD%90%E9%9B%86"><span class="nav-number">2.2.</span> <span class="nav-text">子集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8EA%E6%98%AFB%E7%9A%84%E5%AD%90%E9%9B%86"><span class="nav-number">2.3.</span> <span class="nav-text">证明A是B的子集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8EA%E4%B8%8D%E6%98%AFB%E7%9A%84%E5%AD%90%E9%9B%86"><span class="nav-number">2.4.</span> <span class="nav-text">证明A不是B的子集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8E%E4%B8%A4%E4%B8%AA%E9%9B%86%E5%90%88%E7%9B%B8%E7%AD%89"><span class="nav-number">2.5.</span> <span class="nav-text">证明两个集合相等</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B9%82%E9%9B%86"><span class="nav-number">2.6.</span> <span class="nav-text">幂集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF"><span class="nav-number">2.7.</span> <span class="nav-text">笛卡尔积</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E8%BF%90%E7%AE%97"><span class="nav-number">2.8.</span> <span class="nav-text">集合运算</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%87%A0%E4%B8%AA%E9%9B%86%E5%90%88%E6%81%92%E7%AD%89%E5%BC%8F"><span class="nav-number">2.9.</span> <span class="nav-text">几个集合恒等式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%9F%BA%E6%95%B0"><span class="nav-number">2.10.</span> <span class="nav-text">集合的基数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%A4%E4%B8%AA%E9%9B%86%E5%90%88%E9%97%B4%E5%9F%BA%E6%95%B0%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">2.11.</span> <span class="nav-text">两个集合间基数的关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%AF%E6%95%B0%E9%9B%86%E5%90%88"><span class="nav-number">2.12.</span> <span class="nav-text">可数集合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E9%9B%86%E5%90%88%E6%98%AF%E5%8F%AF%E6%95%B0%E7%9A%84"><span class="nav-number">2.13.</span> <span class="nav-text">证明一个集合是可数的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%8D%E5%8F%AF%E6%95%B0%E9%9B%86%E5%90%88"><span class="nav-number">2.14.</span> <span class="nav-text">不可数集合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9F%BA%E6%95%B0%E7%A0%94%E7%A9%B6%E4%B8%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E5%85%B3%E9%94%AE%E5%AE%9A%E7%90%86"><span class="nav-number">2.15.</span> <span class="nav-text">基数研究中的一个关键定理</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">3.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%80%E5%AF%B9%E4%B8%80%E5%87%BD%E6%95%B0"><span class="nav-number">3.1.</span> <span class="nav-text">一对一函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E4%B8%8A%E5%87%BD%E6%95%B0"><span class="nav-number">3.2.</span> <span class="nav-text">映上函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8Ef%E6%98%AF%E5%8D%95%E5%B0%84%E7%9A%84"><span class="nav-number">3.3.</span> <span class="nav-text">证明f是单射的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8Ef%E4%B8%8D%E6%98%AF%E5%8D%95%E5%B0%84%E7%9A%84"><span class="nav-number">3.4.</span> <span class="nav-text">证明f不是单射的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8Ef%E6%98%AF%E6%BB%A1%E5%B0%84%E7%9A%84"><span class="nav-number">3.5.</span> <span class="nav-text">证明f是满射的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8Ef%E4%B8%8D%E6%98%AF%E6%BB%A1%E5%B0%84%E7%9A%84"><span class="nav-number">3.6.</span> <span class="nav-text">证明f不是满射的</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB"><span class="nav-number">4.</span> <span class="nav-text">关系</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">4.1.</span> <span class="nav-text">集合的关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">4.2.</span> <span class="nav-text">关系的性质</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E7%9A%84%E7%BB%84%E5%90%88"><span class="nav-number">4.3.</span> <span class="nav-text">关系的组合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E8%BF%99%E4%BA%9B%E5%90%88%E6%88%90"><span class="nav-number">4.4.</span> <span class="nav-text">如何找到这些合成</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BC%A0%E9%80%92%E5%85%B3%E7%B3%BB%E7%9A%84%E5%B9%82%E6%98%AF%E8%AF%A5%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AD%90%E9%9B%86"><span class="nav-number">4.5.</span> <span class="nav-text">传递关系的幂是该关系的子集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-number">4.6.</span> <span class="nav-text">关系的表示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E7%9A%84%E9%97%AD%E5%8C%85"><span class="nav-number">4.7.</span> <span class="nav-text">关系的闭包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BC%A0%E9%80%92%E9%97%AD%E5%8C%85"><span class="nav-number">4.8.</span> <span class="nav-text">传递闭包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B1%82%E4%BC%A0%E9%80%92%E9%97%AD%E5%8C%85"><span class="nav-number">4.9.</span> <span class="nav-text">求传递闭包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AD%89%E4%BB%B7%E5%85%B3%E7%B3%BB"><span class="nav-number">4.10.</span> <span class="nav-text">等价关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AD%89%E4%BB%B7%E7%B1%BB"><span class="nav-number">4.11.</span> <span class="nav-text">等价类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AD%89%E4%BB%B7%E7%B1%BB%E4%B8%8E%E5%88%92%E5%88%86"><span class="nav-number">4.12.</span> <span class="nav-text">等价类与划分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%81%8F%E5%BA%8F"><span class="nav-number">4.13.</span> <span class="nav-text">偏序</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%93%88%E5%A1%9E%E5%9B%BE"><span class="nav-number">4.14.</span> <span class="nav-text">哈塞图</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BE"><span class="nav-number">5.</span> <span class="nav-text">图</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E5%9B%BE"><span class="nav-number">5.1.</span> <span class="nav-text">简单图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD"><span class="nav-number">5.2.</span> <span class="nav-text">基本术语</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E7%89%B9%E6%AE%8A%E7%9A%84%E7%AE%80%E5%8D%95%E5%9B%BE"><span class="nav-number">5.3.</span> <span class="nav-text">一些特殊的简单图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%8C%E5%88%86%E5%9B%BE"><span class="nav-number">5.4.</span> <span class="nav-text">二分图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%9B%BE%E6%98%AF%E5%90%A6%E4%B8%BA%E4%BA%8C%E5%88%86%E5%9B%BE"><span class="nav-number">5.5.</span> <span class="nav-text">判断一个图是否为二分图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8C%B9%E9%85%8D"><span class="nav-number">5.6.</span> <span class="nav-text">匹配</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9C%8D%E5%B0%94%E5%A9%9A%E5%A7%BB%E5%AE%9A%E7%90%86"><span class="nav-number">5.7.</span> <span class="nav-text">霍尔婚姻定理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AD%90%E5%9B%BE%E4%B8%8E%E5%AF%BC%E5%87%BA%E7%9A%84%E5%AD%90%E5%9B%BE"><span class="nav-number">5.8.</span> <span class="nav-text">子图与导出的子图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9B%BE%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-number">5.9.</span> <span class="nav-text">图的表示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9B%BE%E7%9A%84%E5%90%8C%E6%9E%84"><span class="nav-number">5.10.</span> <span class="nav-text">图的同构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%A4%E5%AE%9A%E4%B8%A4%E4%B8%AA%E7%AE%80%E5%8D%95%E5%9B%BE%E6%98%AF%E5%90%A6%E5%90%8C%E6%9E%84"><span class="nav-number">5.11.</span> <span class="nav-text">判定两个简单图是否同构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%9A%E8%B7%AF"><span class="nav-number">5.12.</span> <span class="nav-text">通路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%97%A0%E5%90%91%E5%9B%BE%E7%9A%84%E8%BF%9E%E9%80%9A%E6%80%A7"><span class="nav-number">5.13.</span> <span class="nav-text">无向图的连通性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9B%BE%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9E%E9%80%9A%E7%9A%84"><span class="nav-number">5.14.</span> <span class="nav-text">图是如何连通的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%89%E5%90%91%E5%9B%BE%E7%9A%84%E8%BF%9E%E9%80%9A%E6%80%A7"><span class="nav-number">5.15.</span> <span class="nav-text">有向图的连通性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E9%A1%B6%E7%82%B9%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E8%B7%AF%E6%95%B0"><span class="nav-number">5.16.</span> <span class="nav-text">计算顶点之间的通路数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AC%A7%E6%8B%89%E9%80%9A%E8%B7%AF%E4%B8%8E%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF"><span class="nav-number">5.17.</span> <span class="nav-text">欧拉通路与欧拉回路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%93%88%E5%AF%86%E9%A1%BF%E9%80%9A%E8%B7%AF%E4%B8%8E%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%9E%E8%B7%AF"><span class="nav-number">5.18.</span> <span class="nav-text">哈密顿通路与哈密顿回路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8E%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%9E%E8%B7%AF%E4%B8%8D%E5%AD%98%E5%9C%A8"><span class="nav-number">5.19.</span> <span class="nav-text">证明哈密顿回路不存在</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%80%E7%9F%AD%E9%80%9A%E8%B7%AF"><span class="nav-number">5.20.</span> <span class="nav-text">最短通路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B9%B3%E9%9D%A2%E5%9B%BE"><span class="nav-number">5.21.</span> <span class="nav-text">平面图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E5%9B%BE%E6%98%AF%E5%B9%B3%E9%9D%A2%E5%9B%BE"><span class="nav-number">5.22.</span> <span class="nav-text">证明一个图是平面图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E5%9B%BE%E4%B8%8D%E6%98%AF%E5%B9%B3%E9%9D%A2%E5%9B%BE"><span class="nav-number">5.23.</span> <span class="nav-text">证明一个图不是平面图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F"><span class="nav-number">5.24.</span> <span class="nav-text">欧拉公式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9B%BE%E7%9D%80%E8%89%B2"><span class="nav-number">5.25.</span> <span class="nav-text">图着色</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E5%9B%BE%E7%9A%84%E7%9D%80%E8%89%B2%E6%95%B0%E4%B8%BAn"><span class="nav-number">5.26.</span> <span class="nav-text">证明一个图的着色数为n</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%91"><span class="nav-number">6.</span> <span class="nav-text">树</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%89%E6%A0%B9%E6%A0%91"><span class="nav-number">6.1.</span> <span class="nav-text">有根树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%80%A7%E8%B4%A8"><span class="nav-number">6.2.</span> <span class="nav-text">性质</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%89%8D%E7%BC%80%E7%A0%81"><span class="nav-number">6.3.</span> <span class="nav-text">前缀码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%AD%E7%BC%80%E3%80%81%E5%89%8D%E7%BC%80%EF%BC%88%E6%B3%A2%E5%85%B0%EF%BC%89%E5%92%8C%E5%90%8E%E7%BC%80%EF%BC%88%E9%80%86%E6%B3%A2%E5%85%B0%EF%BC%89%E8%AE%B0%E6%B3%95"><span class="nav-number">6.4.</span> <span class="nav-text">中缀、前缀（波兰）和后缀（逆波兰）记法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E6%A0%91"><span class="nav-number">6.5.</span> <span class="nav-text">生成树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91"><span class="nav-number">6.6.</span> <span class="nav-text">最小生成树</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AA%E5%88%86%E7%B1%BB"><span class="nav-number">7.</span> <span class="nav-text">未分类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AF%B9%E5%81%B6%E5%BC%8F"><span class="nav-number">7.1.</span> <span class="nav-text">对偶式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BB%E5%90%88%E5%8F%96%E8%8C%83%E5%BC%8F%E4%B8%8E%E4%B8%BB%E6%9E%90%E5%8F%96%E8%8C%83%E5%BC%8F%E7%9A%84%E8%BD%AC%E5%8C%96"><span class="nav-number">7.2.</span> <span class="nav-text">主合取范式与主析取范式的转化</span></a></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Elcfin"
-      src="/images/profile.jpg">
-  <p class="site-author-name" itemprop="name">Elcfin</p>
-  <div class="site-description" itemprop="description">草木不朽</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">22</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">9</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class=""></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Elcfin</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
 
-<script src="/js/utils.js"></script>
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
 
-<script src="/js/motion.js"></script>
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
-<script src="/js/next-boot.js"></script>
 
 
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
 
 
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
