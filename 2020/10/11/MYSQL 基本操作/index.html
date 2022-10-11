@@ -16,15 +16,15 @@
   <meta name="author" content="Elcfin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="命令行操作启动数据库 1net start mysql80 # 本机数据库名为 mysql80，需要在管理员模式 关闭数据库 1net stop mysql80 登录数据库 1mysql -uroot -p123456 # -u账号 -p密码  登录成功，然后就可以操作数据库啦 数据库操作退出数据库登录 1quit;">
+    <meta name="description" content="命令行操作启动数据库 1net start mysql80 # 本机数据库名为 mysql80，需要在管理员模式 关闭数据库 1net stop mysql80 登录数据库 1mysql -uroot -p123456 # -u账号 -p密码  登录成功，然后就可以操作数据库啦 数据库操作退出数据库登录 1quit; 查看当前用户全部数据库 1show databases; 新建数据库 1crea">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MYSQL 基本操作">
 <meta property="og:url" content="https://elcfin.github.io/2020/10/11/MYSQL%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Elcfin&#39;s Blog">
-<meta property="og:description" content="命令行操作启动数据库 1net start mysql80 # 本机数据库名为 mysql80，需要在管理员模式 关闭数据库 1net stop mysql80 登录数据库 1mysql -uroot -p123456 # -u账号 -p密码  登录成功，然后就可以操作数据库啦 数据库操作退出数据库登录 1quit;">
+<meta property="og:description" content="命令行操作启动数据库 1net start mysql80 # 本机数据库名为 mysql80，需要在管理员模式 关闭数据库 1net stop mysql80 登录数据库 1mysql -uroot -p123456 # -u账号 -p密码  登录成功，然后就可以操作数据库啦 数据库操作退出数据库登录 1quit; 查看当前用户全部数据库 1show databases; 新建数据库 1crea">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-11T12:41:00.000Z">
-<meta property="article:modified_time" content="2022-10-11T12:49:19.998Z">
+<meta property="article:modified_time" content="2022-10-11T14:33:41.821Z">
 <meta property="article:author" content="Elcfin">
 <meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary_large_image">
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          138 字
+          261 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -281,7 +281,19 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mysql -uroot -p123456 # -u账号 -p密码 <br></code></pre></td></tr></table></figure>
 <p>登录成功，然后就可以操作数据库啦</p>
 <h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p><strong>退出数据库登录</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">quit;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">quit;<br></code></pre></td></tr></table></figure>
+<p><strong>查看当前用户全部数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">show databases;<br></code></pre></td></tr></table></figure>
+<p><strong>新建数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">create database 数据库名;<br></code></pre></td></tr></table></figure>
+<p><strong>选择数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">use 数据库名;<br></code></pre></td></tr></table></figure>
+<p><strong>删除数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">drop database 数据库名;<br></code></pre></td></tr></table></figure>
+<p><strong>查看当前数据库全部表</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">show tables;<br></code></pre></td></tr></table></figure>
+<p><strong>查看表结构</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mysql">desc 表名;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
