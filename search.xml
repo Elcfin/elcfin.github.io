@@ -33,41 +33,14 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript ES6 中的单例写法</title>
-    <url>/2021/11/09/JavaScript%20%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8B%E5%86%99%E6%B3%95/</url>
-    <content><![CDATA[<p>Singleton Pattern</p>
-<h3 id="单例类"><a href="#单例类" class="headerlink" title="单例类"></a>单例类</h3><p>该类负责创建自己的对象，同时确保只有单个对象被创建。这个类提供了一种访问其唯一的对象的方式，可以直接访问，不需要实例化该类的对象。</p>
-<ul>
-<li>单例类只能有一个实例。</li>
-<li>单例类必须自己创建自己的唯一实例。</li>
-<li>单例类必须给所有其他对象提供这一实例。</li>
-</ul>
-<h3 id="ES6中创建单例模式"><a href="#ES6中创建单例模式" class="headerlink" title="ES6中创建单例模式"></a>ES6中创建单例模式</h3><figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingletonApple</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">name, creator, products</span>)</span> &#123;<br>      <span class="hljs-built_in">this</span>.name = name;<br>      <span class="hljs-built_in">this</span>.creator = creator;<br>      <span class="hljs-built_in">this</span>.products = products;<br>  &#125;<br>  <span class="hljs-comment">//静态方法</span><br>  <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-title">getInstance</span>(<span class="hljs-params">name, creator, products</span>)</span> &#123;<br>    <span class="hljs-keyword">if</span>(!<span class="hljs-built_in">this</span>.instance) &#123;<br>      <span class="hljs-built_in">this</span>.instance = <span class="hljs-keyword">new</span> SingletonApple(name, creator, products);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.instance;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<blockquote>
-<p><a href="https://zhuanlan.zhihu.com/p/34754447">从ES6重新认识JavaScript设计模式(一): 单例模式 - 知乎 (zhihu.com)</a></p>
-</blockquote>
-]]></content>
+    <title>数据库系统概论 课程笔记</title>
+    <url>/2022/10/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>课程笔记</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Word文档中实现代码高亮</title>
-    <url>/2021/11/09/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
-    <content><![CDATA[<p>使用Notepad++</p>
-<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
-<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
-<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
-<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
+        <tag>课程笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -117,18 +90,42 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/09/23/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>JavaScript ES6 中的单例写法</title>
+    <url>/2021/11/09/JavaScript%20%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8B%E5%86%99%E6%B3%95/</url>
+    <content><![CDATA[<p>Singleton Pattern</p>
+<h3 id="单例类"><a href="#单例类" class="headerlink" title="单例类"></a>单例类</h3><p>该类负责创建自己的对象，同时确保只有单个对象被创建。这个类提供了一种访问其唯一的对象的方式，可以直接访问，不需要实例化该类的对象。</p>
+<ul>
+<li>单例类只能有一个实例。</li>
+<li>单例类必须自己创建自己的唯一实例。</li>
+<li>单例类必须给所有其他对象提供这一实例。</li>
+</ul>
+<h3 id="ES6中创建单例模式"><a href="#ES6中创建单例模式" class="headerlink" title="ES6中创建单例模式"></a>ES6中创建单例模式</h3><figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingletonApple</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">name, creator, products</span>)</span> &#123;<br>      <span class="hljs-built_in">this</span>.name = name;<br>      <span class="hljs-built_in">this</span>.creator = creator;<br>      <span class="hljs-built_in">this</span>.products = products;<br>  &#125;<br>  <span class="hljs-comment">//静态方法</span><br>  <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-title">getInstance</span>(<span class="hljs-params">name, creator, products</span>)</span> &#123;<br>    <span class="hljs-keyword">if</span>(!<span class="hljs-built_in">this</span>.instance) &#123;<br>      <span class="hljs-built_in">this</span>.instance = <span class="hljs-keyword">new</span> SingletonApple(name, creator, products);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.instance;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/34754447">从ES6重新认识JavaScript设计模式(一): 单例模式 - 知乎 (zhihu.com)</a></p>
+</blockquote>
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Word文档中实现代码高亮</title>
+    <url>/2021/11/09/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    <content><![CDATA[<p>使用Notepad++</p>
+<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
+<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
+<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
+<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
   </entry>
   <entry>
     <title>__proto__、prototype与constructor</title>
@@ -239,26 +236,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
-    <url>/2021/11/09/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<p>迭代器与生成器</p>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
-<ul>
-<li>包含的元素是有限的</li>
-<li>具有无歧义的遍历顺序</li>
-</ul>
-<p><strong>迭代器</strong></p>
-<p>按需创建的一次性对象</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《JavaScript高级程序设计（第4版）》读书笔记-继承</title>
     <url>/2021/11/09/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E7%BB%A7%E6%89%BF/</url>
     <content><![CDATA[<p>实现继承是 ECMAScript 唯一支持的继承方式，主要是通过原型链实现的</p>
@@ -312,6 +289,26 @@
 <li>将新创建的对象赋值给子类型的原型</li>
 </ol>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SuperType</span>(<span class="hljs-params">name</span>) </span>&#123; <br> <span class="hljs-built_in">this</span>.name = name; <br> <span class="hljs-built_in">this</span>.colors = [<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;blue&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>]; <br>&#125;<br><br>SuperType.prototype.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123; <br> <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.name); <br>&#125;;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SubType</span>(<span class="hljs-params">name, age</span>) </span>&#123; <br> SuperType.call(<span class="hljs-built_in">this</span>, name);<br> <span class="hljs-built_in">this</span>.age = age; <br>&#125;<br><br>inheritPrototype(SubType, SuperType); <br><br>SubType.prototype.sayAge = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123; <br> <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.age); <br>&#125;; <br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-迭代器与生成器</title>
+    <url>/2021/11/09/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<p>迭代器与生成器</p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p><strong>可迭代对象</strong></p>
+<ul>
+<li>包含的元素是有限的</li>
+<li>具有无歧义的遍历顺序</li>
+</ul>
+<p><strong>迭代器</strong></p>
+<p>按需创建的一次性对象</p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
@@ -948,17 +945,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数据库系统概论 课程笔记</title>
-    <url>/2022/10/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>课程笔记</category>
-      </categories>
-      <tags>
-        <tag>课程笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2021/11/09/%E9%98%AE%E4%B8%80%E5%B3%B0%20ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6</p>
@@ -1030,5 +1016,19 @@
         <tag>JavaScript</tag>
         <tag>读书笔记</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/09/23/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! <span id="more"></span>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
 </search>
