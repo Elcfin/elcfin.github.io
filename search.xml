@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MYSQL 基本操作</title>
+    <url>/2022/10/11/MYSQL%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h3 id="命令行操作"><a href="#命令行操作" class="headerlink" title="命令行操作"></a>命令行操作</h3><p><strong>启动数据库</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">net start mysql80 # 本机数据库名为 mysql80，需要在管理员模式<br></code></pre></td></tr></table></figure>
+<p><strong>关闭数据库</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">net stop mysql80<br></code></pre></td></tr></table></figure>
+<p><strong>登录数据库</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">mysql -uroot -p123456 # -u账号 -p密码 <br></code></pre></td></tr></table></figure>
+<p>登录成功，然后就可以操作数据库啦</p>
+<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p><strong>退出数据库登录</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">quit;<br></code></pre></td></tr></table></figure>
+<p><strong>查看当前用户全部数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">show databases;<br></code></pre></td></tr></table></figure>
+<p><strong>新建数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">create database 数据库名;<br></code></pre></td></tr></table></figure>
+<p><strong>选择数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">use 数据库名;<br></code></pre></td></tr></table></figure>
+<p><strong>删除数据库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">drop database 数据库名;<br></code></pre></td></tr></table></figure>
+<p><strong>查看当前数据库全部表</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">show tables;<br></code></pre></td></tr></table></figure>
+<p><strong>查看表结构</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">desc 表名;<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据库系统概论 课程笔记</title>
+    <url>/2022/10/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>课程笔记</category>
+      </categories>
+      <tags>
+        <tag>课程笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>阮一峰ES6 笔记</title>
     <url>/2022/10/11/%E9%98%AE%E4%B8%80%E5%B3%B0ES6%20%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>ECMAScript 6<span id="more"></span></p>
@@ -1017,55 +1060,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MongoDB 学习笔记</title>
-    <url>/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>MongoDB</p>
-<span id="more"></span>
-<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h4 id="基础安装、配置与连接"><a href="#基础安装、配置与连接" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，zip 版解压后可直接使用</p>
-<p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
-<p>此时路径为 D:/mongodb</p>
-<p>建立 D:/mongodb/data</p>
-<p>建立 D:/mongodb/data/db</p>
-<p>建立 D:/mongodb/data/log</p>
-<p>此时可官网下载图形界面管理工具 mongoDB compass，安置在 D:/mongodb/mongodb-compass</p>
-<p>建立 D:/mongodb/mongod.conf 配置文件</p>
-<p>先简单配置一下</p>
-<figure class="highlight taggerscript"><table><tr><td class="code"><pre><code class="hljs taggerscript">systemLog:<br>    destination: file<br>    path: d:<span class="hljs-symbol">\m</span>ongodb<span class="hljs-symbol">\d</span>ata<span class="hljs-symbol">\l</span>og<span class="hljs-symbol">\m</span>ongod.log<br>storage:<br>    dbPath: d:<span class="hljs-symbol">\m</span>ongodb<span class="hljs-symbol">\d</span>ata<span class="hljs-symbol">\d</span>b<br></code></pre></td></tr></table></figure>
-<p>进入 D:/mongodb/bin</p>
-<p>打开命令行窗口，先执行</p>
-<figure class="highlight arcade"><table><tr><td class="code"><pre><code class="hljs arcade">mongod -f d:<span class="hljs-regexp">/mongodb/m</span>ongod.conf<br></code></pre></td></tr></table></figure>
-<p>打开新窗口，再执行</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">mongo</span><br></code></pre></td></tr></table></figure>
-<p><strong>Bingo</strong></p>
-<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="基础安装、配置与连接-1"><a href="#基础安装、配置与连接-1" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，解压后可直接使用</p>
-<p><img src="/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux 版本选择.png" alt="Linux 版本选择"></p>
-<p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
-<p>此时路径为 /usr/local/mongodb</p>
-<p>建立 /usr/local/mongodb/data</p>
-<p>建立 /usr/local/mongodb/data/db</p>
-<p>建立 /usr/local/mongodb/data/log</p>
-<p>建立 /usr/local/mongodb/mongod.conf 配置文件</p>
-<p>先简单配置一下</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">systemLog:</span><br><span class="hljs-symbol">    destination:</span> file<br><span class="hljs-symbol">    path:</span> <span class="hljs-meta-keyword">/usr/</span>local<span class="hljs-meta-keyword">/mongodb/</span>data<span class="hljs-meta-keyword">/log/</span>mongod.log<br><span class="hljs-symbol">storage:</span><br><span class="hljs-symbol">    dbPath:</span> <span class="hljs-meta-keyword">/usr/</span>local<span class="hljs-meta-keyword">/mongodb/</span>data/db<br><span class="hljs-symbol">net:</span> <br><span class="hljs-symbol">    port:</span> <span class="hljs-number">27017</span> <br><span class="hljs-symbol">    bindIp:</span> <span class="hljs-number">192.168</span><span class="hljs-number">.189</span><span class="hljs-number">.128</span> <span class="hljs-meta">#一定要配，否则远程无法连接</span><br></code></pre></td></tr></table></figure>
-<p>查找 linux 服务器的ip，在终端输入 ifconfig</p>
-<p>进入 /usr/local/mongodb/bin</p>
-<p>打开终端，先执行</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">mongod -f <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/mongodb/m</span>ongod.conf<br></code></pre></td></tr></table></figure>
-<p>打开新终端，再执行</p>
-<figure class="highlight nginx"><table><tr><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">mongo</span> <span class="hljs-number">192.168.189.128</span><br></code></pre></td></tr></table></figure>
-<p>在 Windows 浏览器中访问 <a href="http://192.168.189.128:27017/">192.168.189.128:27017</a></p>
-<p><img src="/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Windows 连接成功.png" alt="Windows 连接成功"></p>
-<p><strong>Bingo</strong></p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>MongoDB</tag>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>minipack 学习笔记</title>
     <url>/2022/10/11/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>「 用JavaScript编写的<code>现代模块捆绑器&#123;modern module bundler&#125;</code>的简化示例 」</p>
@@ -1154,46 +1148,49 @@
       </tags>
   </entry>
   <entry>
-    <title>MYSQL 基本操作</title>
-    <url>/2020/10/11/MYSQL%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h3 id="命令行操作"><a href="#命令行操作" class="headerlink" title="命令行操作"></a>命令行操作</h3><p><strong>启动数据库</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">net start mysql80 # 本机数据库名为 mysql80，需要在管理员模式<br></code></pre></td></tr></table></figure>
-<p><strong>关闭数据库</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">net stop mysql80<br></code></pre></td></tr></table></figure>
-<p><strong>登录数据库</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">mysql -uroot -p123456 # -u账号 -p密码 <br></code></pre></td></tr></table></figure>
-<p>登录成功，然后就可以操作数据库啦</p>
-<h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><p><strong>退出数据库登录</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">quit;<br></code></pre></td></tr></table></figure>
-<p><strong>查看当前用户全部数据库</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">show databases;<br></code></pre></td></tr></table></figure>
-<p><strong>新建数据库</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">create database 数据库名;<br></code></pre></td></tr></table></figure>
-<p><strong>选择数据库</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">use 数据库名;<br></code></pre></td></tr></table></figure>
-<p><strong>删除数据库</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">drop database 数据库名;<br></code></pre></td></tr></table></figure>
-<p><strong>查看当前数据库全部表</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">show tables;<br></code></pre></td></tr></table></figure>
-<p><strong>查看表结构</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">desc 表名;<br></code></pre></td></tr></table></figure>
+    <title>MongoDB 学习笔记</title>
+    <url>/2021/11/12/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h4 id="基础安装、配置与连接"><a href="#基础安装、配置与连接" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，zip 版解压后可直接使用</p>
+<p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
+<p>此时路径为 D:/mongodb</p>
+<p>建立 D:/mongodb/data</p>
+<p>建立 D:/mongodb/data/db</p>
+<p>建立 D:/mongodb/data/log</p>
+<p>此时可官网下载图形界面管理工具 mongoDB compass，安置在 D:/mongodb/mongodb-compass</p>
+<p>建立 D:/mongodb/mongod.conf 配置文件</p>
+<p>先简单配置一下</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">systemLog:<br>    destination: file<br>    path: d:\mongodb\data\log\mongod.log<br>storage:<br>    dbPath: d:\mongodb\data\db<br></code></pre></td></tr></table></figure>
+<p>进入 D:/mongodb/bin</p>
+<p>打开命令行窗口，先执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">mongod -f d:/mongodb/mongod.conf<br></code></pre></td></tr></table></figure>
+<p>打开新窗口，再执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">mongo<br></code></pre></td></tr></table></figure>
+<p><strong>Bingo</strong></p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="基础安装、配置与连接-1"><a href="#基础安装、配置与连接-1" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，解压后可直接使用</p>
+<p><img src="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Linux 版本选择.png" alt></p>
+<p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
+<p>此时路径为 /usr/local/mongodb</p>
+<p>建立 /usr/local/mongodb/data</p>
+<p>建立 /usr/local/mongodb/data/db</p>
+<p>建立 /usr/local/mongodb/data/log</p>
+<p>建立 /usr/local/mongodb/mongod.conf 配置文件</p>
+<p>先简单配置一下</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">systemLog:<br>    destination: file<br>    path: /usr/local/mongodb/data/log/mongod.log<br>storage:<br>    dbPath: /usr/local/mongodb/data/db<br>net: <br>    port: 27017 <br>    bindIp: 192.168.189.128 # 一定要配，否则远程无法连接<br></code></pre></td></tr></table></figure>
+<p>查找 linux 服务器的ip，在终端输入 ifconfig</p>
+<p>进入 /usr/local/mongodb/bin</p>
+<p>打开终端，先执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">mongod -f /usr/local/mongodb/mongod.conf<br></code></pre></td></tr></table></figure>
+<p>打开新终端，再执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">mongo 192.168.189.128<br></code></pre></td></tr></table></figure>
+<p>在 Windows 浏览器中访问 <a href="http://192.168.189.128:27017/">192.168.189.128:27017</a></p>
+<p><img src="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Windows 连接成功.png" alt></p>
+<p><strong>Bingo</strong></p>
 ]]></content>
       <categories>
-        <category>Notes</category>
+        <category>杂记</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据库系统概论 课程笔记</title>
-    <url>/2020/10/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>课程笔记</category>
-      </categories>
-      <tags>
-        <tag>课程笔记</tag>
+        <tag>MongoDB</tag>
       </tags>
   </entry>
 </search>

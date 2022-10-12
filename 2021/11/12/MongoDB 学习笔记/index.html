@@ -16,22 +16,21 @@
   <meta name="author" content="Elcfin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="MongoDB">
+    <meta name="description" content="Windows基础安装、配置与连接官网下载，选择合适的版本，zip 版解压后可直接使用 重命名为 mongodb 并更改位置（便于后续与路径相关的操作） 此时路径为 D:&#x2F;mongodb 建立 D:&#x2F;mongodb&#x2F;data 建立 D:&#x2F;mongodb&#x2F;data&#x2F;db 建立 D:&#x2F;mongodb&#x2F;data&#x2F;log 此时可官网下载图形界面管理工具 mongoDB compass，安置在 D:&#x2F;mon">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MongoDB 学习笔记">
-<meta property="og:url" content="https://elcfin.github.io/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://elcfin.github.io/2021/11/12/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Elcfin&#39;s Blog">
-<meta property="og:description" content="MongoDB">
+<meta property="og:description" content="Windows基础安装、配置与连接官网下载，选择合适的版本，zip 版解压后可直接使用 重命名为 mongodb 并更改位置（便于后续与路径相关的操作） 此时路径为 D:&#x2F;mongodb 建立 D:&#x2F;mongodb&#x2F;data 建立 D:&#x2F;mongodb&#x2F;data&#x2F;db 建立 D:&#x2F;mongodb&#x2F;data&#x2F;log 此时可官网下载图形界面管理工具 mongoDB compass，安置在 D:&#x2F;mon">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://elcfin.github.io/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux%20版本选择.png">
-<meta property="og:image" content="https://elcfin.github.io/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Windows%20连接成功.png">
-<meta property="article:published_time" content="2022-10-11T00:10:00.632Z">
-<meta property="article:modified_time" content="2021-07-17T09:50:38.000Z">
+<meta property="og:image" content="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Linux 版本选择.png">
+<meta property="og:image" content="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Windows 连接成功.png">
+<meta property="article:published_time" content="2021-11-12T01:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-12T01:00:39.133Z">
 <meta property="article:author" content="Elcfin">
 <meta property="article:tag" content="MongoDB">
-<meta property="article:tag" content="杂记">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://elcfin.github.io/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux%20版本选择.png">
+<meta name="twitter:image" content="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Linux 版本选择.png">
   
   
   
@@ -211,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-11 08:10" pubdate>
-          2022年10月11日 早上
+        <time datetime="2021-11-12 09:00" pubdate>
+          2021年11月12日 上午
         </time>
       </span>
     
@@ -223,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          973 字
+          966 字
         
       </span>
     
@@ -277,9 +276,7 @@
             
               <div class="markdown-body">
                 
-                <p>MongoDB</p>
-<span id="more"></span>
-<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h4 id="基础安装、配置与连接"><a href="#基础安装、配置与连接" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，zip 版解压后可直接使用</p>
+                <h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h4 id="基础安装、配置与连接"><a href="#基础安装、配置与连接" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，zip 版解压后可直接使用</p>
 <p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
 <p>此时路径为 D:/mongodb</p>
 <p>建立 D:/mongodb/data</p>
@@ -288,15 +285,15 @@
 <p>此时可官网下载图形界面管理工具 mongoDB compass，安置在 D:/mongodb/mongodb-compass</p>
 <p>建立 D:/mongodb/mongod.conf 配置文件</p>
 <p>先简单配置一下</p>
-<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs taggerscript">systemLog:<br>    destination: file<br>    path: d:<span class="hljs-symbol">\m</span>ongodb<span class="hljs-symbol">\d</span>ata<span class="hljs-symbol">\l</span>og<span class="hljs-symbol">\m</span>ongod.log<br>storage:<br>    dbPath: d:<span class="hljs-symbol">\m</span>ongodb<span class="hljs-symbol">\d</span>ata<span class="hljs-symbol">\d</span>b<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">systemLog:<br>    destination: file<br>    path: d:\mongodb\data\log\mongod.log<br>storage:<br>    dbPath: d:\mongodb\data\db<br></code></pre></td></tr></table></figure>
 <p>进入 D:/mongodb/bin</p>
 <p>打开命令行窗口，先执行</p>
-<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">mongod -f d:<span class="hljs-regexp">/mongodb/m</span>ongod.conf<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mongod -f d:/mongodb/mongod.conf<br></code></pre></td></tr></table></figure>
 <p>打开新窗口，再执行</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">mongo</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mongo<br></code></pre></td></tr></table></figure>
 <p><strong>Bingo</strong></p>
 <h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="基础安装、配置与连接-1"><a href="#基础安装、配置与连接-1" class="headerlink" title="基础安装、配置与连接"></a>基础安装、配置与连接</h4><p>官网下载，选择合适的版本，解压后可直接使用</p>
-<p><img src="/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux 版本选择.png" srcset="/img/loading.gif" lazyload alt="Linux 版本选择"></p>
+<p><img src="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Linux 版本选择.png" srcset="/img/loading.gif" lazyload alt></p>
 <p>重命名为 mongodb 并更改位置（便于后续与路径相关的操作）</p>
 <p>此时路径为 /usr/local/mongodb</p>
 <p>建立 /usr/local/mongodb/data</p>
@@ -304,15 +301,15 @@
 <p>建立 /usr/local/mongodb/data/log</p>
 <p>建立 /usr/local/mongodb/mongod.conf 配置文件</p>
 <p>先简单配置一下</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">systemLog:</span><br><span class="hljs-symbol">    destination:</span> file<br><span class="hljs-symbol">    path:</span> <span class="hljs-meta-keyword">/usr/</span>local<span class="hljs-meta-keyword">/mongodb/</span>data<span class="hljs-meta-keyword">/log/</span>mongod.log<br><span class="hljs-symbol">storage:</span><br><span class="hljs-symbol">    dbPath:</span> <span class="hljs-meta-keyword">/usr/</span>local<span class="hljs-meta-keyword">/mongodb/</span>data/db<br><span class="hljs-symbol">net:</span> <br><span class="hljs-symbol">    port:</span> <span class="hljs-number">27017</span> <br><span class="hljs-symbol">    bindIp:</span> <span class="hljs-number">192.168</span><span class="hljs-number">.189</span><span class="hljs-number">.128</span> <span class="hljs-meta">#一定要配，否则远程无法连接</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">systemLog:<br>    destination: file<br>    path: /usr/local/mongodb/data/log/mongod.log<br>storage:<br>    dbPath: /usr/local/mongodb/data/db<br>net: <br>    port: 27017 <br>    bindIp: 192.168.189.128 # 一定要配，否则远程无法连接<br></code></pre></td></tr></table></figure>
 <p>查找 linux 服务器的ip，在终端输入 ifconfig</p>
 <p>进入 /usr/local/mongodb/bin</p>
 <p>打开终端，先执行</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">mongod -f <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/mongodb/m</span>ongod.conf<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mongod -f /usr/local/mongodb/mongod.conf<br></code></pre></td></tr></table></figure>
 <p>打开新终端，再执行</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">mongo</span> <span class="hljs-number">192.168.189.128</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mongo 192.168.189.128<br></code></pre></td></tr></table></figure>
 <p>在 Windows 浏览器中访问 <a target="_blank" rel="noopener" href="http://192.168.189.128:27017/">192.168.189.128:27017</a></p>
-<p><img src="/2022/10/11/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Windows 连接成功.png" srcset="/img/loading.gif" lazyload alt="Windows 连接成功"></p>
+<p><img src="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/Windows 连接成功.png" srcset="/img/loading.gif" lazyload alt></p>
 <p><strong>Bingo</strong></p>
 
                 
@@ -349,8 +346,6 @@
       
         <a href="/tags/MongoDB/">#MongoDB</a>
       
-        <a href="/tags/%E6%9D%82%E8%AE%B0/">#杂记</a>
-      
     </div>
   
 </div>
@@ -362,7 +357,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>MongoDB 学习笔记</div>
-      <div>https://elcfin.github.io/2022/10/11/MongoDB 学习笔记/</div>
+      <div>https://elcfin.github.io/2021/11/12/MongoDB 学习笔记/</div>
     </div>
     <div class="license-meta">
       
@@ -374,7 +369,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年10月11日</div>
+          <div>2021年11月12日</div>
         </div>
       
       
@@ -406,21 +401,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/11/prototype%E4%B8%8Econstructor/" title="__proto__、prototype与constructor">
+                      <a href="/2022/10/11/colors/" title="Colors">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">__proto__、prototype与constructor</span>
+                        <span class="hidden-mobile">Colors</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2022/10/11/minipack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="minipack 学习笔记">
-                        <span class="hidden-mobile">minipack 学习笔记</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
