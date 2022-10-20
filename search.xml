@@ -26,6 +26,9 @@
 <p>注意<strong>使用哈希表存储这个窗口内的数以及出现的次数</strong>更优</p>
 <h3 id="2022-10-18-902-最大为-N-的数字组合"><a href="#2022-10-18-902-最大为-N-的数字组合" class="headerlink" title="2022/10/18 902. 最大为 N 的数字组合"></a>2022/10/18 <a href="https://leetcode.cn/problems/numbers-at-most-n-given-digit-set/">902. 最大为 N 的数字组合</a></h3><p>数位 DP 模板题</p>
 <p><a href="https://www.bilibili.com/video/BV1rS4y1s721/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;vd_source=f3a41d3aba63daf8a8e227dbe7a43ca0">视频讲解</a></p>
+<h3 id="2022-10-19-1700-无法吃午餐的学生数量"><a href="#2022-10-19-1700-无法吃午餐的学生数量" class="headerlink" title="2022/10/19 1700. 无法吃午餐的学生数量"></a>2022/10/19 <a href="https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/">1700. 无法吃午餐的学生数量</a></h3><p>简单模拟</p>
+<h3 id="2022-10-20-779-第K个语法符号"><a href="#2022-10-20-779-第K个语法符号" class="headerlink" title="2022/10/20 779. 第K个语法符号"></a>2022/10/20 <a href="https://leetcode.cn/problems/k-th-symbol-in-grammar/">779. 第K个语法符号</a></h3><p>找规律</p>
+<p><img src="http://post-image.oss-cn-hangzhou.aliyuncs.com/img/DEX9L9RZK$R02%3[NO49`5O.jpg" alt="img"></p>
 ]]></content>
       <categories>
         <category>算法</category>
