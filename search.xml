@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>操作系统 课程笔记</title>
-    <url>/2022/10/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%20%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="进度记录"><a href="#进度记录" class="headerlink" title="进度记录"></a>进度记录</h3><p><strong>2022/10/12</strong></p>
-<p>进程概念</p>
-<p>进程控制</p>
-]]></content>
-      <categories>
-        <category>课程笔记</category>
-      </categories>
-      <tags>
-        <tag>课程笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode 每日一题 2022-10</title>
     <url>/2022/10/12/LeetCode%20%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%202022-10/</url>
     <content><![CDATA[<h3 id="2022-10-12-817-链表组件"><a href="#2022-10-12-817-链表组件" class="headerlink" title="2022/10/12 817.链表组件"></a>2022/10/12 817.链表组件</h3><p>当需要多次判断值是否位于数组中时，可以采用哈希集合保存数组中的值来降低时间复杂度</p>
@@ -28,7 +14,7 @@
 <p><a href="https://www.bilibili.com/video/BV1rS4y1s721/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;vd_source=f3a41d3aba63daf8a8e227dbe7a43ca0">视频讲解</a></p>
 <h3 id="2022-10-19-1700-无法吃午餐的学生数量"><a href="#2022-10-19-1700-无法吃午餐的学生数量" class="headerlink" title="2022/10/19 1700. 无法吃午餐的学生数量"></a>2022/10/19 <a href="https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/">1700. 无法吃午餐的学生数量</a></h3><p>简单模拟</p>
 <h3 id="2022-10-20-779-第K个语法符号"><a href="#2022-10-20-779-第K个语法符号" class="headerlink" title="2022/10/20 779. 第K个语法符号"></a>2022/10/20 <a href="https://leetcode.cn/problems/k-th-symbol-in-grammar/">779. 第K个语法符号</a></h3><p>找规律</p>
-<p><img src="https://post-image.oss-cn-hangzhou.aliyuncs.com/img/DEX9L9RZK$R02%3[NO49`5O.jpg" alt="img"></p>
+<p><img src="https://post-image.oss-cn-hangzhou.aliyuncs.com/img/第K个语法符号-笔记.jpg" alt=""></p>
 <h3 id="2022-10-22-1235-规划兼职工作"><a href="#2022-10-22-1235-规划兼职工作" class="headerlink" title="2022/10/22 1235. 规划兼职工作"></a>2022/10/22 <a href="https://leetcode.cn/problems/maximum-profit-in-job-scheduling/">1235. 规划兼职工作</a></h3><p>动态规划</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">500010</span>;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-keyword">int</span> curMax[N];<br><br>    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">jobScheduling</span><span class="hljs-params">(vector&lt;<span class="hljs-keyword">int</span>&gt;&amp; startTime, vector&lt;<span class="hljs-keyword">int</span>&gt;&amp; endTime, vector&lt;<span class="hljs-keyword">int</span>&gt;&amp; profit)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> n = profit.<span class="hljs-built_in">size</span>();<br>        vector&lt;<span class="hljs-keyword">int</span>&gt; idList;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)<br>            idList.<span class="hljs-built_in">emplace_back</span>(i);<br><br>        <span class="hljs-comment">// 按照结束时间升序排序</span><br>        <span class="hljs-built_in">sort</span>(idList.<span class="hljs-built_in">begin</span>(), idList.<span class="hljs-built_in">end</span>(), [&amp;](<span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j) &#123; <span class="hljs-keyword">return</span> endTime[i] &lt; endTime[j]; &#125;);<br><br>        curMax[<span class="hljs-number">0</span>] = profit[idList[<span class="hljs-number">0</span>]];<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) &#123;<br>            <span class="hljs-keyword">int</span> curId = idList[i];<br>            curMax[i] = <span class="hljs-built_in">max</span>(profit[curId], curMax[i - <span class="hljs-number">1</span>]);<br>            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = i - <span class="hljs-number">1</span>; j &gt;= <span class="hljs-number">0</span>; j--) &#123;<br>                <span class="hljs-keyword">int</span> preId = idList[j];<br>                <span class="hljs-keyword">if</span>(startTime[curId] &gt;= endTime[preId]) &#123;<br>                    curMax[i] = <span class="hljs-built_in">max</span>(curMax[i], curMax[j] + profit[curId]);<br>                    <span class="hljs-keyword">break</span>;<br>                &#125;<br>            &#125;<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> curMax[n - <span class="hljs-number">1</span>];<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 <h3 id="2022-10-23-1768-交替合并字符串"><a href="#2022-10-23-1768-交替合并字符串" class="headerlink" title="2022/10/23 1768. 交替合并字符串"></a>2022/10/23 <a href="https://leetcode.cn/problems/merge-strings-alternately/">1768. 交替合并字符串</a></h3><h3 id="2022-10-24-915-分割数组"><a href="#2022-10-24-915-分割数组" class="headerlink" title="2022/10/24 915. 分割数组"></a>2022/10/24 <a href="https://leetcode.cn/problems/partition-array-into-disjoint-intervals/">915. 分割数组</a></h3><h3 id="2022-10-26-862-和至少为-K-的最短子数组"><a href="#2022-10-26-862-和至少为-K-的最短子数组" class="headerlink" title="2022/10/26 862. 和至少为 K 的最短子数组"></a>2022/10/26 <a href="https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/">862. 和至少为 K 的最短子数组</a></h3><p>双指针超时&gt;&lt;</p>
@@ -75,17 +61,6 @@
       </categories>
       <tags>
         <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据库系统概论 课程笔记</title>
-    <url>/2022/10/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%20%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>课程笔记</category>
-      </categories>
-      <tags>
-        <tag>课程笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -157,22 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Word文档中实现代码高亮</title>
-    <url>/2021/11/09/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
-    <content><![CDATA[<p>使用Notepad++</p>
-<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
-<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
-<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
-<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>__proto__、prototype与constructor</title>
     <url>/2021/11/09/prototype%E4%B8%8Econstructor/</url>
     <content><![CDATA[<p><code>__proto__</code>、<code>prototype</code>与<code>constructor</code><span id="more"></span></p>
@@ -207,19 +166,19 @@
       </tags>
   </entry>
   <entry>
-    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
-    <url>/2021/11/09/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>创建对象</p>
-<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
-<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
-<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
+    <title>Word文档中实现代码高亮</title>
+    <url>/2021/11/09/Word%E6%96%87%E6%A1%A3%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    <content><![CDATA[<p>使用Notepad++</p>
+<p>一、将文本复制到Notepad++中，选择菜单栏中的语言，修改成代码对应的语言格式</p>
+<p>二、选择菜单栏中的插件 -&gt; NppExport -&gt; Copy RTF to clipboard</p>
+<p>或者插件 -&gt; NppExport -&gt; Export to RTF（先保存成文件，再复制文本内容）</p>
+<p>三、将文本内容复制到Word文档中，并将文本突出显示颜色修改为透明（复制时默认为白色）</p>
 ]]></content>
       <categories>
-        <category>读书笔记</category>
+        <category>杂记</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-        <tag>读书笔记</tag>
+        <tag>杂记</tag>
       </tags>
   </entry>
   <entry>
@@ -241,6 +200,22 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《JavaScript高级程序设计（第4版）》读书笔记-创建对象</title>
+    <url>/2021/11/09/%E3%80%8AJavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>创建对象</p>
+<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><p>可以通过 <code>Object.create()</code> 来创建一个对象，同时为其指定原型</p>
+<p><code>hasOwnProperty()</code> 只有属性存在于实例上时才返回 true</p>
+<p><code>in</code> 操作符会在可以通过对象访问指定属性时返回 true，无论该属性是在实例上还是在原型上</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -361,57 +336,6 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript判断变量是否为某种类型</title>
-    <url>/2021/11/09/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<p>对象、数组</p>
-<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
-<blockquote>
-<p><code>[object Object]</code>中第一个o小写</p>
-</blockquote>
-</li>
-<li><p><code>obj.constructor === Object</code></p>
-</li>
-<li><p><code>obj instanceof Object</code>（不可行）</p>
-<blockquote>
-<p>数组和函数也会返回true</p>
-</blockquote>
-</li>
-<li><p><code>typeof obj === Object</code>（不可行）</p>
-<blockquote>
-<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">typeof undefined <span class="hljs-comment">//&#x27;undefined&#x27;</span><br>typeof <span class="hljs-keyword">null</span> <span class="hljs-comment">//&#x27;object&#x27;</span><br><span class="hljs-function">typeof <span class="hljs-title">function</span><span class="hljs-params">()</span> </span>&#123;&#125; <span class="hljs-comment">//&#x27;function&#x27;</span><br>typeof &#123;&#125; <span class="hljs-comment">//&#x27;object&#x27;</span><br>typeof [] <span class="hljs-comment">//&#x27;object&#x27;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p><code>$.isPlainObject(obj)</code></p>
-<blockquote>
-<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
-<ol>
-<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
-</li>
-<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
-</li>
-<li><code>obj instanceof Array</code></li>
-<li><code>typeof arr //&#39;object&#39;</code>（不可行）</li>
-<li><code>Array.isArray()</code></li>
-</ol>
-<blockquote>
-<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -539,6 +463,130 @@
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript判断变量是否为某种类型</title>
+    <url>/2021/11/09/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E8%B1%A1-%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<p>对象、数组</p>
+<h4 id="判断是否为对象"><a href="#判断是否为对象" class="headerlink" title="判断是否为对象"></a>判断是否为对象</h4><p><code>const obj = &#123;&#125;;</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(obj) === &#39;[object Object]&#39;</code></p>
+<blockquote>
+<p><code>[object Object]</code>中第一个o小写</p>
+</blockquote>
+</li>
+<li><p><code>obj.constructor === Object</code></p>
+</li>
+<li><p><code>obj instanceof Object</code>（不可行）</p>
+<blockquote>
+<p>数组和函数也会返回true</p>
+</blockquote>
+</li>
+<li><p><code>typeof obj === Object</code>（不可行）</p>
+<blockquote>
+<p>存在特殊情况, <code>typeof</code>一般用于判断原始值</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">typeof undefined <span class="hljs-comment">//&#x27;undefined&#x27;</span><br>typeof <span class="hljs-keyword">null</span> <span class="hljs-comment">//&#x27;object&#x27;</span><br><span class="hljs-function">typeof <span class="hljs-title">function</span><span class="hljs-params">()</span> </span>&#123;&#125; <span class="hljs-comment">//&#x27;function&#x27;</span><br>typeof &#123;&#125; <span class="hljs-comment">//&#x27;object&#x27;</span><br>typeof [] <span class="hljs-comment">//&#x27;object&#x27;</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p><code>$.isPlainObject(obj)</code></p>
+<blockquote>
+<p>判断指定参数是否为一个纯粹的对象（指该对象是通过<code>&#123;&#125;</code>或<code>new Object()</code>创建的）</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h4><p><code>const arr = [];</code></p>
+<ol>
+<li><p><code>Object.prototype.toString.call(arr) == &#39;[object Array]&#39;</code></p>
+</li>
+<li><p><code>typeof obj == &#39;object&#39; &amp;&amp; arr.constructor === Array</code></p>
+</li>
+<li><code>obj instanceof Array</code></li>
+<li><code>typeof arr //&#39;object&#39;</code>（不可行）</li>
+<li><code>Array.isArray()</code></li>
+</ol>
+<blockquote>
+<p>使用<code>instanceof</code>方法和<code>constructor</code>属性判断时，如遇到跨框架（<code>iframe</code>），在不同的框架中，创建的数组不共享其prototype属性，无法准确判断</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阮一峰ES6 笔记</title>
+    <url>/2021/11/09/%E9%98%AE%E4%B8%80%E5%B3%B0%20ES6%20%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>ECMAScript 6</p>
+<h2 id="Class的基本语法"><a href="#Class的基本语法" class="headerlink" title="Class的基本语法"></a>Class的基本语法</h2><h3 id="类的实例"><a href="#类的实例" class="headerlink" title="类的实例"></a>类的实例</h3><p>可以通过实例的<code>__proto__</code>属性为“类”添加方法，改写原型（不推荐使用，因为这会改变“类”的原始定义，影响到所有实例）</p>
+<blockquote>
+<p><code>__proto__</code> 并不是语言本身的特性，这是各大厂商具体实现时添加的私有属性，虽然目前很多现代浏览器的 JS 引擎中都提供了这个私有属性，但依旧不建议在生产中使用该属性，避免对环境产生依赖。生产环境中，我们可以使用 <code>Object.getPrototypeOf</code> 方法来获取实例对象的原型，然后再来为原型添加方法/属性。</p>
+</blockquote>
+<h3 id="Class表达式"><a href="#Class表达式" class="headerlink" title="Class表达式"></a>Class表达式</h3><p>与函数一样，类也可以使用表达式的形式定义</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> MyClass = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Me</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">getClassName</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-keyword">return</span> Me.name;<br>  &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<p>上面代码使用表达式定义了一个类。需要注意的是，这个类的名字是<code>Me</code>，但是<code>Me</code>只在 Class 的内部可用，指代当前类。在 Class 外部，这个类只能用<code>MyClass</code>引用。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> inst = <span class="hljs-keyword">new</span> MyClass();<br>inst.getClassName() <span class="hljs-comment">// Me</span><br>Me.name <span class="hljs-comment">// ReferenceError: Me is not defined</span><br></code></pre></td></tr></table></figure>
+<p>上面代码表示，<code>Me</code>只在 Class 内部有定义。</p>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><h4 id="不存在提升"><a href="#不存在提升" class="headerlink" title="不存在提升"></a>不存在提升</h4><p> ES6 不会把类的声明提升到代码头部</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&#123;<br>  <span class="hljs-keyword">let</span> Foo = <span class="hljs-class"><span class="hljs-keyword">class</span> </span>&#123;&#125;;<br>  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Foo</span> </span>&#123;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>上面的代码不会报错，因为<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>已经有定义了。但是，如果存在<code>class</code>的提升，上面代码就会报错，因为<code>class</code>会被提升到代码头部，而<code>let</code>命令是不提升的，所以导致<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>还没有定义。</p>
+<h3 id="私有属性的提案"><a href="#私有属性的提案" class="headerlink" title="私有属性的提案"></a>私有属性的提案</h3><h4 id="in-运算符"><a href="#in-运算符" class="headerlink" title="in 运算符"></a>in 运算符</h4><p><code>in</code>运算符对于<code>Object.create()</code>、<code>Object.setPrototypeOf</code>形成的继承，是无效的，因为这种继承不会传递私有属性</p>
+<h3 id="new-target-属性"><a href="#new-target-属性" class="headerlink" title="new.target 属性"></a><code>new.target</code> 属性</h3><p>Class 内部调用<code>new.target</code>，返回当前 Class</p>
+<p>子类继承父类时，<code>new.target</code>会返回子类</p>
+<p>利用这个特点，可以写出不能独立使用、必须继承后才能使用的类</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">new</span>.target === Shape) &#123;<br>      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&#x27;本类不能实例化&#x27;</span>);<br>    &#125;<br>  &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">length, width</span>)</span> &#123;<br>    <span class="hljs-built_in">super</span>();<br>    <span class="hljs-comment">// ...</span><br>  &#125;<br>&#125;<br><br><span class="hljs-keyword">var</span> x = <span class="hljs-keyword">new</span> Shape();  <span class="hljs-comment">// 报错</span><br><span class="hljs-keyword">var</span> y = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);  <span class="hljs-comment">// 正确</span><br></code></pre></td></tr></table></figure>
+<p>上面代码中，<code>Shape</code>类不能被实例化，只能用于继承</p>
+<h2 id="class的继承"><a href="#class的继承" class="headerlink" title="class的继承"></a>class的继承</h2><h3 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h3><h4 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a>第一种情况</h4><p><code>super</code>作为函数调用时，代表父类的构造函数，<code>super()</code>只能用在子类的构造函数之中</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>&#123;&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-built_in">super</span>();<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>上面代码中，子类<code>B</code>的构造函数之中的<code>super()</code>，代表调用父类的构造函数</p>
+<p>注意，<code>super</code>虽然代表了父类<code>A</code>的构造函数，但是返回的是子类<code>B</code>的实例，即<code>super</code>内部的<code>this</code>指的是<code>B</code>的实例，因此<code>super()</code>在这里相当于<code>A.prototype.constructor.call(this)</code></p>
+<h4 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a>第二种情况</h4><p><code>super</code>作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类</p>
+<h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>对象的解构赋值可以取到继承的属性</p>
+<h4 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h4><ol>
+<li><p>将一个已经声明的变量用于解构赋值时</p>
+<p>错误写法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x;<br>&#123;x&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>&#125;;<br><span class="hljs-comment">// SyntaxError: syntax error</span><br></code></pre></td></tr></table></figure>
+<p>JavaScript 引擎会将<code>&#123;x&#125;</code>理解成一个代码块</p>
+<p>解决方法：不将大括号写在行首，避免 JavaScript 将其解释为代码块</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x;<br>(&#123;x&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>&#125;);<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>数组本质是特殊的对象，因此可以对数组进行对象属性的解构</p>
+<p>数组键值作为匹配模式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];<br><span class="hljs-keyword">let</span> &#123;<span class="hljs-number">0</span> : first, [arr.length - <span class="hljs-number">1</span>] : last&#125; = arr;<br>first <span class="hljs-comment">// 1</span><br>last <span class="hljs-comment">// 3</span><br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ol>
+<li><p>交换变量的值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">let</span> y = <span class="hljs-number">2</span>;<br><br>[x, y] = [y, x];<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>从函数返回多个值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-comment">// 返回一个数组</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];<br>&#125;<br><span class="hljs-keyword">let</span> [a, b, c] = example();<br><br><span class="hljs-comment">// 返回一个对象</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> &#123;<br>    <span class="hljs-attr">foo</span>: <span class="hljs-number">1</span>,<br>    <span class="hljs-attr">bar</span>: <span class="hljs-number">2</span><br>  &#125;;<br>&#125;<br><span class="hljs-keyword">let</span> &#123; foo, bar &#125; = example();<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>函数参数的定义</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 参数是一组有次序的值</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">[x, y, z]</span>) </span>&#123; ... &#125;<br>f([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);<br><br><span class="hljs-comment">// 参数是一组无次序的值</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">&#123;x, y, z&#125;</span>) </span>&#123; ... &#125;<br>f(&#123;<span class="hljs-attr">z</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">x</span>: <span class="hljs-number">1</span>&#125;);<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>提取<code>JSON</code>数据</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">let</span> jsonData = &#123;<br>  <span class="hljs-attr">id</span>: <span class="hljs-number">42</span>,<br>  <span class="hljs-attr">status</span>: <span class="hljs-string">&quot;OK&quot;</span>,<br>  <span class="hljs-attr">data</span>: [<span class="hljs-number">867</span>, <span class="hljs-number">5309</span>]<br>&#125;;<br><br><span class="hljs-keyword">let</span> &#123; id, status, <span class="hljs-attr">data</span>: number &#125; = jsonData;<br><br><span class="hljs-built_in">console</span>.log(id, status, number);<br><span class="hljs-comment">// 42, &quot;OK&quot;, [867, 5309]</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>函数参数的默认值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript">jQuery.ajax = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">url, &#123;</span></span><br><span class="hljs-params"><span class="hljs-function">  <span class="hljs-keyword">async</span> = <span class="hljs-literal">true</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  beforeSend = <span class="hljs-keyword">function</span> () &#123;&#125;,</span></span><br><span class="hljs-params"><span class="hljs-function">  cache = <span class="hljs-literal">true</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  complete = <span class="hljs-keyword">function</span> () &#123;&#125;,</span></span><br><span class="hljs-params"><span class="hljs-function">  crossDomain = <span class="hljs-literal">false</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  <span class="hljs-built_in">global</span> = <span class="hljs-literal">true</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  <span class="hljs-regexp">//</span> ... more config</span></span><br><span class="hljs-params"><span class="hljs-function">&#125; = &#123;&#125;</span>) </span>&#123;<br>  <span class="hljs-comment">// ... do stuff</span><br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>遍历<code>Map</code>结构</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();<br>map.set(<span class="hljs-string">&#x27;first&#x27;</span>, <span class="hljs-string">&#x27;hello&#x27;</span>);<br>map.set(<span class="hljs-string">&#x27;second&#x27;</span>, <span class="hljs-string">&#x27;world&#x27;</span>);<br><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [key, value] <span class="hljs-keyword">of</span> map) &#123;<br>  <span class="hljs-built_in">console</span>.log(key + <span class="hljs-string">&quot; is &quot;</span> + value);<br>&#125;<br><span class="hljs-comment">// first is hello</span><br><span class="hljs-comment">// second is world</span><br><br><span class="hljs-comment">//只想获取键名，或只想获取键值</span><br><br><span class="hljs-comment">// 获取键名</span><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [key] <span class="hljs-keyword">of</span> map) &#123;<br>  <span class="hljs-comment">// ...</span><br>&#125;<br><br><span class="hljs-comment">// 获取键值</span><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [,value] <span class="hljs-keyword">of</span> map) &#123;<br>  <span class="hljs-comment">// ...</span><br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>输入模块指定方法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> &#123; SourceMapConsumer, SourceNode &#125; = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;source-map&quot;</span>);<br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -987,79 +1035,6 @@
       <tags>
         <tag>读书笔记</tag>
         <tag>离散数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阮一峰ES6 笔记</title>
-    <url>/2021/11/09/%E9%98%AE%E4%B8%80%E5%B3%B0%20ES6%20%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>ECMAScript 6</p>
-<h2 id="Class的基本语法"><a href="#Class的基本语法" class="headerlink" title="Class的基本语法"></a>Class的基本语法</h2><h3 id="类的实例"><a href="#类的实例" class="headerlink" title="类的实例"></a>类的实例</h3><p>可以通过实例的<code>__proto__</code>属性为“类”添加方法，改写原型（不推荐使用，因为这会改变“类”的原始定义，影响到所有实例）</p>
-<blockquote>
-<p><code>__proto__</code> 并不是语言本身的特性，这是各大厂商具体实现时添加的私有属性，虽然目前很多现代浏览器的 JS 引擎中都提供了这个私有属性，但依旧不建议在生产中使用该属性，避免对环境产生依赖。生产环境中，我们可以使用 <code>Object.getPrototypeOf</code> 方法来获取实例对象的原型，然后再来为原型添加方法/属性。</p>
-</blockquote>
-<h3 id="Class表达式"><a href="#Class表达式" class="headerlink" title="Class表达式"></a>Class表达式</h3><p>与函数一样，类也可以使用表达式的形式定义</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> MyClass = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Me</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">getClassName</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-keyword">return</span> Me.name;<br>  &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-<p>上面代码使用表达式定义了一个类。需要注意的是，这个类的名字是<code>Me</code>，但是<code>Me</code>只在 Class 的内部可用，指代当前类。在 Class 外部，这个类只能用<code>MyClass</code>引用。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> inst = <span class="hljs-keyword">new</span> MyClass();<br>inst.getClassName() <span class="hljs-comment">// Me</span><br>Me.name <span class="hljs-comment">// ReferenceError: Me is not defined</span><br></code></pre></td></tr></table></figure>
-<p>上面代码表示，<code>Me</code>只在 Class 内部有定义。</p>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><h4 id="不存在提升"><a href="#不存在提升" class="headerlink" title="不存在提升"></a>不存在提升</h4><p> ES6 不会把类的声明提升到代码头部</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&#123;<br>  <span class="hljs-keyword">let</span> Foo = <span class="hljs-class"><span class="hljs-keyword">class</span> </span>&#123;&#125;;<br>  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Foo</span> </span>&#123;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>上面的代码不会报错，因为<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>已经有定义了。但是，如果存在<code>class</code>的提升，上面代码就会报错，因为<code>class</code>会被提升到代码头部，而<code>let</code>命令是不提升的，所以导致<code>Bar</code>继承<code>Foo</code>的时候，<code>Foo</code>还没有定义。</p>
-<h3 id="私有属性的提案"><a href="#私有属性的提案" class="headerlink" title="私有属性的提案"></a>私有属性的提案</h3><h4 id="in-运算符"><a href="#in-运算符" class="headerlink" title="in 运算符"></a>in 运算符</h4><p><code>in</code>运算符对于<code>Object.create()</code>、<code>Object.setPrototypeOf</code>形成的继承，是无效的，因为这种继承不会传递私有属性</p>
-<h3 id="new-target-属性"><a href="#new-target-属性" class="headerlink" title="new.target 属性"></a><code>new.target</code> 属性</h3><p>Class 内部调用<code>new.target</code>，返回当前 Class</p>
-<p>子类继承父类时，<code>new.target</code>会返回子类</p>
-<p>利用这个特点，可以写出不能独立使用、必须继承后才能使用的类</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">new</span>.target === Shape) &#123;<br>      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&#x27;本类不能实例化&#x27;</span>);<br>    &#125;<br>  &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">length, width</span>)</span> &#123;<br>    <span class="hljs-built_in">super</span>();<br>    <span class="hljs-comment">// ...</span><br>  &#125;<br>&#125;<br><br><span class="hljs-keyword">var</span> x = <span class="hljs-keyword">new</span> Shape();  <span class="hljs-comment">// 报错</span><br><span class="hljs-keyword">var</span> y = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);  <span class="hljs-comment">// 正确</span><br></code></pre></td></tr></table></figure>
-<p>上面代码中，<code>Shape</code>类不能被实例化，只能用于继承</p>
-<h2 id="class的继承"><a href="#class的继承" class="headerlink" title="class的继承"></a>class的继承</h2><h3 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h3><h4 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a>第一种情况</h4><p><code>super</code>作为函数调用时，代表父类的构造函数，<code>super()</code>只能用在子类的构造函数之中</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>&#123;&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>&#123;<br>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-built_in">super</span>();<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>上面代码中，子类<code>B</code>的构造函数之中的<code>super()</code>，代表调用父类的构造函数</p>
-<p>注意，<code>super</code>虽然代表了父类<code>A</code>的构造函数，但是返回的是子类<code>B</code>的实例，即<code>super</code>内部的<code>this</code>指的是<code>B</code>的实例，因此<code>super()</code>在这里相当于<code>A.prototype.constructor.call(this)</code></p>
-<h4 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a>第二种情况</h4><p><code>super</code>作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类</p>
-<h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>对象的解构赋值可以取到继承的属性</p>
-<h4 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h4><ol>
-<li><p>将一个已经声明的变量用于解构赋值时</p>
-<p>错误写法：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x;<br>&#123;x&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>&#125;;<br><span class="hljs-comment">// SyntaxError: syntax error</span><br></code></pre></td></tr></table></figure>
-<p>JavaScript 引擎会将<code>&#123;x&#125;</code>理解成一个代码块</p>
-<p>解决方法：不将大括号写在行首，避免 JavaScript 将其解释为代码块</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x;<br>(&#123;x&#125; = &#123;<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>&#125;);<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>数组本质是特殊的对象，因此可以对数组进行对象属性的解构</p>
-<p>数组键值作为匹配模式</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];<br><span class="hljs-keyword">let</span> &#123;<span class="hljs-number">0</span> : first, [arr.length - <span class="hljs-number">1</span>] : last&#125; = arr;<br>first <span class="hljs-comment">// 1</span><br>last <span class="hljs-comment">// 3</span><br></code></pre></td></tr></table></figure>
-</li>
-</ol>
-<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ol>
-<li><p>交换变量的值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">let</span> y = <span class="hljs-number">2</span>;<br><br>[x, y] = [y, x];<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>从函数返回多个值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-comment">// 返回一个数组</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];<br>&#125;<br><span class="hljs-keyword">let</span> [a, b, c] = example();<br><br><span class="hljs-comment">// 返回一个对象</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> &#123;<br>    <span class="hljs-attr">foo</span>: <span class="hljs-number">1</span>,<br>    <span class="hljs-attr">bar</span>: <span class="hljs-number">2</span><br>  &#125;;<br>&#125;<br><span class="hljs-keyword">let</span> &#123; foo, bar &#125; = example();<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>函数参数的定义</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 参数是一组有次序的值</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">[x, y, z]</span>) </span>&#123; ... &#125;<br>f([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);<br><br><span class="hljs-comment">// 参数是一组无次序的值</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">&#123;x, y, z&#125;</span>) </span>&#123; ... &#125;<br>f(&#123;<span class="hljs-attr">z</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">x</span>: <span class="hljs-number">1</span>&#125;);<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>提取<code>JSON</code>数据</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">let</span> jsonData = &#123;<br>  <span class="hljs-attr">id</span>: <span class="hljs-number">42</span>,<br>  <span class="hljs-attr">status</span>: <span class="hljs-string">&quot;OK&quot;</span>,<br>  <span class="hljs-attr">data</span>: [<span class="hljs-number">867</span>, <span class="hljs-number">5309</span>]<br>&#125;;<br><br><span class="hljs-keyword">let</span> &#123; id, status, <span class="hljs-attr">data</span>: number &#125; = jsonData;<br><br><span class="hljs-built_in">console</span>.log(id, status, number);<br><span class="hljs-comment">// 42, &quot;OK&quot;, [867, 5309]</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>函数参数的默认值</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript">jQuery.ajax = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">url, &#123;</span></span><br><span class="hljs-params"><span class="hljs-function">  <span class="hljs-keyword">async</span> = <span class="hljs-literal">true</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  beforeSend = <span class="hljs-keyword">function</span> () &#123;&#125;,</span></span><br><span class="hljs-params"><span class="hljs-function">  cache = <span class="hljs-literal">true</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  complete = <span class="hljs-keyword">function</span> () &#123;&#125;,</span></span><br><span class="hljs-params"><span class="hljs-function">  crossDomain = <span class="hljs-literal">false</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  <span class="hljs-built_in">global</span> = <span class="hljs-literal">true</span>,</span></span><br><span class="hljs-params"><span class="hljs-function">  <span class="hljs-regexp">//</span> ... more config</span></span><br><span class="hljs-params"><span class="hljs-function">&#125; = &#123;&#125;</span>) </span>&#123;<br>  <span class="hljs-comment">// ... do stuff</span><br>&#125;;<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>遍历<code>Map</code>结构</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();<br>map.set(<span class="hljs-string">&#x27;first&#x27;</span>, <span class="hljs-string">&#x27;hello&#x27;</span>);<br>map.set(<span class="hljs-string">&#x27;second&#x27;</span>, <span class="hljs-string">&#x27;world&#x27;</span>);<br><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [key, value] <span class="hljs-keyword">of</span> map) &#123;<br>  <span class="hljs-built_in">console</span>.log(key + <span class="hljs-string">&quot; is &quot;</span> + value);<br>&#125;<br><span class="hljs-comment">// first is hello</span><br><span class="hljs-comment">// second is world</span><br><br><span class="hljs-comment">//只想获取键名，或只想获取键值</span><br><br><span class="hljs-comment">// 获取键名</span><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [key] <span class="hljs-keyword">of</span> map) &#123;<br>  <span class="hljs-comment">// ...</span><br>&#125;<br><br><span class="hljs-comment">// 获取键值</span><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [,value] <span class="hljs-keyword">of</span> map) &#123;<br>  <span class="hljs-comment">// ...</span><br>&#125;<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>输入模块指定方法</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> &#123; SourceMapConsumer, SourceNode &#125; = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;source-map&quot;</span>);<br></code></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
